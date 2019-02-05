@@ -12,6 +12,10 @@
 //To format with Google Style Java Guide, Ctrl+Shift+F
 public class Main {
 
+  // This is a header.
+  // Public is an access modifier.
+  // void is the return type meaning this method does not return anything.
+  // method names should be in lowerCamelCase and be named with a verb.
   public static void main(String[] args) {
     System.out.println("Welcome to my Integration Project!");
     System.out.println("This program will quiz you based on how knowledgable"
@@ -58,12 +62,14 @@ public class Main {
     question3.choiceC = "C\n";
     question3.choiceD = "D";
     Rating ratingResult = new Rating();
-    ratingResult.bronzeRating = "Bronze";
-    ratingResult.silverRating = "Silver";
+    ratingResult.setBronzeRating("Bronze");
+    ratingResult.setSilverRating("Silver");
     ratingResult.goldRating = "Gold";
     ratingResult.platinumRating = "PLatinum";
     ratingResult.diamondRating = "Diamond";
-
+    
+    
+    
     /*
      * One method of Strings that we will be using in this program is concatenating. The + operator
      * is used to concatenate strings together, which helps create sentences out of strings. It is
@@ -77,8 +83,8 @@ public class Main {
         + question2.choiceC + question2.choiceD);
     System.out.println(question3.question + question3.choiceA + question3.choiceB
         + question3.choiceC + question3.choiceD);
-    System.out.println("Here is your result: " + ratingResult.bronzeRating);
-    System.out.println("Here is your result: " + ratingResult.silverRating);
+    System.out.println("Here is your result: " + ratingResult.getBronzeRating());
+    System.out.println("Here is your result: " + ratingResult.getSilverRating());
     System.out.println("Here is your result: " + ratingResult.goldRating);
     System.out.println("Here is your result: " + ratingResult.platinumRating);
     System.out.println("Here is your result: " + ratingResult.diamondRating);
@@ -113,11 +119,27 @@ class Rating {
   int points = 0;
   short score = (short) points; // This line indicates casting, which converts a type of value into
                                 // another. (EX: short to int)
-  String bronzeRating = "0";
-  String silverRating = "1";
+  private String bronzeRating = "0";
+  private String silverRating = "1";
   String goldRating = "2";
   String platinumRating = "3";
   String diamondRating = "4";
+  
+  public String getBronzeRating() {
+	  return bronzeRating;
+  }
+  
+  public void setBronzeRating(String newBronzeRating)  {
+	  bronzeRating = newBronzeRating;
+  }
+  
+  public String getSilverRating() {
+	  return silverRating;
+  }
+  
+  public void setSilverRating(String newSilverRating)  {
+	  silverRating = newSilverRating;
+  }
 
   /*
    * valueOf(); is another string method that this program utilizes. What valueOf(); does is that
@@ -127,5 +149,7 @@ class Rating {
    */
 
   String ratingResult = String.valueOf(score);
-
+  
+  
+  
 }
