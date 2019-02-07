@@ -41,11 +41,16 @@ public class Main {
      * purposes.) 
      * long: 64-bit integer. char: used for unicode, which will not be necessary here.
      */
-    Question question1 = new Question();
-    question1.question = "Question1\n"; // the \n is a type of escape sequence which stands for
-                                        // newline.
-    question1.choiceA = "A\n"; // \n (newline) creates a new line for the next string (EX: A is
-                               // below the first question).
+    Question question1 = new Question(); // the new keyword is used to create a new object from a class.
+    
+    /*the \n is a type of escape sequence which stands for
+     * newline.   
+     * \n (newline) creates a new line for the next string (EX: A is
+     * below the first question).
+     */
+    
+    question1.question = "Question1\n";
+    question1.choiceA = "A\n";
     question1.choiceB = "B\n";
     question1.choiceC = "C\n";
     question1.choiceD = "D";
@@ -62,11 +67,21 @@ public class Main {
     question3.choiceC = "C\n";
     question3.choiceD = "D";
     Rating ratingResult = new Rating();
+    
+    /*
+     * With the getter/setter method in the Rating class, we have to use the set string extension.
+     * Using this will bring our private string into the main method, and the name of the string is
+     * within the argument of the string.
+     * 
+     * After declaring set, when printing the result, we then have to use the get
+     * string extension to obtain the string from its set form.
+     */
+    
     ratingResult.setBronzeRating("Bronze");
     ratingResult.setSilverRating("Silver");
-    ratingResult.goldRating = "Gold";
-    ratingResult.platinumRating = "PLatinum";
-    ratingResult.diamondRating = "Diamond";
+    ratingResult.setGoldRating("Gold");
+    ratingResult.setPlatinumRating("Platinum");
+    ratingResult.setDiamondRating("Diamond");
     
     
     
@@ -85,9 +100,9 @@ public class Main {
         + question3.choiceC + question3.choiceD);
     System.out.println("Here is your result: " + ratingResult.getBronzeRating());
     System.out.println("Here is your result: " + ratingResult.getSilverRating());
-    System.out.println("Here is your result: " + ratingResult.goldRating);
-    System.out.println("Here is your result: " + ratingResult.platinumRating);
-    System.out.println("Here is your result: " + ratingResult.diamondRating);
+    System.out.println("Here is your result: " + ratingResult.getGoldRating());
+    System.out.println("Here is your result: " + ratingResult.getPlatinumRating());
+    System.out.println("Here is your result: " + ratingResult.getDiamondRating());
 
   }
 }
@@ -103,6 +118,14 @@ class Question {
 
   static final double time = 10.25; // the time you have for each question. Final variable will
                                     // prevent the time from changing.
+  
+  /*
+   * For this project, we want to set our fields in each class private.
+   * When a field is set to private, the main class is unable to locate these strings.
+   * This is due to the concept of scope, which the scope of these strings are located in the Rating class.
+   * TO DO: Set each field (String, boolean, final double) in this class private.
+   */
+  
   String question;
   String choiceA;
   String choiceB;
@@ -110,6 +133,16 @@ class Question {
   String choiceD;
   boolean correctAnswer = true;
   boolean incorrectAnswer = false;
+  
+  /*
+   * In order for main to find these fields, we use the getter/setter method.
+   * For strings within this class, we set a public string for each private string that we have.
+   * We then have to return the string which allows it to be prepared to be shipped to the main method.
+   *
+   * After using the get method, we now have to use the set method.
+   * The set method will create a new string, which we can set equal to out old string.
+   * This will then allow the string to be shipped to the main class.
+   */
 
 }
 
@@ -117,13 +150,16 @@ class Question {
 class Rating {
 
   int points = 0;
-  short score = (short) points; // This line indicates casting, which converts a type of value into
-                                // another. (EX: short to int)
+/*
+ * The next line indicates casting, which converts a type of 
+ * value into another. (EX: short to int)
+ */
+  short score = (short) points;
   private String bronzeRating = "0";
   private String silverRating = "1";
-  String goldRating = "2";
-  String platinumRating = "3";
-  String diamondRating = "4";
+  private String goldRating = "2";
+  private String platinumRating = "3";
+  private String diamondRating = "4";
   
   public String getBronzeRating() {
 	  return bronzeRating;
@@ -139,6 +175,30 @@ class Rating {
   
   public void setSilverRating(String newSilverRating)  {
 	  silverRating = newSilverRating;
+  }
+  
+  public String getGoldRating() {
+	  return goldRating;
+  }
+  
+  public void setGoldRating(String newGoldRating)  {
+	  goldRating = newGoldRating;
+  }
+  
+  public String getPlatinumRating() {
+	  return platinumRating;
+  }
+  
+  public void setPlatinumRating(String newPlatinumRating)  {
+	  platinumRating = newPlatinumRating;
+  }
+  
+  public String getDiamondRating() {
+	  return diamondRating;
+  }
+	  
+  public void setDiamondRating(String newDiamondRating)  {
+	  diamondRating = newDiamondRating;
   }
 
   /*
