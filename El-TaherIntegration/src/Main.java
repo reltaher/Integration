@@ -43,40 +43,37 @@ public class Main {
      */
     Question question1 = new Question(); // the new keyword is used to create a new object from a class.
     
-    /*the \n is a type of escape sequence which stands for
-     * newline.   
-     * \n (newline) creates a new line for the next string (EX: A is
-     * below the first question).
-     */
-    
-    question1.question = "Question1\n";
-    question1.choiceA = "A\n";
-    question1.choiceB = "B\n";
-    question1.choiceC = "C\n";
-    question1.choiceD = "D";
-    Question question2 = new Question();
-    question2.question = "Question2\n";
-    question2.choiceA = "A\n";
-    question2.choiceB = "B\n";
-    question2.choiceC = "C\n";
-    question2.choiceD = "D";
-    Question question3 = new Question();
-    question3.question = "Question3\n";
-    question3.choiceA = "A\n";
-    question3.choiceB = "B\n";
-    question3.choiceC = "C\n";
-    question3.choiceD = "D";
-    Rating ratingResult = new Rating();
-    
     /*
-     * With the getter/setter method in the Rating class, we have to use the set string extension.
+     * With the getter/setter method in our different classes, we have to use the set string extension.
      * Using this will bring our private string into the main method, and the name of the string is
      * within the argument of the string.
      * 
      * After declaring set, when printing the result, we then have to use the get
      * string extension to obtain the string from its set form.
+     */     
+    question1.setQuestion("Question1\n");   
+    /*the \n is a type of escape sequence which stands for
+     * newline.   
+     * \n (newline) creates a new line for the next string (EX: A is
+     * below the first question).
      */
-    
+    question1.setChoiceA("A\n");
+    question1.setChoiceB("B\n");
+    question1.setChoiceC("C\n");
+    question1.setChoiceD("D");
+    Question question2 = new Question();
+    question2.setQuestion("Question2\n");
+    question2.setChoiceA("A\n");
+    question2.setChoiceB("B\n");
+    question2.setChoiceC("C\n");
+    question2.setChoiceD("D");
+    Question question3 = new Question();
+    question3.setQuestion("Question3\n");
+    question3.setChoiceA("A\n");
+    question3.setChoiceB("B\n");
+    question3.setChoiceC("C\n");
+    question3.setChoiceD("D");
+    Rating ratingResult = new Rating();    
     ratingResult.setBronzeRating("Bronze");
     ratingResult.setSilverRating("Silver");
     ratingResult.setGoldRating("Gold");
@@ -92,12 +89,12 @@ public class Main {
      * program.
      */
 
-    System.out.println(question1.question + question1.choiceA + question1.choiceB
-        + question1.choiceC + question1.choiceD);
-    System.out.println(question2.question + question2.choiceA + question2.choiceB
-        + question2.choiceC + question2.choiceD);
-    System.out.println(question3.question + question3.choiceA + question3.choiceB
-        + question3.choiceC + question3.choiceD);
+    System.out.println(question1.getQuestion() + question1.getChoiceA() + question1.getChoiceB()
+        + question1.getChoiceC() + question1.getChoiceD());
+    System.out.println(question2.getQuestion() + question2.getChoiceA() + question2.getChoiceB()
+        + question2.getChoiceC() + question2.getChoiceD());
+    System.out.println(question3.getQuestion() + question3.getChoiceA() + question3.getChoiceB()
+        + question3.getChoiceC() + question3.getChoiceD());
     System.out.println("Here is your result: " + ratingResult.getBronzeRating());
     System.out.println("Here is your result: " + ratingResult.getSilverRating());
     System.out.println("Here is your result: " + ratingResult.getGoldRating());
@@ -116,7 +113,7 @@ class Question {
    * would be in the class of the object.
    */
 
-  static final double time = 10.25; // the time you have for each question. Final variable will
+  private static final double time = 10.25; // the time you have for each question. Final variable will
                                     // prevent the time from changing.
   
   /*
@@ -126,13 +123,13 @@ class Question {
    * TO DO: Set each field (String, boolean, final double) in this class private.
    */
   
-  String question;
-  String choiceA;
-  String choiceB;
-  String choiceC;
-  String choiceD;
-  boolean correctAnswer = true;
-  boolean incorrectAnswer = false;
+  private String question;
+  private String choiceA;
+  private String choiceB;
+  private String choiceC;
+  private String choiceD;
+  private boolean correctAnswer = true;
+  private boolean incorrectAnswer = false;
   
   /*
    * In order for main to find these fields, we use the getter/setter method.
@@ -144,17 +141,75 @@ class Question {
    * This will then allow the string to be shipped to the main class.
    */
 
+  public double getTime() {
+	  return time;
+  }
+  
+  public void setTime(double newTime)  {
+	  newTime = time;
+  }
+  
+  public String getQuestion() {
+	  return question;
+  }
+  
+  public void setQuestion(String newQuestion)  {
+	  question = newQuestion;
+  }
+  
+  public String getChoiceA() {
+	  return choiceA;
+  }
+  
+  public void setChoiceA(String newChoiceA)  {
+	  choiceA = newChoiceA;
+  }
+  
+  public String getChoiceB() {
+	  return choiceB;
+  }
+  
+  public void setChoiceB(String newChoiceB)  {
+	  choiceB = newChoiceB;
+  }
+  
+  public String getChoiceC() {
+	  return choiceC;
+  }
+  
+  public void setChoiceC(String newChoiceC)  {
+	  choiceC = newChoiceC;
+  }
+  
+  public String getChoiceD() {
+	  return choiceD;
+  }
+  
+  public void setChoiceD(String newChoiceD)  {
+	  choiceD = newChoiceD;
+  }
+  
+  public boolean getCorrectAnswer() {
+	  return correctAnswer;
+  }
+  
+  public void setCorrectAnswer(boolean newCorrectAnswer) {
+	  correctAnswer = newCorrectAnswer;
+  }
+  public boolean getIncorrectAnswer() {
+	  return incorrectAnswer;
+  }
+  
+  public void setIncorrectAnswer(boolean newIncorrectAnswer) {
+	  incorrectAnswer = newIncorrectAnswer;
+  }
 }
 
 
 class Rating {
 
-  int points = 0;
-/*
- * The next line indicates casting, which converts a type of 
- * value into another. (EX: short to int)
- */
-  short score = (short) points;
+  private int points = 0;
+  private short score = (short) points; // casting (converts a type of value into another)
   private String bronzeRating = "0";
   private String silverRating = "1";
   private String goldRating = "2";
@@ -168,7 +223,23 @@ class Rating {
    * score into the type of result that the user gets.
    */
 
-  String ratingResult = String.valueOf(score);
+  private String ratingResult = String.valueOf(score);
+   
+  public int getPoints() {
+	  return points;
+  }
+  
+  public void setPoints(int newPoints) {
+	  points = newPoints;
+  }
+  
+  public short getScore() {
+	  return score;
+  }
+  
+  public void setScore(short newScore) {
+	  score = newScore;
+  }
   
   public String getBronzeRating() {
 	  return bronzeRating;
@@ -208,5 +279,13 @@ class Rating {
 	  
   public void setDiamondRating(String newDiamondRating)  {
 	  diamondRating = newDiamondRating;
+  }
+	  
+  public String getRatingResult() {
+	  return ratingResult;
+  }
+	  
+  public void setRatingResult(String newRatingResult) {
+	  ratingResult = newRatingResult;
   }  
 }
