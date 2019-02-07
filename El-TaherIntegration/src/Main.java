@@ -161,6 +161,15 @@ class Rating {
   private String platinumRating = "3";
   private String diamondRating = "4";
   
+  /*
+   * valueOf(); is another string method that this program utilizes. What valueOf(); does is that
+   * it converts our variables into a string. The reason why we want to convert the int variable
+   * "score" to a string is because we will need the string form of this variable to convert the
+   * score into the type of result that the user gets.
+   */
+
+  String ratingResult = String.valueOf(score);
+  
   public String getBronzeRating() {
 	  return bronzeRating;
   }
@@ -199,17 +208,5 @@ class Rating {
 	  
   public void setDiamondRating(String newDiamondRating)  {
 	  diamondRating = newDiamondRating;
-  }
-
-  /*
-   * valueOf(); is another string method that this program utilizes. What valueOf(); does is that
-   * it converts our variables into a string. The reason why we want to convert the int variable
-   * "score" to a string is because we will need the string form of this variable to convert the
-   * score into the type of result that the user gets.
-   */
-
-  String ratingResult = String.valueOf(score);
-  
-  
-  
+  }  
 }
