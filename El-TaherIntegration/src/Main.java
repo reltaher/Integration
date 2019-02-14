@@ -1,3 +1,4 @@
+
 import java.util.Random;
 
 // This Project has been created by Ramzy El-Taher.
@@ -53,21 +54,7 @@ public class Main {
 		System.out.println("Take the quiz");
 		System.out.println("What champion are you? Random Number Generator");
 		System.out.println("Settings");
-		
-		/*
-		 * I will be using the Random class for a different setting rather than for the quiz.
-		 * What I plan to do is to assign specific integers (EX: 10-20) to a champion in LoL.
-		 * When the program prints out the number, whatever number is printed out will also
-		 * print the champion that is associated with the number. This will just be a fun
-		 * side game in this program.
-		 * 
-		 * More will be added on to this later.
-		 */
-		Random randomNumber = new Random();
-		int number;
-		number = randomNumber.nextInt(100);
-		System.out.println(number);
-
+			
 		/*
 		 * With the getter/setter method in our different classes, we have to use the
 		 * set string extension. Using this will bring our private string into the main
@@ -84,6 +71,7 @@ public class Main {
 		 * within its parentheses is the argument. In this example, the argument
 		 * would be ("Question1\n").
 		 */
+		System.out.println("Quiz");
 		// the new keyword is used to create a new object from a class.
 		Question question1 = new Question();
 		question1.setQuestion("Question1\n");
@@ -129,7 +117,10 @@ public class Main {
 		System.out.println("Here is your result: " + ratingResult.getGoldRating());
 		System.out.println("Here is your result: " + ratingResult.getPlatinumRating());
 		System.out.println("Here is your result: " + ratingResult.getDiamondRating());
-
+		
+		System.out.println("Random Champion Game");
+		Champion myChamp = new Champion();
+		myChamp.ranChamp();
 	}
 }
 
@@ -323,5 +314,63 @@ class Rating {
 
 	public void setRatingResult(String newRatingResult) {
 		ratingResult = newRatingResult;
+	}
+}
+
+class Champion  {
+	public void ranChamp() {
+		/*
+		 * I will be using the Random class for a different setting rather than for the quiz.
+		 * What I plan to do is to assign specific integers (EX: 10-20) to a champion in LoL.
+		 * When the program prints out the number, whatever number is printed out will also
+		 * print the champion that is associated with the number. This will just be a fun
+		 * side game in this program.
+		 * 
+		 * More will be added on to this later.
+		 */
+		Random randomNumber = new Random();
+		int number;
+		String champion = "unknown";
+		number = randomNumber.nextInt(101);
+		System.out.println(number);
+		if (number == 0)  {
+		champion = "Ashe";
+		System.out.println(champion);
+		} else if ((number >= 0) && (number <=10))  {
+		champion = "Zoe";
+		System.out.println(champion);
+		} else if ((number >=10) && (number <=20))  {
+		champion = "Ekko";
+		System.out.println(champion);	
+		} else if ((number >= 20) && (number <=30))  {
+		champion = "Gragas";
+		System.out.println(champion);
+		} else if ((number >= 30) && (number <=40))  {
+		champion = "Ahri";
+		System.out.println(champion);
+		} else if ((number >= 40) && (number <=50))  {
+		champion = "Xerath";
+		System.out.println(champion);
+		} else if ((number >= 50) && (number <=60))  {
+		champion = "Urgot";
+		System.out.println(champion);
+		} else if ((number >= 60) && (number <=70))  {
+		champion = "Yorick";
+		System.out.println(champion);
+		} else if ((number >= 70) && (number <=80))  {
+		champion = "Ivern";
+		System.out.println(champion);
+		} else if ((number >= 80) && (number <=90))  {
+		champion = "Graves";
+		System.out.println(champion);
+		} else if ((number >= 90) && (number <=100))  {
+		champion = "Elise";
+		System.out.println(champion);
+		} else if (number == 100)  {
+		champion = "Kha'Zix";
+		System.out.println(champion);
+		} else {
+		System.out.println("Something went wrong...");
+		}
 	}
 }
