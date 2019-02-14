@@ -11,6 +11,28 @@ import java.util.Random;
  * rather than the integer.
  */
 
+/*
+ * In this program, we will be using Data-Types. These data-types will include
+ * int, bool, and double.
+ * 
+ * Main primitive data types:
+ * 
+ * int: 32 bit integer and our main variable type.
+ * bool: true or false.
+ * double: 64-bit floating point. Used for decimals.
+ * 
+ * Other data types that will not be used:
+ * 
+ * float: 32-bit floating point. Used for decimals, but doubles are preferred
+ * over floats. 
+ * byte: 8-bit integer. Data is not large enough to use. 
+ * short: 16-bit integer. Data is not large enough to use.
+ * (Note: Short IS used in this program, but it is only used for casting purposes.)
+ * long: 64-bit integer.
+ * char: used for unicode, which will not be necessary here.
+ */
+
+
 //To format with Google Style Java Guide, Ctrl+Shift+F
 public class Main {
 
@@ -27,37 +49,24 @@ public class Main {
 		System.out.println("This program will quiz you based on how knowledgable"
 				+ " you are with champion quotes from League of Legends.");
 		
-		/*
-		 * In this program, we will be using Data-Types. These data-types will include
-		 * int, bool, and double.
-		 * 
-		 * Main primitive data types:
-		 * 
-		 * int: 32 bit integer and our main variable type.
-		 * bool: true or false.
-		 * double: 64-bit floating point. Used for decimals.
-		 * 
-		 * Other data types that will not be used:
-		 * 
-		 * float: 32-bit floating point. Used for decimals, but doubles are preferred
-		 * over floats. 
-		 * byte: 8-bit integer. Data is not large enough to use. 
-		 * short: 16-bit integer. Data is not large enough to use.
-		 * (Note: Short IS used in this program, but it is only used for casting purposes.)
-		 * long: 64-bit integer.
-		 * char: used for unicode, which will not be necessary here.
-		 */
-		
-		// the new keyword is used to create a new object from a class.
-		Random randomizeQuestions = new Random();
+		//Temporary menu screen - will add on later.
+		System.out.println("Take the quiz");
+		System.out.println("What champion are you? Random Number Generator");
+		System.out.println("Settings");
 		
 		/*
-		 * Randomizes questions.
-		 * nextInt(3)+1 makes the int data type between 1 and 3
+		 * I will be using the Random class for a different setting rather than for the quiz.
+		 * What I plan to do is to assign specific integers (EX: 10-20) to a champion in LoL.
+		 * When the program prints out the number, whatever number is printed out will also
+		 * print the champion that is associated with the number. This will just be a fun
+		 * side game in this program.
+		 * 
+		 * More will be added on to this later.
 		 */
-		String[] newQuestion = {"question", "Q2", "Q3"};
-		
-		Question question1 = new Question();
+		Random randomNumber = new Random();
+		int number;
+		number = randomNumber.nextInt(100);
+		System.out.println(number);
 
 		/*
 		 * With the getter/setter method in our different classes, we have to use the
@@ -75,6 +84,8 @@ public class Main {
 		 * within its parentheses is the argument. In this example, the argument
 		 * would be ("Question1\n").
 		 */
+		// the new keyword is used to create a new object from a class.
+		Question question1 = new Question();
 		question1.setQuestion("Question1\n");
 		question1.setChoiceA("A\n");
 		question1.setChoiceB("B\n");
@@ -145,6 +156,7 @@ class Question {
 	 * double) in this class private.
 	 */
 
+	//NOTE: Questions/Answers associated with questions need to be randomized. Will add on to it later.
 	private String question;
 	private String choiceA;
 	private String choiceB;
@@ -152,6 +164,7 @@ class Question {
 	private String choiceD;
 	private boolean correctAnswer = true;
 	private boolean incorrectAnswer = false;
+
 	/*
 	 * In order for main to find these fields, we use the getter/setter method. For
 	 * strings within this class, we set a public string for each private string
