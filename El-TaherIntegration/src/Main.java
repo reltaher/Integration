@@ -1,5 +1,6 @@
 
 import java.util.Random;
+import java.util.Scanner;
 
 // This Project has been created by Ramzy El-Taher.
 // This program is a quiz on how well you know champion quotes from the game "League of Legends".
@@ -49,11 +50,59 @@ public class Main {
 		System.out.println("Welcome to my Integration Project!");
 		System.out.println("This program will quiz you based on how knowledgable"
 				+ " you are with champion quotes from League of Legends.");
-		
-		//Temporary menu screen - will add on later.
-		System.out.println("Take the quiz");
-		System.out.println("What champion are you? Random Number Generator");
-		System.out.println("Settings");
+		System.out.println("Type 1 to take the quiz, type 2 to try the " +
+				"Random Number Generator minigame.");	
+		//Menu screen
+		Scanner scan = new Scanner(System.in);
+		int select = 0;	
+		select = scan.nextInt();
+		switch (select) {
+		case 1: 
+			Question question1 = new Question();
+			question1.setQuestion("Question1\n");
+			question1.setChoiceA("A\n");
+			question1.setChoiceB("B\n");
+			question1.setChoiceC("C\n");
+			question1.setChoiceD("D");
+			Question question2 = new Question();
+			question2.setQuestion("Question2\n");
+			question2.setChoiceA("A\n");
+			question2.setChoiceB("B\n");
+			question2.setChoiceC("C\n");
+			question2.setChoiceD("D");
+			Question question3 = new Question();
+			question3.setQuestion("Question3\n");
+			question3.setChoiceA("A\n");
+			question3.setChoiceB("B\n");
+			question3.setChoiceC("C\n");
+			question3.setChoiceD("D");
+			Rating ratingResult = new Rating();
+			ratingResult.setBronzeRating("Bronze");
+			ratingResult.setSilverRating("Silver");
+			ratingResult.setGoldRating("Gold");
+			ratingResult.setPlatinumRating("Platinum");
+			ratingResult.setDiamondRating("Diamond");
+			System.out.println(question1.getQuestion() + "A: " + question1.getChoiceA() + "B: " + question1.getChoiceB()
+			+ "C: " + question1.getChoiceC() + "D: " + question1.getChoiceD());
+			System.out.println(question2.getQuestion() + question2.getChoiceA() + question2.getChoiceB()
+			+ question2.getChoiceC() + question2.getChoiceD());
+			System.out.println(question3.getQuestion() + question3.getChoiceA() + question3.getChoiceB()
+			+ question3.getChoiceC() + question3.getChoiceD());
+			System.out.println("Score: " + Math.ceil(ratingResult.getScore())); //Math.ceil rounds up score
+			System.out.println("Here is your result: " + ratingResult.getBronzeRating());
+			System.out.println("Here is your result: " + ratingResult.getSilverRating());
+			System.out.println("Here is your result: " + ratingResult.getGoldRating());
+			System.out.println("Here is your result: " + ratingResult.getPlatinumRating());
+			System.out.println("Here is your result: " + ratingResult.getDiamondRating());
+			break;
+		case 2:
+			Champion myChamp = new Champion();
+			System.out.println("Random Champion Game");
+			myChamp.ranChamp();
+			break;
+		default:
+			System.out.println("Error");
+		}
 			
 		/*
 		 * With the getter/setter method in our different classes, we have to use the
@@ -68,35 +117,10 @@ public class Main {
 		 * 
 		 * The following few lines below are good examples of call and argument.
 		 * For example, question1.setQuestion() would be considered the call.
-		 * within its parentheses is the argument. In this example, the argument
+		 * within its parentheses is the argument. In the example below, the argument
 		 * would be ("Question1\n").
 		 */
-		System.out.println("Quiz");
-		// the new keyword is used to create a new object from a class.
-		Question question1 = new Question();
-		question1.setQuestion("Question1\n");
-		question1.setChoiceA("A\n");
-		question1.setChoiceB("B\n");
-		question1.setChoiceC("C\n");
-		question1.setChoiceD("D");
-		Question question2 = new Question();
-		question2.setQuestion("Question2\n");
-		question2.setChoiceA("A\n");
-		question2.setChoiceB("B\n");
-		question2.setChoiceC("C\n");
-		question2.setChoiceD("D");
-		Question question3 = new Question();
-		question3.setQuestion("Question3\n");
-		question3.setChoiceA("A\n");
-		question3.setChoiceB("B\n");
-		question3.setChoiceC("C\n");
-		question3.setChoiceD("D");
-		Rating ratingResult = new Rating();
-		ratingResult.setBronzeRating("Bronze");
-		ratingResult.setSilverRating("Silver");
-		ratingResult.setGoldRating("Gold");
-		ratingResult.setPlatinumRating("Platinum");
-		ratingResult.setDiamondRating("Diamond");		
+
 
 		/*
 		 * One method of Strings that we will be using in this program is concatenating.
@@ -104,24 +128,7 @@ public class Main {
 		 * sentences out of strings. It is also useful for other purposes, such as
 		 * making a multiple choice test like we are in this program.
 		 */
-
-		System.out.println(question1.getQuestion() + "A: " + question1.getChoiceA() + "B: " + question1.getChoiceB()
-				+ "C: " + question1.getChoiceC() + "D: " + question1.getChoiceD());
-		System.out.println(question2.getQuestion() + question2.getChoiceA() + question2.getChoiceB()
-				+ question2.getChoiceC() + question2.getChoiceD());
-		System.out.println(question3.getQuestion() + question3.getChoiceA() + question3.getChoiceB()
-				+ question3.getChoiceC() + question3.getChoiceD());
-		System.out.println("Score: " + Math.ceil(ratingResult.getScore())); //Math.ceil rounds up score
-		System.out.println("Here is your result: " + ratingResult.getBronzeRating());
-		System.out.println("Here is your result: " + ratingResult.getSilverRating());
-		System.out.println("Here is your result: " + ratingResult.getGoldRating());
-		System.out.println("Here is your result: " + ratingResult.getPlatinumRating());
-		System.out.println("Here is your result: " + ratingResult.getDiamondRating());
-		
-		System.out.println("Random Champion Game");
-		Champion myChamp = new Champion();
-		myChamp.ranChamp();
-	}
+		}
 }
 
 class Question {
@@ -236,6 +243,10 @@ class Rating {
 
 	private int points = 0;
 	private short score = (short) points; // casting (converts a type of value into another)
+	// ?  the ternary opertator
+	//variable x = (expression) ? value if true: value if false
+	//https://www.tutorialspoint.com/Java-Ternary-Operator-Examples
+	//2String rating ? '0' : '1';
 	private String bronzeRating = "0";
 	private String silverRating = "1";
 	private String goldRating = "2";
@@ -318,7 +329,7 @@ class Rating {
 }
 
 class Champion  {
-	public void ranChamp() {
+	public static void ranChamp() {
 		/*
 		 * I will be using the Random class for a different setting rather than for the quiz.
 		 * What I plan to do is to assign specific integers (EX: 10-20) to a champion in LoL.
@@ -333,40 +344,37 @@ class Champion  {
 		String champion = "unknown";
 		number = randomNumber.nextInt(101);
 		System.out.println(number);
-		if (number == 0)  {
+		if (number <= 0)  {
 		champion = "Ashe";
 		System.out.println(champion);
-		} else if ((number >= 0) && (number <=10))  {
-		champion = "Zoe";
-		System.out.println(champion);
-		} else if ((number >=10) && (number <=20))  {
+		} else if (number <=10)  {
 		champion = "Ekko";
 		System.out.println(champion);	
-		} else if ((number >= 20) && (number <=30))  {
+		} else if (number <= 20)  {
 		champion = "Gragas";
 		System.out.println(champion);
-		} else if ((number >= 30) && (number <=40))  {
+		} else if (number <= 30)  {
 		champion = "Ahri";
 		System.out.println(champion);
-		} else if ((number >= 40) && (number <=50))  {
+		} else if (number <= 40)  {
 		champion = "Xerath";
 		System.out.println(champion);
-		} else if ((number >= 50) && (number <=60))  {
+		} else if (number <= 50)  {
 		champion = "Urgot";
 		System.out.println(champion);
-		} else if ((number >= 60) && (number <=70))  {
+		} else if (number <= 60)  {
 		champion = "Yorick";
 		System.out.println(champion);
-		} else if ((number >= 70) && (number <=80))  {
+		} else if (number <= 70)  {
 		champion = "Ivern";
 		System.out.println(champion);
-		} else if ((number >= 80) && (number <=90))  {
+		} else if (number <= 80)  {
 		champion = "Graves";
 		System.out.println(champion);
-		} else if ((number >= 90) && (number <=100))  {
+		} else if (number <= 90)  {
 		champion = "Elise";
 		System.out.println(champion);
-		} else if (number == 100)  {
+		} else if (number <= 100)  {
 		champion = "Kha'Zix";
 		System.out.println(champion);
 		} else {
