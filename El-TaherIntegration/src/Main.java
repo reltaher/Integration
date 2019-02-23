@@ -54,46 +54,107 @@ public class Main {
 				"Random Number Generator minigame.");	
 		//Menu screen
 		Scanner scan = new Scanner(System.in);
-		int select = 0;	
+		int select = 0;
+		int score = 0;
+		String choice = "";
 		select = scan.nextInt();
-		switch (select) {
-		case 1: 
-			Question question1 = new Question();
-			question1.setQuestion("Question1\n");
-			question1.setChoiceA("A\n");
-			question1.setChoiceB("B\n");
-			question1.setChoiceC("C\n");
-			question1.setChoiceD("D");
-			Question question2 = new Question();
-			question2.setQuestion("Question2\n");
-			question2.setChoiceA("A\n");
-			question2.setChoiceB("B\n");
-			question2.setChoiceC("C\n");
-			question2.setChoiceD("D");
-			Question question3 = new Question();
-			question3.setQuestion("Question3\n");
-			question3.setChoiceA("A\n");
-			question3.setChoiceB("B\n");
-			question3.setChoiceC("C\n");
-			question3.setChoiceD("D");
-			Rating ratingResult = new Rating();
-			ratingResult.setBronzeRating("Bronze");
-			ratingResult.setSilverRating("Silver");
-			ratingResult.setGoldRating("Gold");
-			ratingResult.setPlatinumRating("Platinum");
-			ratingResult.setDiamondRating("Diamond");
-			System.out.println(question1.getQuestion() + "A: " + question1.getChoiceA() + "B: " + question1.getChoiceB()
-			+ "C: " + question1.getChoiceC() + "D: " + question1.getChoiceD());
-			System.out.println(question2.getQuestion() + question2.getChoiceA() + question2.getChoiceB()
-			+ question2.getChoiceC() + question2.getChoiceD());
-			System.out.println(question3.getQuestion() + question3.getChoiceA() + question3.getChoiceB()
-			+ question3.getChoiceC() + question3.getChoiceD());
-			System.out.println("Score: " + Math.ceil(ratingResult.getScore())); //Math.ceil rounds up score
-			System.out.println("Here is your result: " + ratingResult.getBronzeRating());
-			System.out.println("Here is your result: " + ratingResult.getSilverRating());
-			System.out.println("Here is your result: " + ratingResult.getGoldRating());
-			System.out.println("Here is your result: " + ratingResult.getPlatinumRating());
-			System.out.println("Here is your result: " + ratingResult.getDiamondRating());
+	switch (select) {
+		case 1:
+			System.out.println("Quiz. Type Q1 TO continue.");
+			choice = scan.nextLine();
+			choice = scan.nextLine();
+			switch (choice)  {
+				case "Q1":
+					Question question1 = new Question();
+					question1.setQuestion("Question1\n");
+					question1.setChoiceA("A\n");
+					question1.setChoiceB("B\n");
+					question1.setChoiceC("C\n");
+					question1.setChoiceD("D");
+					question1.setCorrectAnswer(true);
+					question1.setIncorrectAnswer(false);
+					System.out.println(question1.getQuestion() + "A: " + question1.getChoiceA() + "B: " +
+					question1.getChoiceB() + "C: " + question1.getChoiceC() + "D: " + question1.getChoiceD());
+					choice = scan.nextLine();
+					if (choice.equals("A"))  {
+						score++;		
+					} else if (choice.equals("B"))  {
+						score--;
+					} else if (choice.equals(question1.getChoiceC()))  {
+						score--;
+					} else if (choice.equals(question1.getChoiceD()))  {
+						score--;
+					} else {
+						score--;
+					}
+				case "Q2":
+					Question question2 = new Question();
+					question2.setQuestion("Question2\n");
+					question2.setChoiceA("A\n");
+					question2.setChoiceB("B\n");
+					question2.setChoiceC("C\n");
+					question2.setChoiceD("D");
+					System.out.println(question2.getQuestion() + question2.getChoiceA() + question2.getChoiceB()
+					+ question2.getChoiceC() + question2.getChoiceD());
+					choice = scan.nextLine();
+					if (choice.equals("A"))  {
+						score--;	
+					} else if (choice.equals("B"))  {
+						score--;
+					} else if (choice.equals("C"))  {
+						score++;
+					} else if (choice.equals("D"))  {
+						score--;
+					} else {
+						score--;
+					}
+				case "Q3":
+					Question question3 = new Question();
+					question3.setQuestion("Question3\n");
+					question3.setChoiceA("A\n");
+					question3.setChoiceB("B\n");
+					question3.setChoiceC("C\n");
+					question3.setChoiceD("D");
+					System.out.println(question3.getQuestion() + question3.getChoiceA() + question3.getChoiceB()
+					+ question3.getChoiceC() + question3.getChoiceD());
+					choice = scan.nextLine();
+					if (choice.equals("A"))  {
+						score--;	
+					} else if (choice.equals("B"))  {
+						score++;
+					} else if (choice.equals("C"))  {
+						score--;
+					} else if (choice.equals("D"))  {
+						score--;
+					} else {
+						score--;
+					}
+				case "Result":
+					Rating ratingResult = new Rating();
+					ratingResult.setScoreResult(score);
+					ratingResult.setBronzeRating("Bronze");
+					ratingResult.setSilverRating("Silver");
+					ratingResult.setGoldRating("Gold");
+					ratingResult.setPlatinumRating("Platinum");
+					ratingResult.setDiamondRating("Diamond");
+					System.out.println("Score: " + Math.ceil(ratingResult.getScoreResult())); //Math.ceil rounds up score
+					if (score <= 0)  {
+					System.out.println("Here is your result: " + ratingResult.getBronzeRating());
+					}
+					else if (score == 1)  {
+					System.out.println("Here is your result: " + ratingResult.getSilverRating());
+					}
+					else if (score == 2)  {
+					System.out.println("Here is your result: " + ratingResult.getGoldRating());
+					}
+					else if (score == 3)  {
+					System.out.println("Here is your result: " + ratingResult.getPlatinumRating());
+					}
+					else if (score == 4)  {
+					System.out.println("Here is your result: " + ratingResult.getDiamondRating());
+					}
+					break;
+				}
 			break;
 		case 2:
 			Champion myChamp = new Champion();
@@ -156,12 +217,14 @@ class Question {
 
 	//NOTE: Questions/Answers associated with questions need to be randomized. Will add on to it later.
 	private String question;
-	private String choiceA;
-	private String choiceB;
-	private String choiceC;
-	private String choiceD;
+	private String choiceA = "A";
+	private String choiceB = "B";
+	private String choiceC = "C";
+	private String choiceD = "D";
 	private boolean correctAnswer = true;
 	private boolean incorrectAnswer = false;
+	private int points = 0;
+	private short score = (short) points; // casting (converts a type of value into another)
 
 	/*
 	 * In order for main to find these fields, we use the getter/setter method. For
@@ -237,31 +300,6 @@ class Question {
 	public void setIncorrectAnswer(boolean newIncorrectAnswer) {
 		incorrectAnswer = newIncorrectAnswer;
 	}
-}
-
-class Rating {
-
-	private int points = 0;
-	private short score = (short) points; // casting (converts a type of value into another)
-	// ?  the ternary opertator
-	//variable x = (expression) ? value if true: value if false
-	//https://www.tutorialspoint.com/Java-Ternary-Operator-Examples
-	//2String rating ? '0' : '1';
-	private String bronzeRating = "0";
-	private String silverRating = "1";
-	private String goldRating = "2";
-	private String platinumRating = "3";
-	private String diamondRating = "4";
-
-	/*
-	 * valueOf(); is another string method that this program utilizes. What
-	 * valueOf(); does is that it converts our variables into a string. The reason
-	 * why we want to convert the int variable "score" to a string is because we
-	 * will need the string form of this variable to convert the score into the type
-	 * of result that the user gets.
-	 */
-
-	private String ratingResult = String.valueOf(score);
 
 	public int getPoints() {
 		return points;
@@ -277,6 +315,45 @@ class Rating {
 
 	public void setScore(short newScore) {
 		score = newScore;
+	}
+}
+
+class Rating {
+
+	// ?  the ternary opertator
+	//variable x = (expression) ? value if true: value if false
+	//https://www.tutorialspoint.com/Java-Ternary-Operator-Examples
+	//2String rating ? '0' : '1';
+	
+	/*
+	 * valueOf(); is another string method that this program utilizes. What
+	 * valueOf(); does is that it converts our variables into a string. The reason
+	 * why we want to convert the int variable "score" to a string is because we
+	 * will need the string form of this variable to convert the score into the type
+	 * of result that the user gets.
+	 */
+	private int scoreResult;
+	private String ratingResult = String.valueOf(scoreResult);
+	private String bronzeRating = "0";
+	private String silverRating = "1";
+	private String goldRating = "2";
+	private String platinumRating = "3";
+	private String diamondRating = "4";
+
+	public int getScoreResult() {
+		return scoreResult;
+	}
+	
+	public void setScoreResult(int newScoreResult)  {
+		scoreResult = newScoreResult;
+	}
+	
+	public String getRatingResult() {
+		return ratingResult;
+	}
+
+	public void setRatingResult(String newRatingResult) {
+		ratingResult = newRatingResult;
 	}
 
 	public String getBronzeRating() {
@@ -317,14 +394,6 @@ class Rating {
 
 	public void setDiamondRating(String newDiamondRating) {
 		diamondRating = newDiamondRating;
-	}
-
-	public String getRatingResult() {
-		return ratingResult;
-	}
-
-	public void setRatingResult(String newRatingResult) {
-		ratingResult = newRatingResult;
 	}
 }
 
