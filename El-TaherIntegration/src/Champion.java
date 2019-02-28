@@ -1,6 +1,7 @@
 import java.util.Random;
+//This Project has been created by Ramzy El-Taher.
 
-class Champion  {
+class RandomChampion  {
 	public void ranChamp() {
 		/*
 		 * I will be using the Random class for a different setting rather than for the quiz.

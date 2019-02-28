@@ -57,96 +57,14 @@ public class Main {
 				+ "Type 5 to end the program.");
 		// Menu screen
 		boolean runProgram = true;
+		Scanner scan = new Scanner(System.in);
 		while (runProgram) {
-			Scanner scan = new Scanner(System.in);
 			int select = 0;
-			int score = 0;
-			String choice = "";
 			select = scan.nextInt();
 			switch (select) {
 			case 1:
-				choice = scan.nextLine();
-					Question question1 = new Question();
-					question1.setQuestion("Question1\n");
-					question1.setChoiceA("A\n");
-					question1.setChoiceB("B\n");
-					question1.setChoiceC("C\n");
-					question1.setChoiceD("D");
-					System.out.println(question1.getQuestion() + "A: " + question1.getChoiceA() + "B: "
-							+ question1.getChoiceB() + "C: " + question1.getChoiceC() + "D: " + question1.getChoiceD());
-					choice = scan.nextLine();
-					if (choice.equals("A")) {
-						score--;
-					} else if (choice.equals("B")) {
-						score--;
-					} else if (choice.equals("C")) {
-						score++;
-					} else if (choice.equals("D")) {
-						score--;
-					} else {
-						score--;
-					}
-					Question question2 = new Question();
-					question2.setQuestion("Question2\n");
-					question2.setChoiceA("A\n");
-					question2.setChoiceB("B\n");
-					question2.setChoiceC("C\n");
-					question2.setChoiceD("D");
-					System.out.println(question2.getQuestion() + "A: " + question2.getChoiceA() + "B: "
-							+ question2.getChoiceB() + "C: " + question2.getChoiceC() + "D: " + question2.getChoiceD());
-					choice = scan.nextLine();
-					if (choice.equals("A")) {
-						score++;
-					} else if (choice.equals("B")) {
-						score--;
-					} else if (choice.equals("C")) {
-						score--;
-					} else if (choice.equals("D")) {
-						score--;
-					} else {
-						score--;
-					}
-					Question question3 = new Question();
-					question3.setQuestion("Question3\n");
-					question3.setChoiceA("A\n");
-					question3.setChoiceB("B\n");
-					question3.setChoiceC("C\n");
-					question3.setChoiceD("D");
-					System.out.println(question3.getQuestion() + "A: " + question3.getChoiceA() + "B: "
-							+ question3.getChoiceB() + "C: " + question3.getChoiceC() + "D: " + question3.getChoiceD());
-					choice = scan.nextLine();
-					if (choice.equals("A")) {
-						score--;
-					} else if (choice.equals("B")) {
-						score--;
-					} else if (choice.equals("C")) {
-						score++;
-					} else if (choice.equals("D")) {
-						score--;
-					} else if (choice.equals("AB"))  {
-						score += score + 1;
-					} else {
-						score--;
-					}
-					Rating ratingResult = new Rating();
-					ratingResult.setScoreResult(score);
-					ratingResult.setBronzeRating("Bronze");
-					ratingResult.setSilverRating("Silver");
-					ratingResult.setGoldRating("Gold");
-					ratingResult.setPlatinumRating("Platinum");
-					ratingResult.setDiamondRating("Diamond");
-					System.out.println("Score: " + Math.ceil(ratingResult.getScoreResult())); // Math.ceil rounds up																			// score
-					if (score <= 0) {
-						System.out.println("Here is your result: " + ratingResult.getBronzeRating());
-					} else if (score == 1) {
-						System.out.println("Here is your result: " + ratingResult.getSilverRating());
-					} else if (score == 2) {
-						System.out.println("Here is your result: " + ratingResult.getGoldRating());
-					} else if (score == 3) {
-						System.out.println("Here is your result: " + ratingResult.getPlatinumRating());
-					} else if (score >= 4) {
-						System.out.println("Here is your result: " + ratingResult.getDiamondRating());
-					}
+				Quiz takeQuiz = new Quiz();
+				takeQuiz.quizStart(scan);
 					System.out.println(
 							"Type 1 to re-take the quiz.\n"
 							+ "Type 2 to try the Random Champion Game.\n"
@@ -155,7 +73,7 @@ public class Main {
 							+ "Type 5 to end the program.");
 					break;
 			case 2:
-				Champion myChamp = new Champion();
+				RandomChampion myChamp = new RandomChampion();
 				System.out.println("Random Champion Game");
 				myChamp.ranChamp();
 				System.out.println(
@@ -166,41 +84,8 @@ public class Main {
 						+ "Type 5 to end the program.");
 				break;
 			case 3:
-				int champInt = 0;
-				String champResult = "unknown";
-				champResult = String.valueOf(champInt);
-				System.out.println("Enter a number: ");
-				champInt = scan.nextInt();
-				do {
-				if (champInt >= 0 || champInt <= 0) {
-					champInt = champInt + 150 - 100 * 2 / 3 % 4;
-					if (champInt <= 0)  {
-						champResult = "Zed";
-						System.out.println(champResult);
-					} else if (champInt == 1) {
-						
-						// ? is the ternary opertator
-						//variable x = (expression) ? value if true: value if false
-						//https://www.tutorialspoint.com/Java-Ternary-Operator-Examples
-						//Enter -147 to get Teemo
-						
-						champInt = (champInt == 1) ? 1: 99;
-						champResult = "Teemo";
-						System.out.println(champResult);
-					} else if (champInt <= 100)  {
-						champResult = "Yasuo";
-						System.out.println(champResult);
-					} else if (champInt <= 200)  {
-						champResult = "Talon";
-						System.out.println(champResult);
-					} else if (champInt <= 300)  {
-						champResult = "Leblanc";
-						System.out.println(champResult);
-					} else if (champInt == 999)  {
-						continue; //skips this part of the loop to the end.
-					}
-				}
-				} while(champInt == 0);
+				ChampionNumber startNumGame = new ChampionNumber();
+				startNumGame.champNum(scan);
 				System.out.println(
 						"Type 1 to take the quiz.\n"
 						+ "Type 2 to try the Random Champion Game.\n"
@@ -209,35 +94,8 @@ public class Main {
 						+ "Type 5 to end the program.");
 				break;
 			case 4:
-				int programCase4 = 1;
-				String choice1 = "";
-				String choice2 = "";
-				while(programCase4 == 1) {
-				String champ1 = "Ahri";
-				String champ2 = "Kayle";
-				String champ3 = "Varus";
-				choice = scan.nextLine();
-				System.out.println("Enter a champion: ");
-				choice1 = scan.nextLine();
-				System.out.println("Enter a second champion: ");
-				choice2 = scan.nextLine();
-				if (choice1.equals(champ1) && choice2.equals(champ2)) {
-				System.out.println(champ1.compareTo(champ2));
-				System.out.println("Type 1 to try again. Type 2 to quit.");
-				}
-				else if (choice1.equals(champ2) && choice2.equals(champ1)) {
-					System.out.println(champ2.compareTo(champ1));
-					System.out.println("Type 1 to try again. Type 2 to quit.");
-				}
-				else if (choice1.equals(champ3) && choice2.equals(champ1)) {
-					System.out.println(champ3.compareTo(champ1));
-					System.out.println("Type 1 to try again. Type 2 to quit.");
-				}
-				else {
-					System.out.println("Invalid entry. Type 1 to try again. Type 2 to quit.");
-					programCase4 = scan.nextInt();
-				}
-				}
+				CompareChampStrings useCompare = new CompareChampStrings();
+				useCompare.startCompare(scan);
 				System.out.println(
 						"Type 1 to take the quiz.\n"
 						+ "Type 2 to retry the Random Champion Game.\n"
