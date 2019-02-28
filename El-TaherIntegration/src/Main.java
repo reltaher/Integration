@@ -46,7 +46,10 @@ public class Main {
 		System.out.println("This program will quiz you based on how knowledgable"
 				+ " you are with champion quotes from League of Legends.");
 		System.out.println(
-				"Type 1 to take the quiz, type 2 to try the " + "Random Champion Game. Type 3 to end the program.");
+				"Type 1 to take the quiz. "
+				+ "Type 2 to retry the Random Champion Game."
+				+ " Type 3 enter a number for a champion output."
+				+ " Type 4 to end the program.");
 		// Menu screen
 		boolean runProgram = true;
 		while (runProgram) {
@@ -115,6 +118,8 @@ public class Main {
 						score++;
 					} else if (choice.equals("D")) {
 						score--;
+					} else if (choice.equals("AB"))  {
+						score += score + 1;
 					} else {
 						score--;
 					}
@@ -134,20 +139,52 @@ public class Main {
 						System.out.println("Here is your result: " + ratingResult.getGoldRating());
 					} else if (score == 3) {
 						System.out.println("Here is your result: " + ratingResult.getPlatinumRating());
-					} else if (score == 4) {
+					} else if (score >= 4) {
 						System.out.println("Here is your result: " + ratingResult.getDiamondRating());
 					}
 					System.out.println(
-							"Type 1 to Re-take the quiz. Type 2 to try the Random Champion Game. Type 3 to end the program.");
+							"Type 1 to take the quiz. "
+							+ "Type 2 to retry the Random Champion Game."
+							+ " Type 3 enter a number for a champion output."
+							+ " Type 4 to end the program.");
 					break;
 			case 2:
 				Champion myChamp = new Champion();
 				System.out.println("Random Champion Game");
 				myChamp.ranChamp();
 				System.out.println(
-						"Type 1 to take the quiz. Type 2 to retry the Random Champion Game. Type 3 to end the program.");
+						"Type 1 to take the quiz. "
+						+ "Type 2 to retry the Random Champion Game."
+						+ " Type 3 enter a number for a champion output."
+						+ " Type 4 to end the program.");
 				break;
 			case 3:
+				int champInt = 0;
+				String champResult = "unknown";
+				champResult = String.valueOf(champInt);
+				System.out.println("Enter a number: ");
+				champInt = scan.nextInt();
+				do {
+				if (champInt >= 0 || champInt <= 0) {
+					champInt = champInt + 150 - 100 / 3 % 4;
+					if (champInt <= 10) {
+						champResult = "Zed";
+						System.out.println(champInt);
+						System.out.println(champResult);
+					} else if (champInt >= 10)  {
+						champResult = "Yasuo";
+						System.out.println(champInt);
+						System.out.println(champResult);
+					}
+				}
+				} while(champInt == 0);
+				System.out.println(
+						"Type 1 to take the quiz. "
+						+ "Type 2 to retry the Random Champion Game."
+						+ " Type 3 enter a number for a champion output."
+						+ " Type 4 to end the program.");
+				break;
+			case 4:
 				System.out.println("Thanks for playing!");
 				runProgram = false;
 				break; //terminates loop/program.
