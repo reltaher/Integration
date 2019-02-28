@@ -30,6 +30,10 @@ import java.util.Scanner;
  * (Note: Short IS used in this program, but it is only used for casting purposes.)
  * long: 64-bit integer.
  * char: used for unicode, which will not be necessary here.
+ * 
+ * Operator precedence - order in which operators are evaluated.
+ * This is important to understand because a lot of operators are used in this program.
+ * Precedence order: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
  */
 
 //To format with Google Style Java Guide, Ctrl+Shift+F
@@ -46,10 +50,11 @@ public class Main {
 		System.out.println("This program will quiz you based on how knowledgable"
 				+ " you are with champion quotes from League of Legends.");
 		System.out.println(
-				"Type 1 to take the quiz. "
-				+ "Type 2 to retry the Random Champion Game."
-				+ " Type 3 enter a number for a champion output."
-				+ " Type 4 to end the program.");
+				"Type 1 to take the quiz.\n"
+				+ "Type 2 to try the Random Champion Game.\n"
+				+ "Type 3 enter a number for a champion output.\n"
+				+ "Type 4 to compare the Strings of two champions.\n"
+				+ "Type 5 to end the program.");
 		// Menu screen
 		boolean runProgram = true;
 		while (runProgram) {
@@ -143,20 +148,22 @@ public class Main {
 						System.out.println("Here is your result: " + ratingResult.getDiamondRating());
 					}
 					System.out.println(
-							"Type 1 to take the quiz. "
-							+ "Type 2 to retry the Random Champion Game."
-							+ " Type 3 enter a number for a champion output."
-							+ " Type 4 to end the program.");
+							"Type 1 to re-take the quiz.\n"
+							+ "Type 2 to try the Random Champion Game.\n"
+							+ "Type 3 enter a number for a champion output.\n"
+							+ "Type 4 to compare the Strings of two champions.\n"
+							+ "Type 5 to end the program.");
 					break;
 			case 2:
 				Champion myChamp = new Champion();
 				System.out.println("Random Champion Game");
 				myChamp.ranChamp();
 				System.out.println(
-						"Type 1 to take the quiz. "
-						+ "Type 2 to retry the Random Champion Game."
-						+ " Type 3 enter a number for a champion output."
-						+ " Type 4 to end the program.");
+						"Type 1 to take the quiz.\n"
+						+ "Type 2 to retry the Random Champion Game.\n"
+						+ "Type 3 enter a number for a champion output.\n"
+						+ "Type 4 to compare the Strings of two champions.\n"
+						+ "Type 5 to end the program.");
 				break;
 			case 3:
 				int champInt = 0;
@@ -166,30 +173,84 @@ public class Main {
 				champInt = scan.nextInt();
 				do {
 				if (champInt >= 0 || champInt <= 0) {
-					champInt = champInt + 150 - 100 / 3 % 4;
-					if (champInt <= 10) {
+					champInt = champInt + 150 - 100 * 2 / 3 % 4;
+					if (champInt <= 0)  {
 						champResult = "Zed";
-						System.out.println(champInt);
 						System.out.println(champResult);
-					} else if (champInt >= 10)  {
+					} else if (champInt == 1) {
+						
+						// ? is the ternary opertator
+						//variable x = (expression) ? value if true: value if false
+						//https://www.tutorialspoint.com/Java-Ternary-Operator-Examples
+						//Enter -147 to get Teemo
+						
+						champInt = (champInt == 1) ? 1: 99;
+						champResult = "Teemo";
+						System.out.println(champResult);
+					} else if (champInt <= 100)  {
 						champResult = "Yasuo";
-						System.out.println(champInt);
 						System.out.println(champResult);
+					} else if (champInt <= 200)  {
+						champResult = "Talon";
+						System.out.println(champResult);
+					} else if (champInt <= 300)  {
+						champResult = "Leblanc";
+						System.out.println(champResult);
+					} else if (champInt == 999)  {
+						continue; //skips this part of the loop to the end.
 					}
 				}
 				} while(champInt == 0);
 				System.out.println(
-						"Type 1 to take the quiz. "
-						+ "Type 2 to retry the Random Champion Game."
-						+ " Type 3 enter a number for a champion output."
-						+ " Type 4 to end the program.");
+						"Type 1 to take the quiz.\n"
+						+ "Type 2 to try the Random Champion Game.\n"
+						+ "Type 3 re-enter a number for a champion output.\n"
+						+ "Type 4 to compare the Strings of two champions.\n"
+						+ "Type 5 to end the program.");
 				break;
 			case 4:
+				int programCase4 = 1;
+				String choice1 = "";
+				String choice2 = "";
+				while(programCase4 == 1) {
+				String champ1 = "Ahri";
+				String champ2 = "Kayle";
+				String champ3 = "Varus";
+				choice = scan.nextLine();
+				System.out.println("Enter a champion: ");
+				choice1 = scan.nextLine();
+				System.out.println("Enter a second champion: ");
+				choice2 = scan.nextLine();
+				if (choice1.equals(champ1) && choice2.equals(champ2)) {
+				System.out.println(champ1.compareTo(champ2));
+				System.out.println("Type 1 to try again. Type 2 to quit.");
+				}
+				else if (choice1.equals(champ2) && choice2.equals(champ1)) {
+					System.out.println(champ2.compareTo(champ1));
+					System.out.println("Type 1 to try again. Type 2 to quit.");
+				}
+				else if (choice1.equals(champ3) && choice2.equals(champ1)) {
+					System.out.println(champ3.compareTo(champ1));
+					System.out.println("Type 1 to try again. Type 2 to quit.");
+				}
+				else {
+					System.out.println("Invalid entry. Type 1 to try again. Type 2 to quit.");
+					programCase4 = scan.nextInt();
+				}
+				}
+				System.out.println(
+						"Type 1 to take the quiz.\n"
+						+ "Type 2 to retry the Random Champion Game.\n"
+						+ "Type 3 enter a number for a champion output.\n"
+						+ "Type 4 to re-compare the Strings of two champions.\n"
+						+ "Type 5 to end the program.");
+				break;
+			case 5:
 				System.out.println("Thanks for playing!");
 				runProgram = false;
 				break; //terminates loop/program.
 			default:
-				System.out.println("Error");
+				System.out.println("Invalid choice. Try again.");
 			}
 
 			/*

@@ -1,9 +1,4 @@
 class Rating {
-
-	// ?  the ternary opertator
-	//variable x = (expression) ? value if true: value if false
-	//https://www.tutorialspoint.com/Java-Ternary-Operator-Examples
-	//2String rating ? '0' : '1';
 	
 	private int scoreResult;
 	private String bronzeRating = "0";

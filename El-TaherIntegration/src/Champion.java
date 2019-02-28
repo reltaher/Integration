@@ -12,10 +12,10 @@ class Champion  {
 		 * More will be added on to this later.
 		 */
 		Random randomNumber = new Random();
-		int number;
+		int championRanNum;
 		String champion = "unknown";
 		for(int champ = 1; champ<=1; champ++) { //There has to be something IN the loop to change the condition.
-		number = randomNumber.nextInt(101);
+		championRanNum = randomNumber.nextInt(101);
 		
 		/*
 		 * valueOf(); is another string method that this program utilizes. What
@@ -25,39 +25,39 @@ class Champion  {
 		 * "Champion" in order to output a champion name.
 		 */
 		
-		champion = String.valueOf(number);
-		System.out.println(number);	
-		if (number <= 0)  {
+		champion = String.valueOf(championRanNum);
+		System.out.println(championRanNum);	
+		if (championRanNum <= 0)  {
 		champion = "Ashe";
 		System.out.println(champion);
-		} else if (number <=10)  {
+		} else if (championRanNum <=10)  {
 		champion = "Ekko";
 		System.out.println(champion);	
-		} else if (number <= 20)  {
+		} else if (championRanNum <= 20)  {
 		champion = "Gragas";
 		System.out.println(champion);
-		} else if (number <= 30)  {
+		} else if (championRanNum <= 30)  {
 		champion = "Ahri";
 		System.out.println(champion);
-		} else if (number <= 40)  {
+		} else if (championRanNum <= 40)  {
 		champion = "Xerath";
 		System.out.println(champion);
-		} else if (number <= 50)  {
+		} else if (championRanNum <= 50)  {
 		champion = "Urgot";
 		System.out.println(champion);
-		} else if (number <= 60)  {
+		} else if (championRanNum <= 60)  {
 		champion = "Yorick";
 		System.out.println(champion);
-		} else if (number <= 70)  {
+		} else if (championRanNum <= 70)  {
 		champion = "Ivern";
 		System.out.println(champion);
-		} else if (number <= 80)  {
+		} else if (championRanNum <= 80)  {
 		champion = "Graves";
 		System.out.println(champion);
-		} else if (number <= 90)  {
+		} else if (championRanNum <= 90)  {
 		champion = "Elise";
 		System.out.println(champion);
-		} else if (number <= 100)  {
+		} else if (championRanNum <= 100)  {
 		champion = "Kha'Zix";
 		System.out.println(champion);
 		} else {
