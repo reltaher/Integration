@@ -1,57 +1,58 @@
-class Rating {
-	
-	private int scoreResult;
-	private String bronzeRating = "0";
-	private String silverRating = "1";
-	private String goldRating = "2";
-	private String platinumRating = "3";
-	private String diamondRating = "4";
+//This project has been created by Ramzy El-Taher.
+public class Rating {
 
-	public int getScoreResult() {
-		return scoreResult;
-	}
-	
-	public void setScoreResult(int newScoreResult)  {
-		scoreResult = newScoreResult;
-	}
-	
-	public String getBronzeRating() {
-		return bronzeRating;
-	}
+    private int scoreResult;
+    private String bronzeRating = "0";
+    private String silverRating = "1";
+    private String goldRating = "2";
+    private String platinumRating = "3";
+    private String diamondRating = "4";
 
-	public void setBronzeRating(String newBronzeRating) {
-		bronzeRating = newBronzeRating;
-	}
+    public int getScoreResult() {
+        return scoreResult;
+    }
 
-	public String getSilverRating() {
-		return silverRating;
-	}
+    public void setScoreResult(int newScoreResult) {
+        scoreResult = newScoreResult;
+    }
 
-	public void setSilverRating(String newSilverRating) {
-		silverRating = newSilverRating;
-	}
+    public String getBronzeRating() {
+        return bronzeRating;
+    }
 
-	public String getGoldRating() {
-		return goldRating;
-	}
+    public void setBronzeRating(String newBronzeRating) {
+        bronzeRating = newBronzeRating;
+    }
 
-	public void setGoldRating(String newGoldRating) {
-		goldRating = newGoldRating;
-	}
+    public String getSilverRating() {
+        return silverRating;
+    }
 
-	public String getPlatinumRating() {
-		return platinumRating;
-	}
+    public void setSilverRating(String newSilverRating) {
+        silverRating = newSilverRating;
+    }
 
-	public void setPlatinumRating(String newPlatinumRating) {
-		platinumRating = newPlatinumRating;
-	}
+    public String getGoldRating() {
+        return goldRating;
+    }
 
-	public String getDiamondRating() {
-		return diamondRating;
-	}
+    public void setGoldRating(String newGoldRating) {
+        goldRating = newGoldRating;
+    }
 
-	public void setDiamondRating(String newDiamondRating) {
-		diamondRating = newDiamondRating;
-	}
+    public String getPlatinumRating() {
+        return platinumRating;
+    }
+
+    public void setPlatinumRating(String newPlatinumRating) {
+        platinumRating = newPlatinumRating;
+    }
+
+    public String getDiamondRating() {
+        return diamondRating;
+    }
+
+    public void setDiamondRating(String newDiamondRating) {
+        diamondRating = newDiamondRating;
+    }
 }

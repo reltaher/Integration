@@ -1,108 +1,109 @@
+//This project has been created by Ramzy El-Taher.
 public class Question {
-	
-	/*
-	 * Everything in this code block would be defined as a scope. A scope is where
-	 * all the variables are located in. Variables: location in memory. In this
-	 * case, the location of the variables would be in the class of the object.
-	 */
 
-	/* 
-	 * the time you have for each question. Final variable will
-	 * prevent the time from changing.
-	 */
-	
-	private static final double time = 10.25; 
+    /*
+     * Everything in this code block would be defined as a scope. A scope is where
+     * all the variables are located in. Variables: location in memory. In this
+     * case, the location of the variables would be in the class of the object.
+     */
 
-	/*
-	 * For this project, we want to set our fields in each class private. When a
-	 * field is set to private, the main class is unable to locate these strings.
-	 * This is due to the concept of scope, which the scope of these strings are
-	 * located in the Rating class. TO DO: Set each field (String, boolean, final
-	 * double) in this class private.
-	 */
+    /*
+     * the time you have for each question. Final variable will prevent the time
+     * from changing.
+     */
 
-	//NOTE: Questions/Answers associated with questions need to be randomized. Will add on to it later.
-	private String question;
-	private String choiceA = "A";
-	private String choiceB = "B";
-	private String choiceC = "C";
-	private String choiceD = "D";
-	private int points = 0;
-	private short score = (short) points; // casting (converts a type of value into another)
+    private static final double time = 10.25;
 
-	/*
-	 * In order for main to find these fields, we use the getter/setter method. For
-	 * strings within this class, we set a public string for each private string
-	 * that we have. We then have to return the string which allows it to be
-	 * prepared to be shipped to the main method.
-	 *
-	 * After using the get method, we now have to use the set method. The set method
-	 * will create a new string, which we can set equal to out old string. This will
-	 * then allow the string to be shipped to the main class.
-	 */
+    /*
+     * For this project, we want to set our fields in each class private. When a
+     * field is set to private, the main class is unable to locate these strings.
+     * This is due to the concept of scope, which the scope of these strings are
+     * located in the Rating class. TO DO: Set each field (String, boolean, final
+     * double) in this class private.
+     */
 
-	public double getTime() {
-		return time;
-	}
+    // NOTE: Questions/Answers associated with questions need to be randomized. Will
+    // add on to it later.
+    private String question;
+    private String choiceA = "A";
+    private String choiceB = "B";
+    private String choiceC = "C";
+    private String choiceD = "D";
+    private int points = 0;
+    private short score = (short) points; // casting (converts a type of value into another)
 
-	public void setTime(double newTime) {
-		newTime = time;
-	}
+    /*
+     * In order for main to find these fields, we use the getter/setter method. For
+     * strings within this class, we set a public string for each private string
+     * that we have. We then have to return the string which allows it to be
+     * prepared to be shipped to the main method.
+     *
+     * After using the get method, we now have to use the set method. The set method
+     * will create a new string, which we can set equal to out old string. This will
+     * then allow the string to be shipped to the main class.
+     */
 
-	public String getQuestion() {
-		return question;
-	}
+    public double getTime() {
+        return time;
+    }
 
-	public void setQuestion(String newQuestion) {
-		question = newQuestion;
-	}
+    public void setTime(double newTime) {
+        newTime = time;
+    }
 
-	public String getChoiceA() {
-		return choiceA;
-	}
+    public String getQuestion() {
+        return question;
+    }
 
-	public void setChoiceA(String newChoiceA) {
-		choiceA = newChoiceA;
-	}
+    public void setQuestion(String newQuestion) {
+        question = newQuestion;
+    }
 
-	public String getChoiceB() {
-		return choiceB;
-	}
+    public String getChoiceA() {
+        return choiceA;
+    }
 
-	public void setChoiceB(String newChoiceB) {
-		choiceB = newChoiceB;
-	}
+    public void setChoiceA(String newChoiceA) {
+        choiceA = newChoiceA;
+    }
 
-	public String getChoiceC() {
-		return choiceC;
-	}
+    public String getChoiceB() {
+        return choiceB;
+    }
 
-	public void setChoiceC(String newChoiceC) {
-		choiceC = newChoiceC;
-	}
+    public void setChoiceB(String newChoiceB) {
+        choiceB = newChoiceB;
+    }
 
-	public String getChoiceD() {
-		return choiceD;
-	}
+    public String getChoiceC() {
+        return choiceC;
+    }
 
-	public void setChoiceD(String newChoiceD) {
-		choiceD = newChoiceD;
-	}
+    public void setChoiceC(String newChoiceC) {
+        choiceC = newChoiceC;
+    }
 
-	public int getPoints() {
-		return points;
-	}
+    public String getChoiceD() {
+        return choiceD;
+    }
 
-	public void setPoints(int newPoints) {
-		points = newPoints;
-	}
+    public void setChoiceD(String newChoiceD) {
+        choiceD = newChoiceD;
+    }
 
-	public short getScore() {
-		return score;
-	}
+    public int getPoints() {
+        return points;
+    }
 
-	public void setScore(short newScore) {
-		score = newScore;
-	}
+    public void setPoints(int newPoints) {
+        points = newPoints;
+    }
+
+    public short getScore() {
+        return score;
+    }
+
+    public void setScore(short newScore) {
+        score = newScore;
+    }
 }
-
