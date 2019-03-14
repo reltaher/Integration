@@ -137,11 +137,11 @@ public class Quiz {
 				quizScore--;
 			}
 			Question question6 = new Question();
-			question6.setQuestion("5. Which champion got hotfixed for an undiscovered OP build in patch 9.5?\n");
-			question6.setChoiceA("Akali\n");
-			question6.setChoiceB("Graves\n");
-			question6.setChoiceC("Neeko\n");
-			question6.setChoiceD("Karthus");
+			question6.setQuestion("6.\n");
+			question6.setChoiceA("\n");
+			question6.setChoiceB("\n");
+			question6.setChoiceC("\n");
+			question6.setChoiceD("");
 			System.out.println(question6.getQuestion() + "A: " + question6.getChoiceA() + "B: " + question6.getChoiceB()
 					+ "C: " + question6.getChoiceC() + "D: " + question6.getChoiceD());
 			choice = scan.nextLine();
@@ -157,11 +157,11 @@ public class Quiz {
 				quizScore--;
 			}
 			Question question7 = new Question();
-			question7.setQuestion("5. Which champion got hotfixed for an undiscovered OP build in patch 9.5?\n");
-			question7.setChoiceA("Akali\n");
-			question7.setChoiceB("Graves\n");
-			question7.setChoiceC("Neeko\n");
-			question7.setChoiceD("Karthus");
+			question7.setQuestion("7.\n");
+			question7.setChoiceA("\n");
+			question7.setChoiceB("\n");
+			question7.setChoiceC("\n");
+			question7.setChoiceD("");
 			System.out.println(question7.getQuestion() + "A: " + question7.getChoiceA() + "B: " + question7.getChoiceB()
 					+ "C: " + question7.getChoiceC() + "D: " + question7.getChoiceD());
 			choice = scan.nextLine();
@@ -177,11 +177,11 @@ public class Quiz {
 				quizScore--;
 			}
 			Question question8 = new Question();
-			question8.setQuestion("5. Which champion got hotfixed for an undiscovered OP build in patch 9.5?\n");
-			question8.setChoiceA("Akali\n");
-			question8.setChoiceB("Graves\n");
-			question8.setChoiceC("Neeko\n");
-			question8.setChoiceD("Karthus");
+			question8.setQuestion("8.\n");
+			question8.setChoiceA("\n");
+			question8.setChoiceB("\n");
+			question8.setChoiceC("\n");
+			question8.setChoiceD("");
 			System.out.println(question8.getQuestion() + "A: " + question8.getChoiceA() + "B: " + question8.getChoiceB()
 					+ "C: " + question8.getChoiceC() + "D: " + question8.getChoiceD());
 			choice = scan.nextLine();
@@ -197,11 +197,11 @@ public class Quiz {
 				quizScore--;
 			}
 			Question question9 = new Question();
-			question9.setQuestion("5. Which champion got hotfixed for an undiscovered OP build in patch 9.5?\n");
-			question9.setChoiceA("Akali\n");
-			question9.setChoiceB("Graves\n");
-			question9.setChoiceC("Neeko\n");
-			question9.setChoiceD("Karthus");
+			question9.setQuestion("9.\n");
+			question9.setChoiceA("\n");
+			question9.setChoiceB("\n");
+			question9.setChoiceC("\n");
+			question9.setChoiceD("");
 			System.out.println(question9.getQuestion() + "A: " + question9.getChoiceA() + "B: " + question9.getChoiceB()
 					+ "C: " + question9.getChoiceC() + "D: " + question9.getChoiceD());
 			choice = scan.nextLine();
@@ -217,11 +217,11 @@ public class Quiz {
 				quizScore--;
 			}
 			Question question10 = new Question();
-			question10.setQuestion("5. Which champion got hotfixed for an undiscovered OP build in patch 9.5?\n");
-			question10.setChoiceA("Akali\n");
-			question10.setChoiceB("Graves\n");
-			question10.setChoiceC("Neeko\n");
-			question10.setChoiceD("Karthus");
+			question10.setQuestion("10.\n");
+			question10.setChoiceA("\n");
+			question10.setChoiceB("\n");
+			question10.setChoiceC("\n");
+			question10.setChoiceD("");
 			System.out.println(question10.getQuestion() + "A: " + question10.getChoiceA() + "B: " + question10.getChoiceB()
 					+ "C: " + question10.getChoiceC() + "D: " + question10.getChoiceD());
 			choice = scan.nextLine();
@@ -253,19 +253,19 @@ public class Quiz {
 				System.out.println("Here is your result: " + ratingResult.getIronRating());
 			} else if (quizScore == 0) {
 				System.out.println("Here is your result: " + ratingResult.getBronzeRating());
-			} else if (quizScore >= 2) {
+			} else if (quizScore <= 2) {
 				System.out.println("Here is your result: " + ratingResult.getSilverRating());
-			} else if (quizScore >= 4) {
+			} else if (quizScore <= 4) {
 				System.out.println("Here is your result: " + ratingResult.getGoldRating());
-			} else if (quizScore >= 6) {
+			} else if (quizScore <= 6) {
 				System.out.println("Here is your result: " + ratingResult.getPlatinumRating());
-			} else if (quizScore >= 8) {
+			} else if (quizScore <= 8) {
 				System.out.println("Here is your result: " + ratingResult.getDiamondRating());
-			} else if (quizScore >= 10)  {
+			} else if (quizScore <= 10)  {
 				System.out.println("Here is your result: " + ratingResult.getMasterRating());
-			} else if (quizScore >= 12)  {
+			} else if (quizScore <= 12)  {
 				System.out.println("Here is your result: " + ratingResult.getGrandmasterRating());
-			} else if (quizScore >= 15)  {
+			} else if (quizScore <= 15)  {
 				System.out.println("Here is your result: " + ratingResult.getChallengerRating()
 				+ "Congratulations! This is the highest possible rank you can achieve.");
 			} else {
