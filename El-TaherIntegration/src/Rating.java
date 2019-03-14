@@ -2,11 +2,15 @@
 public class Rating {
 
 	private int scoreResult;
-	private String bronzeRating = "0";
-	private String silverRating = "1";
-	private String goldRating = "2";
-	private String platinumRating = "3";
-	private String diamondRating = "4";
+	private String ironRating;
+	private String bronzeRating;
+	private String silverRating;
+	private String goldRating;
+	private String platinumRating;
+	private String diamondRating;
+	private String masterRating;
+	private String grandmasterRating;
+	private String challengerRating;
 
 	public int getScoreResult() {
 		return scoreResult;
@@ -14,6 +18,14 @@ public class Rating {
 
 	public void setScoreResult(int newScoreResult) {
 		scoreResult = newScoreResult;
+	}
+
+	public String getIronRating() {
+		return ironRating;
+	}
+
+	public void setIronRating(String newIronRating) {
+		ironRating = newIronRating;
 	}
 
 	public String getBronzeRating() {
@@ -54,5 +66,29 @@ public class Rating {
 
 	public void setDiamondRating(String newDiamondRating) {
 		diamondRating = newDiamondRating;
+	}
+
+	public String getMasterRating() {
+		return masterRating;
+	}
+
+	public void setMasterRating(String newMasterRating) {
+		masterRating = newMasterRating;
+	}
+
+	public String getGrandmasterRating() {
+		return grandmasterRating;
+	}
+
+	public void setGrandmasterRating(String newGrandmasterRating) {
+		grandmasterRating = newGrandmasterRating;
+	}
+
+	public String getChallengerRating() {
+		return challengerRating;
+	}
+
+	public void setChallengerRating(String newChallengerRating) {
+		challengerRating = newChallengerRating;
 	}
 }
