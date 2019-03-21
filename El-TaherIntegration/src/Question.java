@@ -30,7 +30,7 @@ public class Question {
 	private String choiceC = "C";
 	private String choiceD = "D";
 	private int points = 0;
-	private short score = (short) points; // casting (converts a type of value into another)
+	protected short score = (short) points; // casting (converts a type of value into another)
 
 	/*
 	 * In order for main to find these fields, we use the getter/setter method. For
@@ -105,5 +105,11 @@ public class Question {
 
 	public void setScore(short newScore) {
 		score = newScore;
+	}
+	public void question(int question7) {
+		
+	}
+	public void question(String question8) {
+		
 	}
 }

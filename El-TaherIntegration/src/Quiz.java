@@ -25,12 +25,12 @@ import java.util.Scanner;
  * making a multiple choice test like we are in this program.
  */
 
-public class Quiz {
+public class Quiz extends Question {
 	public void quizStart(Scanner scan) {
 		int programCase1 = 0;
 		String choice = "";
 		while (programCase1 == 0) {
-			int quizScore = 0;
+			score = 0;
 			choice = scan.nextLine();
 			// Will add more questions later.
 			Question question1 = new Question();
@@ -43,15 +43,15 @@ public class Quiz {
 					+ "C: " + question1.getChoiceC() + "D: " + question1.getChoiceD());
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("B")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("C")) {
-				quizScore++;
+				score++;
 			} else if (choice.equals("D")) {
-				quizScore--;
+				score--;
 			} else {
-				quizScore--;
+				score--;
 			}
 			Question question2 = new Question();
 			question2.setQuestion(
@@ -64,15 +64,15 @@ public class Quiz {
 					+ "C: " + question2.getChoiceC() + "D: " + question2.getChoiceD());
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
-				quizScore++;
+				score++;
 			} else if (choice.equals("B")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("C")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("D")) {
-				quizScore--;
+				score--;
 			} else {
-				quizScore--;
+				score--;
 			}
 			Question question3 = new Question();
 			question3.setQuestion("3. Which of the following champions are Marksmen?\n");
@@ -84,17 +84,17 @@ public class Quiz {
 					+ "C: " + question3.getChoiceC() + "D: " + question3.getChoiceD());
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("B")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("C")) {
-				quizScore++;
+				score++;
 			} else if (choice.equals("D")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("AB")) {
-				quizScore += quizScore + 1;
+				score += score + 1;
 			} else {
-				quizScore--;
+				score--;
 			}
 			Question question4 = new Question();
 			question4.setQuestion("4. What is the FIRST item to purchase as Lee Sin?\n");
@@ -106,15 +106,15 @@ public class Quiz {
 					+ "C: " + question4.getChoiceC() + "D: " + question4.getChoiceD());
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("B")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("C")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("D")) {
-				quizScore++;
+				score++;
 			} else {
-				quizScore--;
+				score--;
 			}
 			Question question5 = new Question();
 			question5.setQuestion("5. Which champion got hotfixed for an undiscovered OP build in patch 9.5?\n");
@@ -126,15 +126,15 @@ public class Quiz {
 					+ "C: " + question5.getChoiceC() + "D: " + question5.getChoiceD());
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("B")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("C")) {
-				quizScore++;
+				score++;
 			} else if (choice.equals("D")) {
-				quizScore--;
+				score--;
 			} else {
-				quizScore--;
+				score--;
 			}
 			Question question6 = new Question();
 			question6.setQuestion("6.\n");
@@ -146,18 +146,18 @@ public class Quiz {
 					+ "C: " + question6.getChoiceC() + "D: " + question6.getChoiceD());
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("B")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("C")) {
-				quizScore++;
+				score++;
 			} else if (choice.equals("D")) {
-				quizScore--;
+				score--;
 			} else {
-				quizScore--;
+				score--;
 			}
 			Question question7 = new Question();
-			question7.setQuestion("7.\n");
+			question7.question(7);
 			question7.setChoiceA("\n");
 			question7.setChoiceB("\n");
 			question7.setChoiceC("\n");
@@ -166,15 +166,15 @@ public class Quiz {
 					+ "C: " + question7.getChoiceC() + "D: " + question7.getChoiceD());
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("B")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("C")) {
-				quizScore++;
+				score++;
 			} else if (choice.equals("D")) {
-				quizScore--;
+				score--;
 			} else {
-				quizScore--;
+				score--;
 			}
 			Question question8 = new Question();
 			question8.setQuestion("8.\n");
@@ -186,58 +186,46 @@ public class Quiz {
 					+ "C: " + question8.getChoiceC() + "D: " + question8.getChoiceD());
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("B")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("C")) {
-				quizScore++;
+				score++;
 			} else if (choice.equals("D")) {
-				quizScore--;
+				score--;
 			} else {
-				quizScore--;
+				score--;
 			}
-			Question question9 = new Question();
-			question9.setQuestion("9.\n");
-			question9.setChoiceA("\n");
-			question9.setChoiceB("\n");
-			question9.setChoiceC("\n");
-			question9.setChoiceD("");
-			System.out.println(question9.getQuestion() + "A: " + question9.getChoiceA() + "B: " + question9.getChoiceB()
-					+ "C: " + question9.getChoiceC() + "D: " + question9.getChoiceD());
+			Question9 question9 = new Question9();
+			question9.askQuestion();
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("B")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("C")) {
-				quizScore++;
+				score++;
 			} else if (choice.equals("D")) {
-				quizScore--;
+				score--;
 			} else {
-				quizScore--;
+				score--;
 			}
-			Question question10 = new Question();
-			question10.setQuestion("10.\n");
-			question10.setChoiceA("\n");
-			question10.setChoiceB("\n");
-			question10.setChoiceC("\n");
-			question10.setChoiceD("");
-			System.out.println(question10.getQuestion() + "A: " + question10.getChoiceA() + "B: " + question10.getChoiceB()
-					+ "C: " + question10.getChoiceC() + "D: " + question10.getChoiceD());
+			Question10 question10 = new Question10();
+			question10.askQuestion();
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("B")) {
-				quizScore--;
+				score--;
 			} else if (choice.equals("C")) {
-				quizScore++;
+				score++;
 			} else if (choice.equals("D")) {
-				quizScore--;
+				score--;
 			} else {
-				quizScore--;
+				score--;
 			}
 			Rating ratingResult = new Rating();
-			ratingResult.setScoreResult(quizScore);
+			ratingResult.setScoreResult(score);
 			ratingResult.setIronRating("Iron");
 			ratingResult.setBronzeRating("Bronze");
 			ratingResult.setSilverRating("Silver");
@@ -249,23 +237,23 @@ public class Quiz {
 			ratingResult.setChallengerRating("Challenger");
 			// Math.ceil rounds up score
 			System.out.println("Score: " + Math.ceil(ratingResult.getScoreResult()));
-			if (quizScore <= 0) {
+			if (score <= 0) {
 				System.out.println("Here is your result: " + ratingResult.getIronRating());
-			} else if (quizScore == 0) {
+			} else if (score == 0) {
 				System.out.println("Here is your result: " + ratingResult.getBronzeRating());
-			} else if (quizScore <= 2) {
+			} else if (score <= 2) {
 				System.out.println("Here is your result: " + ratingResult.getSilverRating());
-			} else if (quizScore <= 4) {
+			} else if (score <= 4) {
 				System.out.println("Here is your result: " + ratingResult.getGoldRating());
-			} else if (quizScore <= 6) {
+			} else if (score <= 6) {
 				System.out.println("Here is your result: " + ratingResult.getPlatinumRating());
-			} else if (quizScore <= 8) {
+			} else if (score <= 8) {
 				System.out.println("Here is your result: " + ratingResult.getDiamondRating());
-			} else if (quizScore <= 10)  {
+			} else if (score <= 10)  {
 				System.out.println("Here is your result: " + ratingResult.getMasterRating());
-			} else if (quizScore <= 12)  {
+			} else if (score <= 12)  {
 				System.out.println("Here is your result: " + ratingResult.getGrandmasterRating());
-			} else if (quizScore <= 15)  {
+			} else if (score <= 15)  {
 				System.out.println("Here is your result: " + ratingResult.getChallengerRating()
 				+ "Congratulations! This is the highest possible rank you can achieve.");
 			} else {
