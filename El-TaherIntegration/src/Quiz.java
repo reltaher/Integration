@@ -25,6 +25,10 @@ import java.util.Scanner;
  * making a multiple choice test like we are in this program.
  */
 
+//This class utilizes inheritance.
+//Inheritance = one class containing the fields and methods of another class.
+//In this case, this class contains the properties from the Question class.
+//These fields and methods are obtained with the extends keyword.
 public class Quiz extends Question {
 	public void quizStart(Scanner scan) {
 		int programCase1 = 0;
