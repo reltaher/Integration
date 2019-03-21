@@ -157,7 +157,6 @@ public class Quiz extends Question {
 				score--;
 			}
 			Question question7 = new Question();
-			question7.question(7);
 			question7.setChoiceA("\n");
 			question7.setChoiceB("\n");
 			question7.setChoiceC("\n");

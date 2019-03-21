@@ -106,10 +106,7 @@ public class Question {
 	public void setScore(short newScore) {
 		score = newScore;
 	}
-	public void question(int question7) {
-		
-	}
-	public void question(String question8) {
-		
+	public void setScore(int newScore) {
+		score = (short)newScore;
 	}
 }
