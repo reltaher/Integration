@@ -88,11 +88,11 @@ public class Quiz extends Question {
 					+ "C: " + question3.getChoiceC() + "D: " + question3.getChoiceD());
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
-				score--;
-			} else if (choice.equals("B")) {
-				score--;
-			} else if (choice.equals("C")) {
 				score++;
+			} else if (choice.equals("B")) {
+				score++;
+			} else if (choice.equals("C")) {
+				score--;
 			} else if (choice.equals("D")) {
 				score--;
 			} else if (choice.equals("AB")) {
