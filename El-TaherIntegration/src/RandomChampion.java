@@ -69,8 +69,8 @@ public class RandomChampion {
 			System.out.println("Type 0 to try again. Type 1 to return to main menu.");
 			programCase2 = scan.nextInt();
 		}
-		System.out.println("Type 1 to take the quiz.\n" + "Type 2 to retry the Random Champion Game.\n"
+		System.out.println("Type 1 to take the quiz.\n" + "Type 2 to try the Random Champion Game.\n"
 				+ "Type 3 enter a number for a champion output.\n" + "Type 4 to compare the Strings of two champions.\n"
-				+ "Type 5 to end the program.");
+				+ "Type 5 to view the list of champions.\n" + "Type 6 to end the program.");
 	}
 }

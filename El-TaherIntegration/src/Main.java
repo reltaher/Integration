@@ -55,7 +55,7 @@ public class Main {
 		System.out.println();
 		System.out.println("Type 1 to take the quiz.\n" + "Type 2 to try the Random Champion Game.\n"
 				+ "Type 3 enter a number for a champion output.\n" + "Type 4 to compare the Strings of two champions.\n"
-				+ "Type 5 to end the program.");
+				+ "Type 5 to view the list of champions.\n" + "Type 6 to end the program.");
 		// Menu screen
 		boolean runProgram = true;
 		Scanner scan = new Scanner(System.in);
@@ -82,6 +82,10 @@ public class Main {
 				useCompare.startCompare(scan);
 				break;
 			case 5:
+				ChampionList champs = new ChampionList();
+				champs.champList(scan);
+				break;
+			case 6:
 				System.out.println("Thanks for playing!");
 				runProgram = false;
 				break; // terminates loop/program.
