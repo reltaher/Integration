@@ -5,7 +5,7 @@ public class ChampionList {
 		int programCase5 = 0;
 		while (programCase5 == 0) {
 		String list[] =
-				{"143", "Aatrox", "Ahri", "Akali", "Alistar",
+				{ "Aatrox", "Ahri", "Akali", "Alistar",
 						"Amumu", "Anivia", "Annie", "Ashe", "Aurelion Sol",
 						"Azir", "Bard", "Blitzcrank", "Brand", "Braum",
 						"Caitlyn", "Camille", "Cassiopeia", "Cho'Gath",
@@ -33,10 +33,11 @@ public class ChampionList {
 						"Zoe", "Zyra"};
 
 			System.out.println("Champion List: ");
-		for(int counter = 1; counter < list.length; counter++)   {	
-			System.out.println(counter + ": " + list[counter]);
+		for(String champions : list)   {	
+			System.out.println(champions);
 		}
-			System.out.println("Right now, there are " + list[0] + " Champions. " + 
+			System.out.println();
+			System.out.println("Right now, there are 143 Champions. " + 
 								"Scroll up to view all of the champions.");
 			System.out.println("The list will update when new champions are added.");
 			System.out.println();

@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
-		<item value="C:\Users\eltah\OneDrive - Florida Gulf Coast University\eclipse\git\repository\Integration\El-TaherIntegration"/>
-	</list>
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\Users\rjeltaher5059\OneDrive - Florida Gulf Coast University\eclipse\git\repository\Integration\El-TaherIntegration"/>
-			<item value="C:\Users\rjeltaher5059\OneDrive - Florida Gulf Coast University\eclipse\Integration\El-TaherIntegration"/>
 			<item value="C:\Users\eltah\OneDrive - Florida Gulf Coast University\eclipse\git\repository\Integration\El-TaherIntegration"/>
-			<item value="C:\Users\eltah\OneDrive - Florida Gulf Coast University\eclipse\git\repository\Integration"/>
-			<item value="C:\Users\rjeltaher5059\OneDrive - Florida Gulf Coast University\eclipse\El-TaherIntegration"/>
-			<item value="C:\Users\rjeltaher5059\OneDrive - Florida Gulf Coast University"/>
-			<item value="C:\Users\rjeltaher5059\OneDrive - Florida Gulf Coast University\eclipse"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
