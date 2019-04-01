@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 //This class manually checks the smallest value stored in an array.
+//We will use this class for the user to find the answer to a quiz question (youngest champion)
 public class SmallestChamp {
 	public void smallestChamp(Scanner scan)  {
 	int programCase6 = 0;
