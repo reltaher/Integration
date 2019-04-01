@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ChampionList {
@@ -393,7 +394,152 @@ public class ChampionList {
 				}
 				break;
 			case "All":
-				String list[] = { "Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Ashe",
+				ArrayList<String> champion = new ArrayList<>();
+				champion.add("Aatrox");
+				champion.add("Ahri");
+				champion.add("Akali");
+				champion.add("Alistar");
+				champion.add("Amumu");
+				champion.add("Anivia");
+				champion.add("Annie");
+				champion.add("Ashe");
+				champion.add("Aurelion Sol");
+				champion.add("Azir");
+				champion.add("Bard");
+				champion.add("Blitzcrank");
+				champion.add("Brand");
+				champion.add("Braum");
+				champion.add("Caitlyn");
+				champion.add("Camille");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				champion.add("");
+				/*String list[] = { "Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Ashe",
 						"Aurelion Sol", "Azir", "Bard", "Blitzcrank", "Brand", "Braum", "Caitlyn", "Camille",
 						"Cassiopeia", "Cho'Gath", "Corki", "Darius", "Diana", "Dr. Mundo", "Draven", "Ekko", "Elise",
 						"Evelynn", "Ezreal", "Fiddlesticks", "Fiora", "Fizz", "Galio", "Gangplank", "Garen", "Gnar",
@@ -409,11 +555,11 @@ public class ChampionList {
 						"Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch", "Udyr", "Urgot", "Varus",
 						"Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor", "Vladimir", "Volibear", "Warwick", "Wukong",
 						"Xayah", "Xerath", "Xin Zhao", "Yasuo", "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zoe",
-						"Zyra" };
+						"Zyra" };*/
 				System.out.println();
 				System.out.println("Champion List: ");
-				for (String champions : list) {
-					System.out.println(champions);
+				for (String championlist : champion) {
+					System.out.println(championlist);
 				}
 				System.out.println();
 				System.out.println("Right now, there are 143 Champions. " + "Scroll up to view all of the champions.");

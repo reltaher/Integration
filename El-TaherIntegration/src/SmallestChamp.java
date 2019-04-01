@@ -7,7 +7,7 @@ public class SmallestChamp {
 	int programCase6 = 0;
 	while(programCase6 == 0)  {
 		//array declared with 4 values, index is ranged from 0 to 3.
-		int smallestChamp[] = {32, 24, 55, 54};
+		int smallestChamp[] = {35, 22, 25, 45};
 		//first value is declared as smallest
 		int smallest = smallestChamp[0];
 		//second value is declared as next, used to compare to smallest value.
@@ -87,7 +87,7 @@ public class SmallestChamp {
 				}
 			}
 		//smallest value in the array would be printed out
-		System.out.println(smallest);
+		System.out.println("The answer is Orianna, age: " + smallest);
 		System.out.println("Type 0 to retry. Type 1 to return to main menu.");
 		programCase6 = scan.nextInt();
 		}
