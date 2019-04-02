@@ -29,7 +29,7 @@ import java.util.Scanner;
 //Inheritance = one class containing the fields and methods of another class.
 //In this case, this class contains the properties from the Question class.
 //These fields and methods are obtained with the extends keyword.
-public class Quiz extends Question {
+public class Quiz extends Rating {
 	public void quizStart(Scanner scan) {
 		int programCase1 = 0;
 		String choice = "";
@@ -230,39 +230,9 @@ public class Quiz extends Question {
 			}
 			Rating ratingResult = new Rating();
 			ratingResult.setScoreResult(score);
-			ratingResult.setIronRating("Iron");
-			ratingResult.setBronzeRating("Bronze");
-			ratingResult.setSilverRating("Silver");
-			ratingResult.setGoldRating("Gold");
-			ratingResult.setPlatinumRating("Platinum");
-			ratingResult.setDiamondRating("Diamond");
-			ratingResult.setMasterRating("Master");
-			ratingResult.setGrandmasterRating("Grandmaster");
-			ratingResult.setChallengerRating("Challenger");
 			// Math.ceil rounds up score
 			System.out.println("Score: " + Math.ceil(ratingResult.getScoreResult()));
-			if (score <= 0) {
-				System.out.println("Here is your result: " + ratingResult.getIronRating());
-			} else if (score == 0) {
-				System.out.println("Here is your result: " + ratingResult.getBronzeRating());
-			} else if (score <= 2) {
-				System.out.println("Here is your result: " + ratingResult.getSilverRating());
-			} else if (score <= 4) {
-				System.out.println("Here is your result: " + ratingResult.getGoldRating());
-			} else if (score <= 6) {
-				System.out.println("Here is your result: " + ratingResult.getPlatinumRating());
-			} else if (score <= 8) {
-				System.out.println("Here is your result: " + ratingResult.getDiamondRating());
-			} else if (score <= 10)  {
-				System.out.println("Here is your result: " + ratingResult.getMasterRating());
-			} else if (score <= 12)  {
-				System.out.println("Here is your result: " + ratingResult.getGrandmasterRating());
-			} else if (score <= 15)  {
-				System.out.println("Here is your result: " + ratingResult.getChallengerRating()
-				+ "Congratulations! This is the highest possible rank you can achieve.");
-			} else {
-				System.out.println("The quiz has encountered an error while displaying a result.");
-			}
+			super.displayScore();
 			System.out.println("Type 0 to try again. Type 1 to return to main menu.");
 			programCase1 = scan.nextInt();
 		}

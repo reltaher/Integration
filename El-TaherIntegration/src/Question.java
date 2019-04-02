@@ -29,8 +29,6 @@ public class Question {
 	private String choiceB = "B";
 	private String choiceC = "C";
 	private String choiceD = "D";
-	private int points = 0;
-	protected short score = (short) points; // casting (converts a type of value into another)
 
 	/*
 	 * In order for main to find these fields, we use the getter/setter method. For
@@ -89,24 +87,5 @@ public class Question {
 
 	public void setChoiceD(String newChoiceD) {
 		choiceD = newChoiceD;
-	}
-
-	public int getPoints() {
-		return points;
-	}
-
-	public void setPoints(int newPoints) {
-		points = newPoints;
-	}
-
-	public short getScore() {
-		return score;
-	}
-
-	public void setScore(short newScore) {
-		score = newScore;
-	}
-	public void setScore(int newScore) {
-		score = (short)newScore;
 	}
 }
