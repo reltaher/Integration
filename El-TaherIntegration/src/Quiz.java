@@ -230,8 +230,8 @@ public class Quiz extends Rating {
 			}
 			Rating ratingResult = new Rating();
 			ratingResult.setScoreResult(score);
-			// Math.ceil rounds up score
-			System.out.println("Score: " + Math.ceil(ratingResult.getScoreResult()));
+			// Math.ceil takes absolute value of score (prevents negative result)
+			System.out.println("Score: " + Math.abs(ratingResult.getScoreResult()));
 			super.displayScore();
 			System.out.println("Type 0 to try again. Type 1 to return to main menu.");
 			programCase1 = scan.nextInt();
