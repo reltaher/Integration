@@ -6,8 +6,13 @@ public class SmallestChamp {
 	public void smallestChamp(Scanner scan)  {
 	int programCase6 = 0;
 	while(programCase6 == 0)  {
-		//array declared with 4 values, index is ranged from 0 to 3.
+		/*array declared with 4 values, index is ranged from 0 to 3.
+		 *35 is at index 0
+		 *22 is at index 1
+		 *25 is at index 2
+		 *45 is at index 3.*/
 		int smallestChamp[] = {35, 22, 25, 45};
+		int sum = 0;
 		//first value is declared as smallest
 		int smallest = smallestChamp[0];
 		//second value is declared as next, used to compare to smallest value.
@@ -86,8 +91,15 @@ public class SmallestChamp {
 					}
 				}
 			}
-		//smallest value in the array would be printed out
+		//smallest value in the array would be printed out.
+		//Hidden answer to a quiz question
 		System.out.println("The answer is Orianna, age: " + smallest);
+		//takes each value in the array and adds them together
+		for (int i : smallestChamp) {
+			sum += i;
+		}
+		//prints the sum of the values in the array. Hidden answer to a quiz question
+		System.out.println("The sum of the ages are: " + sum);
 		System.out.println("Type 0 to retry. Type 1 to return to main menu.");
 		programCase6 = scan.nextInt();
 		}

@@ -228,6 +228,7 @@ public class Quiz extends Rating {
 			} else {
 				score--;
 			}
+			//super takes the method of displayScore from the base class of Quiz, which is Rating.
 			super.displayScore();
 			System.out.println("Type 0 to try again. Type 1 to return to main menu.");
 			programCase1 = scan.nextInt();
