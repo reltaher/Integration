@@ -18,7 +18,7 @@ public class Rating {
 	}
 
 	public void setPoints(int newPoints) {
-		points = newPoints;
+		this.points = newPoints;
 	}
 
 	public short getScore() {
@@ -113,22 +113,32 @@ public class Rating {
 	}
 	public void displayScore()  {
 		if (score <= 0) {
+			score = 0;
+			System.out.println("Score: " + score);
 			System.out.println("Here is your result: " + ironRating);
 		} else if (score == 0) {
+			System.out.println("Score: " + score);
 			System.out.println("Here is your result: " + bronzeRating);
 		} else if (score <= 2) {
+			System.out.println("Score: " + score);
 			System.out.println("Here is your result: " + silverRating);
 		} else if (score <= 4) {
+			System.out.println("Score: " + score);
 			System.out.println("Here is your result: " + goldRating);
 		} else if (score <= 6) {
+			System.out.println("Score: " + score);
 			System.out.println("Here is your result: " + platinumRating);
 		} else if (score <= 8) {
+			System.out.println("Score: " + score);
 			System.out.println("Here is your result: " + diamondRating);
 		} else if (score <= 10)  {
+			System.out.println("Score: " + score);
 			System.out.println("Here is your result: " + masterRating);
 		} else if (score <= 12)  {
+			System.out.println("Score: " + score);
 			System.out.println("Here is your result: " + grandmasterRating);
 		} else if (score <= 15)  {
+			System.out.println("Score: " + score);
 			System.out.println("Here is your result: " + challengerRating
 			+ "Congratulations! This is the highest possible rank you can achieve.");
 		} else {

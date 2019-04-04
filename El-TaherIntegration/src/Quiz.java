@@ -96,7 +96,7 @@ public class Quiz extends Rating {
 			} else if (choice.equals("D")) {
 				score--;
 			} else if (choice.equals("AB")) {
-				score += score + 1;
+				score += 2;
 			} else {
 				score--;
 			}
@@ -228,10 +228,6 @@ public class Quiz extends Rating {
 			} else {
 				score--;
 			}
-			Rating ratingResult = new Rating();
-			ratingResult.setScoreResult(score);
-			// Math.ceil takes absolute value of score (prevents negative result)
-			System.out.println("Score: " + Math.abs(ratingResult.getScoreResult()));
 			super.displayScore();
 			System.out.println("Type 0 to try again. Type 1 to return to main menu.");
 			programCase1 = scan.nextInt();
