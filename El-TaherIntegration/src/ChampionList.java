@@ -13,26 +13,28 @@ public class ChampionList {
 			searchChampLetter = scan.nextLine();
 			switch (searchChampLetter) {
 			case "A":
-				String[][] championA = new String[5][2]; //2D Array with 5 Rows, 2 Columns
-				//Row 0, Column 0
+				//2D Array with 5 Rows, 2 Columns
+				//2D Array Coordinates are backwards. Row is Y, Column is X.
+				String[][] championA = new String[5][2]; 
+				//Row 0, Column 0 (0,0)
 				championA[0][0] = "Aatrox";
-				//Row 0, Column 1
+				//Row 0, Column 1 (1,0)
 				championA[0][1] = "Ahri";
-				//Row 1, Column 0
+				//Row 1, Column 0 (0,1)
 				championA[1][0] = "Akali";
-				//Row 1, Column 1
+				//Row 1, Column 1 (1,1)
 				championA[1][1] = "Alistar";
-				//Row 2, Column 0
+				//Row 2, Column 0 (0,2)
 				championA[2][0] = "Amumu";
-				//Row 2, Column 1
+				//Row 2, Column 1 (1,2)
 				championA[2][1] = "Anivia";
-				//Row 3, Column 0
+				//Row 3, Column 0 (0,3)
 				championA[3][0] = "Annie";
-				//Row 3, Column 1
+				//Row 3, Column 1 (1,3)
 				championA[3][1] = "Ashe";
-				//Row 4, Column 0
+				//Row 4, Column 0 (0,4)
 				championA[4][0] = "A. Sol";
-				//Row 4, Column 1
+				//Row 4, Column 1 (1,4)
 				championA[4][1] = "Azir";
 				//For loop to display rows
 				for (int row = 0; row < championA.length; row++) {
