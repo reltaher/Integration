@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 // This Project has been created by Ramzy El-Taher.
 //To format with Google Style Java Guide, Ctrl+Shift+F
 public class Main {

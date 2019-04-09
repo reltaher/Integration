@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /*
@@ -50,8 +51,10 @@ public class MainMenu {
 		// Menu screen
 		boolean runProgram = true;
 		Scanner scan = new Scanner(System.in);
+		int select = 0;
 		while (runProgram) {
-			int select = 0; // used for menu selection
+			// used for menu selection
+			try {
 			select = scan.nextInt(); // reads input for menu selection
 			// A switch statement is used to create the menu screen.
 			switch (select) {
@@ -84,8 +87,23 @@ public class MainMenu {
 				SmallestChamp start = new SmallestChamp();
 				start.smallestChamp(scan);
 				break;
+			case 8:
+				ChampNumSum a = new ChampNumSum();
+				a.numsum();
+				break;
 			default:
 				System.out.println("Invalid choice. Try again.");
+			}
+			} catch (InputMismatchException ex)  {
+				System.out.println("Invalid Entry.");
+				System.out.println();
+				System.out.println("Type 1 to take the quiz.\n" + "Type 2 to try the Random Champion Game.\n"
+						+ "Type 3 enter a number for a champion output.\n" + "Type 4 to compare the Strings of two champions.\n"
+						+ "Type 5 to view the list of champions.\n" + "Type 6 to end the program.");
+				scan.nextLine();
+			} catch (Exception ex)  {
+				System.out.println("If you managed to get to this point, then this program probably has more bugs than" +
+			"Mordekaiser. Contact system administrator if you see this message.");
 			}
 		}
 	}

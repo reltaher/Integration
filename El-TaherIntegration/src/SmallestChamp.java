@@ -4,8 +4,8 @@ import java.util.Scanner;
 //We will use this class for the user to find the answer to a quiz question (youngest champion)
 public class SmallestChamp {
 	public void smallestChamp(Scanner scan)  {
-	int programCase6 = 0;
-	while(programCase6 == 0)  {
+	boolean programCase7 = true;
+	while(programCase7 == true)  {
 		/*array declared with 4 values, index is ranged from 0 to 3.
 		 *35 is at index 0
 		 *22 is at index 1
@@ -100,8 +100,9 @@ public class SmallestChamp {
 		}
 		//prints the sum of the values in the array. Hidden answer to a quiz question
 		System.out.println("The sum of the ages are: " + sum);
-		System.out.println("Type 0 to retry. Type 1 to return to main menu.");
-		programCase6 = scan.nextInt();
+		System.out.println();
+		//System.out.println("Type 1 to return to main menu.");
+		programCase7 = false;
 		}
 	System.out.println("Type 1 to take the quiz.\n" + "Type 2 to try the Random Champion Game.\n"
 			+ "Type 3 enter a number for a champion output.\n" + "Type 4 to compare the Strings of two champions.\n"
