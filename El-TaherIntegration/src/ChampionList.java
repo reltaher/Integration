@@ -14,7 +14,7 @@ public class ChampionList {
 			switch (searchChampLetter) {
 			case "A":
 				//2D Array with 5 Rows, 2 Columns
-				//2D Array Coordinates are backwards. Row is Y, Column is X.
+				//2D Array Coordinates are backwards. Row is Y, while Column is X.
 				String[][] championA = new String[5][2]; 
 				//Row 0, Column 0 (0,0)
 				championA[0][0] = "Aatrox";
