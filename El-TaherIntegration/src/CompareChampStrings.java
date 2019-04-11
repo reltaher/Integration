@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class CompareChampStrings {
 	public void startCompare(Scanner scan) {
 		int programCase4 = 0;
+		boolean enterChamp = false;
 		String buffer = "";
 		String choice1 = "";
 		String choice2 = "";
@@ -14,11 +15,29 @@ public class CompareChampStrings {
 			String champ3 = "Varus";
 			buffer = scan.nextLine();
 			System.out.println("Enter a champion: ");
-			choice1 = scan.nextLine();
+			while (enterChamp == false) {
+				choice1 = scan.nextLine();
+				if (choice1.equalsIgnoreCase(champ1) || choice1.equalsIgnoreCase(champ2)
+						|| choice1.equalsIgnoreCase(champ3)) {
+					enterChamp = true;
+				} else {
+					System.out.println("Try again");
+				}
+			}
+			enterChamp = false;
 			System.out.println("Enter a second champion: ");
-			choice2 = scan.nextLine();
+			while (enterChamp == false) {
+				choice2 = scan.nextLine();
+				if (choice2.equalsIgnoreCase(champ1) || choice2.equalsIgnoreCase(champ2)
+						|| choice2.equalsIgnoreCase(champ3)) {
+					enterChamp = true;
+				} else {
+					System.out.println("Try again");
+				}
+			}
 			if (choice1.equalsIgnoreCase(champ1) && choice2.equalsIgnoreCase(champ2)) {
 				System.out.println("You get: " + champ1.compareTo(champ2));
+				System.out.println("Type 0 to try again. Type 1 to return to main menu.");
 			} else if (choice1.equalsIgnoreCase(champ2) && choice2.equalsIgnoreCase(champ1)) {
 				System.out.println("You get: " + champ2.compareTo(champ1));
 				System.out.println("Type 0 to try again. Type 1 to return to main menu.");
@@ -29,7 +48,7 @@ public class CompareChampStrings {
 				System.out.println("You get: " + champ1.compareTo(champ3));
 				System.out.println("Type 0 to try again. Type 1 to return to main menu.");
 			} else {
-				System.out.println("Invalid entry." + "Type 0 to try again. Type 1 to return to main menu.");
+				System.out.println("Invalid entry." + " Type 0 to try again. Type 1 to return to main menu.");
 			}
 			programCase4 = scan.nextInt();
 		}
@@ -40,6 +59,6 @@ public class CompareChampStrings {
 		System.out.println("Type 5 to view the list of champions.");
 		System.out.println("Type 6 to view the ranks that you can obtain from the quiz.");
 		System.out.println("Type 7 to end the program.");
-	}
 
+	}
 }

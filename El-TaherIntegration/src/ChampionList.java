@@ -16,26 +16,19 @@ public class ChampionList {
 				//2D Array with 5 Rows, 2 Columns
 				//2D Array Coordinates are backwards. Row is Y, while Column is X.
 				String[][] championA = new String[5][2]; 
-				//Row 0, Column 0 (0,0)
+				//Each champion's coordinates are identified next to them. (Found at y, x)
+				//"Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Ashe",
+				//"Aurelion Sol", "Azir"
 				championA[0][0] = "Aatrox (Found at 0, 0)";
-				//Row 0, Column 1 (1,0)
 				championA[0][1] = "Ahri (Found at 0, 1)";
-				//Row 1, Column 0 (0,1)
-				championA[1][0] = "Akali";
-				//Row 1, Column 1 (1,1)
-				championA[1][1] = "Alistar";
-				//Row 2, Column 0 (0,2)
-				championA[2][0] = "Amumu";
-				//Row 2, Column 1 (1,2)
-				championA[2][1] = "Anivia";
-				//Row 3, Column 0 (0,3)
-				championA[3][0] = "Annie";
-				//Row 3, Column 1 (1,3)
-				championA[3][1] = "Ashe";
-				//Row 4, Column 0 (0,4)
-				championA[4][0] = "A. Sol";
-				//Row 4, Column 1 (1,4)
-				championA[4][1] = "Azir";
+				championA[1][0] = "Akali (Found at 1, 0";
+				championA[1][1] = "Alistar (Found at 1, 1)";
+				championA[2][0] = "Amumu (Found at 2, 0)";
+				championA[2][1] = "Anivia (Found at 2, 1)";
+				championA[3][0] = "Annie (Found at 3, 0)";
+				championA[3][1] = "Ashe (Found at 3, 1)";
+				championA[4][0] = "A. Sol (Found at 4, 0)";
+				championA[4][1] = "Azir (Found at 4, 1)";
 				//For loop to display rows
 				for (int row = 0; row < championA.length; row++) {
 					//Nested for loop to display columns
@@ -48,10 +41,10 @@ public class ChampionList {
 				break;
 			case "B":
 				String[][] championB = new String[2][2];
-				championB[0][0] = "";
-				championB[0][1] = "";
-				championB[1][0] = "";
-				championB[1][1] = "";
+				championB[0][0] = "Bard (Found at 0, 0)";
+				championB[0][1] = "Blitzcrank (Found at 0, 1)";
+				championB[1][0] = "Brand (Found at 1, 0)";
+				championB[1][1] = "Braum (Found at 1, 1)";
 				for (int row = 0; row < championB.length; row++) {
 					for (int col = 0; col < championB[row].length; col++) {
 						System.out.print(championB[row][col] + "\t");
@@ -61,11 +54,11 @@ public class ChampionList {
 				break;
 			case "C":
 				String[][] championC = new String[3][2];
-				championC[0][0] = "Caitlyn";
-				championC[0][1] = "\t\tCamille";
-				championC[1][0] = "Cassiopeia";
-				championC[1][1] = "\tCho'Gath";
-				championC[2][0] = "Corki";
+				championC[0][0] = "Caitlyn (Found at 0, 0)";
+				championC[0][1] = "\t\tCamille (Found at 0, 1)";
+				championC[1][0] = "Cassiopeia (Found at 1, 0)";
+				championC[1][1] = "\tCho'Gath (Found at 1, 1)";
+				championC[2][0] = "Corki (Found at 2, 0)";
 				championC[2][1] = "";
 				for (int row = 0; row < championC.length; row++) {
 					for (int col = 0; col < championC[row].length; col++) {
@@ -76,10 +69,10 @@ public class ChampionList {
 				break;
 			case "D":
 				String[][] championD = new String[2][2];
-				championD[0][0] = "";
-				championD[0][1] = "";
-				championD[1][0] = "";
-				championD[1][1] = "";
+				championD[0][0] = "Darius (Found at 0, 0)";
+				championD[0][1] = "Diana (Found at 0, 1)";
+				championD[1][0] = "Dr. Mundo (Found at 1, 0)";
+				championD[1][1] = "Draven (Found at 1, 1)";
 				for (int row = 0; row < championD.length; row++) {
 					for (int col = 0; col < championD[row].length; col++) {
 						System.out.print(championD[row][col] + "\t");
@@ -89,10 +82,10 @@ public class ChampionList {
 				break;
 			case "E":
 				String[][] championE = new String[2][2];
-				championE[0][0] = "";
-				championE[0][1] = "";
-				championE[1][0] = "";
-				championE[1][1] = "";
+				championE[0][0] = "Ekko (Found at 0, 0)";
+				championE[0][1] = "Elise (Found at 0, 1)";
+				championE[1][0] = "Evelynn (Found at 1, 0)";
+				championE[1][1] = "Ezreal (Found at 1, 1)";
 				for (int row = 0; row < championE.length; row++) {
 					for (int col = 0; col < championE[row].length; col++) {
 						System.out.print(championE[row][col] + "\t");
@@ -102,9 +95,9 @@ public class ChampionList {
 				break;
 			case "F":
 				String[][] championF = new String[3][1];
-				championF[0][0] = "";
-				championF[1][0] = "";
-				championF[2][0] = "";
+				championF[0][0] = "Fiddlesticks (Found at 0, 0)";
+				championF[1][0] = "Fiora (Found at 1, 0)";
+				championF[2][0] = "Fizz (Found at 2, 0)";
 				for (int row = 0; row < championF.length; row++) {
 					for (int col = 0; col < championF[row].length; col++) {
 						System.out.print(championF[row][col] + "\t");
@@ -114,12 +107,14 @@ public class ChampionList {
 				break;
 			case "G":
 				String[][] championG = new String[3][2];
-				championG[0][0] = "";
-				championG[0][1] = "";
-				championG[1][0] = "";
-				championG[1][1] = "";
-				championG[2][0] = "";
-				championG[2][1] = "";
+				//"Galio", "Gangplank", "Garen", "Gnar",
+				//"Gragas", "Graves",
+				championG[0][0] = "Galio (Found at 0, 0)";
+				championG[0][1] = "Gangplank (Found at 0, 1)";
+				championG[1][0] = "Garen (Found at 1, 0)";
+				championG[1][1] = " Gnar (Found at 1, 1)";
+				championG[2][0] = "Gragas (Found at 2, 0)";
+				championG[2][1] = "Graves (Found at 2, 1)";
 				for (int row = 0; row < championG.length; row++) {
 					for (int col = 0; col < championG[row].length; col++) {
 						System.out.print(championG[row][col] + "\t");
@@ -572,6 +567,7 @@ public class ChampionList {
 						"Zyra" };*/
 				System.out.println();
 				System.out.println("Champion List: ");
+				//Enhanced for loop (for each)
 				for (String championlist : champion) {
 					System.out.println(championlist);
 				}

@@ -9,7 +9,16 @@ public class ChampionNumber {
 		champResult = String.valueOf(champInt);
 		while (programCase3 == 0) {
 			System.out.println("Enter a number: ");
+			while (programCase3 == 0) {
+			try {
 			champInt = scan.nextInt();
+			programCase3 = 1;
+			break;
+			} catch (Exception ex) {
+				System.out.println("Try again");
+				scan.nextLine();
+			}
+			}
 			if (champInt >= 0 || champInt <= 0) {
 				//Math.abs takes the absolute value of a number (prevents negative results).
 				champInt = Math.abs(champInt + 150 - 100 * 2 / 3 % 4);
