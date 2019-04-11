@@ -33,9 +33,13 @@ public class CompareChampStrings {
 			}
 			programCase4 = scan.nextInt();
 		}
-		System.out.println("Type 1 to take the quiz.\n" + "Type 2 to try the Random Champion Game.\n"
-				+ "Type 3 enter a number for a champion output.\n" + "Type 4 to compare the Strings of two champions.\n"
-				+ "Type 5 to view the list of champions.\n" + "Type 6 to end the program.");
+		System.out.println("Type 1 to take the quiz.");
+		System.out.println("Type 2 to try the Random Champion Game.");
+		System.out.println("Type 3 enter a number for a champion output.");
+		System.out.println("Type 4 to compare the Strings of two champions.");
+		System.out.println("Type 5 to view the list of champions.");
+		System.out.println("Type 6 to view the ranks that you can obtain from the quiz.");
+		System.out.println("Type 7 to end the program.");
 	}
 
 }

@@ -36,15 +36,8 @@ public class Quiz extends Rating {
 		while (programCase1 == 0) {
 			score = 0;
 			choice = scan.nextLine();
-			// Will add more questions later.
-			Question question1 = new Question();
-			question1.setQuestion("1. Which champion states this quote?: " + "\"Balance is weakness.\"\n");
-			question1.setChoiceA("Vayne\n");
-			question1.setChoiceB("Thresh\n");
-			question1.setChoiceC("Zed\n");
-			question1.setChoiceD("Jayce");
-			System.out.println(question1.getQuestion() + "A: " + question1.getChoiceA() + "B: " + question1.getChoiceB()
-					+ "C: " + question1.getChoiceC() + "D: " + question1.getChoiceD());
+			Question1 question1 = new Question1();
+			question1.askQuestion();
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;
@@ -57,15 +50,8 @@ public class Quiz extends Rating {
 			} else {
 				score--;
 			}
-			Question question2 = new Question();
-			question2.setQuestion(
-					"2. Which champion states this quote?: " + "\"Am I the abyss? Or did I gaze into it?\"\n");
-			question2.setChoiceA("Aatrox\n");
-			question2.setChoiceB("Kaisa\n");
-			question2.setChoiceC("Vel'Koz\n");
-			question2.setChoiceD("Kayn (Rhaast)");
-			System.out.println(question2.getQuestion() + "A: " + question2.getChoiceA() + "B: " + question2.getChoiceB()
-					+ "C: " + question2.getChoiceC() + "D: " + question2.getChoiceD());
+			Question2 question2 = new Question2();
+			question2.askQuestion();
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score++;
@@ -78,14 +64,8 @@ public class Quiz extends Rating {
 			} else {
 				score--;
 			}
-			Question question3 = new Question();
-			question3.setQuestion("3. Which of the following champions are Marksmen?\n");
-			question3.setChoiceA("Lucian\n");
-			question3.setChoiceB("Graves\n");
-			question3.setChoiceC("Braum\n");
-			question3.setChoiceD("Swain");
-			System.out.println(question3.getQuestion() + "A: " + question3.getChoiceA() + "B: " + question3.getChoiceB()
-					+ "C: " + question3.getChoiceC() + "D: " + question3.getChoiceD());
+			Question3 question3 = new Question3();
+			question3.askQuestion();
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score++;
@@ -100,14 +80,8 @@ public class Quiz extends Rating {
 			} else {
 				score--;
 			}
-			Question question4 = new Question();
-			question4.setQuestion("4. What is the FIRST item to purchase as Lee Sin?\n");
-			question4.setChoiceA("Runic Echoes\n");
-			question4.setChoiceB("Warrior\n");
-			question4.setChoiceC("Cinderhulk\n");
-			question4.setChoiceD("Hunter Machete");
-			System.out.println(question4.getQuestion() + "A: " + question4.getChoiceA() + "B: " + question4.getChoiceB()
-					+ "C: " + question4.getChoiceC() + "D: " + question4.getChoiceD());
+			Question4 question4 = new Question4();
+			question4.askQuestion();
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;
@@ -120,14 +94,8 @@ public class Quiz extends Rating {
 			} else {
 				score--;
 			}
-			Question question5 = new Question();
-			question5.setQuestion("5. Which champion got hotfixed for an undiscovered OP build in patch 9.5?\n");
-			question5.setChoiceA("Akali\n");
-			question5.setChoiceB("Graves\n");
-			question5.setChoiceC("Neeko\n");
-			question5.setChoiceD("Karthus");
-			System.out.println(question5.getQuestion() + "A: " + question5.getChoiceA() + "B: " + question5.getChoiceB()
-					+ "C: " + question5.getChoiceC() + "D: " + question5.getChoiceD());
+			Question5 question5 = new Question5();
+			question5.askQuestion();
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;
@@ -140,14 +108,8 @@ public class Quiz extends Rating {
 			} else {
 				score--;
 			}
-			Question question6 = new Question();
-			question6.setQuestion("6.\n");
-			question6.setChoiceA("\n");
-			question6.setChoiceB("\n");
-			question6.setChoiceC("\n");
-			question6.setChoiceD("");
-			System.out.println(question6.getQuestion() + "A: " + question6.getChoiceA() + "B: " + question6.getChoiceB()
-					+ "C: " + question6.getChoiceC() + "D: " + question6.getChoiceD());
+			Question6 question6 = new Question6();
+			question6.askQuestion();
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;
@@ -160,14 +122,8 @@ public class Quiz extends Rating {
 			} else {
 				score--;
 			}
-			Question question7 = new Question();
-			question7.setQuestion("7.\n");
-			question7.setChoiceA("\n");
-			question7.setChoiceB("\n");
-			question7.setChoiceC("\n");
-			question7.setChoiceD("");
-			System.out.println(question7.getQuestion() + "A: " + question7.getChoiceA() + "B: " + question7.getChoiceB()
-					+ "C: " + question7.getChoiceC() + "D: " + question7.getChoiceD());
+			Question7 question7 = new Question7();
+			question7.askQuestion();
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;
@@ -180,14 +136,8 @@ public class Quiz extends Rating {
 			} else {
 				score--;
 			}
-			Question question8 = new Question();
-			question8.setQuestion("8.\n");
-			question8.setChoiceA("\n");
-			question8.setChoiceB("\n");
-			question8.setChoiceC("\n");
-			question8.setChoiceD("");
-			System.out.println(question8.getQuestion() + "A: " + question8.getChoiceA() + "B: " + question8.getChoiceB()
-					+ "C: " + question8.getChoiceC() + "D: " + question8.getChoiceD());
+			Question8 question8 = new Question8();
+			question8.askQuestion();
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;
@@ -228,13 +178,18 @@ public class Quiz extends Rating {
 			} else {
 				score--;
 			}
-			//super takes the method of displayScore from the base class of Quiz, which is Rating.
+			// super takes the method of displayScore from the base class of Quiz, which is
+			// Rating.
 			super.displayScore();
 			System.out.println("Type 0 to try again. Type 1 to return to main menu.");
 			programCase1 = scan.nextInt();
-			}
-		System.out.println("Type 1 to take the quiz.\n" + "Type 2 to try the Random Champion Game.\n"
-				+ "Type 3 enter a number for a champion output.\n" + "Type 4 to compare the Strings of two champions.\n"
-				+ "Type 5 to view the list of champions.\n" + "Type 6 to end the program.");
+		}
+		System.out.println("Type 1 to take the quiz.");
+		System.out.println("Type 2 to try the Random Champion Game.");
+		System.out.println("Type 3 enter a number for a champion output.");
+		System.out.println("Type 4 to compare the Strings of two champions.");
+		System.out.println("Type 5 to view the list of champions.");
+		System.out.println("Type 6 to view the ranks that you can obtain from the quiz.");
+		System.out.println("Type 7 to end the program.");
 	}
 }

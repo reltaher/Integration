@@ -40,14 +40,18 @@ import java.util.Scanner;
  */
 
 public class MainMenu {
-	public void menu()  {
+	public void menu() {
 		System.out.println("Welcome to my Integration Project!");
 		System.out.println("This program will quiz you based on how knowledgable"
 				+ " you are with champion quotes from League of Legends.");
 		System.out.println();
-		System.out.println("Type 1 to take the quiz.\n" + "Type 2 to try the Random Champion Game.\n"
-				+ "Type 3 enter a number for a champion output.\n" + "Type 4 to compare the Strings of two champions.\n"
-				+ "Type 5 to view the list of champions.\n" + "Type 6 to end the program.");
+		System.out.println("Type 1 to take the quiz.");
+		System.out.println("Type 2 to try the Random Champion Game.");
+		System.out.println("Type 3 enter a number for a champion output.");
+		System.out.println("Type 4 to compare the Strings of two champions.");
+		System.out.println("Type 5 to view the list of champions.");
+		System.out.println("Type 6 to view the ranks that you can obtain from the quiz.");
+		System.out.println("Type 7 to end the program.");
 		// Menu screen
 		boolean runProgram = true;
 		Scanner scan = new Scanner(System.in);
@@ -55,55 +59,60 @@ public class MainMenu {
 		while (runProgram) {
 			// used for menu selection
 			try {
-			select = scan.nextInt(); // reads input for menu selection
-			// A switch statement is used to create the menu screen.
-			switch (select) {
-			case 1:
-				Quiz takeQuiz = new Quiz(); // creates a quiz object.
-				takeQuiz.quizStart(scan); // takes code from the Quiz class.
-				break; // terminates this specific case after user is finished.
-			case 2:
-				RandomChampion myChamp = new RandomChampion();
-				System.out.println("Random Champion Game");
-				myChamp.ranChamp(scan);
-				break;
-			case 3:
-				ChampionNumber startNumGame = new ChampionNumber();
-				startNumGame.champNum(scan);
-				break;
-			case 4:
-				CompareChampStrings useCompare = new CompareChampStrings();
-				useCompare.startCompare(scan);
-				break;
-			case 5:
-				ChampionList champs = new ChampionList();
-				champs.champList(scan);
-				break;
-			case 6:
-				System.out.println("Thanks for playing!");
-				runProgram = false;
-				break; // terminates loop/program.
-			case 7:
-				SmallestChamp start = new SmallestChamp();
-				start.smallestChamp(scan);
-				break;
-			case 8:
-				ChampNumSum a = new ChampNumSum();
-				a.numsum();
-				break;
-			default:
-				System.out.println("Invalid choice. Try again.");
-			}
-			} catch (InputMismatchException ex)  {
+				select = scan.nextInt(); // reads input for menu selection
+				// A switch statement is used to create the menu screen.
+				switch (select) {
+				case 1:
+					Quiz takeQuiz = new Quiz(); // creates a quiz object.
+					takeQuiz.quizStart(scan); // takes code from the Quiz class.
+					break; // terminates this specific case after user is finished.
+				case 2:
+					RandomChampion myChamp = new RandomChampion();
+					System.out.println("Random Champion Game");
+					myChamp.ranChamp(scan);
+					break;
+				case 3:
+					ChampionNumber startNumGame = new ChampionNumber();
+					startNumGame.champNum(scan);
+					break;
+				case 4:
+					CompareChampStrings useCompare = new CompareChampStrings();
+					useCompare.startCompare(scan);
+					break;
+				case 5:
+					ChampionList champs = new ChampionList();
+					champs.champList(scan);
+					break;
+				case 6:
+					Ranks showrank = new Ranks();
+					showrank.displayRanks(scan);
+					break;
+				case 7:
+					System.out.println("Thanks for playing!");
+					runProgram = false;
+					break; // terminates loop/program.
+				case 8:
+					SmallestChamp start = new SmallestChamp();
+					start.smallestChamp(scan);
+					break;
+				case 9:
+					System.out.println("Thanks for playing!");
+					runProgram = false;
+					break; // terminates loop/program.
+				default:
+					System.out.println("Invalid choice. Try again.");
+				}
+			} catch (InputMismatchException ex) {
 				System.out.println("Invalid Entry.");
 				System.out.println();
 				System.out.println("Type 1 to take the quiz.\n" + "Type 2 to try the Random Champion Game.\n"
-						+ "Type 3 enter a number for a champion output.\n" + "Type 4 to compare the Strings of two champions.\n"
+						+ "Type 3 enter a number for a champion output.\n"
+						+ "Type 4 to compare the Strings of two champions.\n"
 						+ "Type 5 to view the list of champions.\n" + "Type 6 to end the program.");
 				scan.nextLine();
-			} catch (Exception ex)  {
-				System.out.println("If you managed to get to this point, then this program probably has more bugs than" +
-			"Mordekaiser. Contact system administrator if you see this message.");
+			} catch (Exception ex) {
+				System.out.println("If you managed to get to this point, then this program probably has more bugs than"
+						+ "Mordekaiser. Contact system administrator if you see this message.");
 			}
 		}
 	}
