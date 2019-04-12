@@ -99,6 +99,10 @@ public class MainMenu {
 					System.out.println("Thanks for playing!");
 					runProgram = false;
 					break; // terminates loop/program.
+				case 10:
+					ChampNumSum a = new ChampNumSum();
+					a.numsum();
+					break;
 				default:
 					System.out.println("Invalid choice. Try again.");
 				}

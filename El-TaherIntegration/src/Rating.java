@@ -3,6 +3,7 @@ public class Rating {
 	private int points = 0;
 	protected short score = (short) points; // casting (converts a type of value into another)
 	private int scoreResult;
+	protected String choice = "";
 	private String ironRating = "Iron";
 	private String bronzeRating = "Bronze";
 	private String silverRating = "Silver";
@@ -38,6 +39,14 @@ public class Rating {
 
 	public void setScoreResult(int newScoreResult) {
 		scoreResult = newScoreResult;
+	}
+	
+	public String getChoice() {
+		return choice;
+	}
+	
+	public void setChoice(String newChoice) {
+		choice = newChoice;
 	}
 
 	public String getIronRating() {

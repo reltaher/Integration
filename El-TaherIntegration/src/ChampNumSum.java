@@ -1,23 +1,16 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class ChampNumSum {
 	public void numsum() {
-		/*int arr[] = new int[5];
-		int qty = 1;
-
-		for (int index = 0; index < 5; index++)
-
-		{
-
-		  arr[index] = index * qty;
-
-		  qty = qty + 1;
-		  System.out.println(arr[index]);*/
-		  
-		  StringBuilder s1 = new StringBuilder("Java ");
-		  String s2 = "Lovei";
-		  s1.append(s2);
-		  s1.substring(4);
-		  int foundAt = s1.indexOf(s2);
-		 System.out.println(foundAt);
+		ArrayList<Quiz> questions = new ArrayList<Quiz>();
+		questions.add(new Question1());
+		questions.add(new Question2());
+		questions.add(new Question3());
+		questions.add(new Question4());
+		questions.add(new Question5());
+		Collections.shuffle(questions);
+		System.out.println(questions);
 		}
 	}
 //}

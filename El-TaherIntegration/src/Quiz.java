@@ -32,12 +32,32 @@ import java.util.Scanner;
 public class Quiz extends Rating {
 	public void quizStart(Scanner scan) {
 		int programCase1 = 0;
-		String choice = "";
 		while (programCase1 == 0) {
 			score = 0;
 			choice = scan.nextLine();
+			/*Question1 question1 = new Question1();
+			question1.askQuestion(scan);
+			Question2 question2 = new Question2();
+			question2.askQuestion(scan);
+			Question3 question3 = new Question3();
+			question3.askQuestion(scan);
+			Question4 question4 = new Question4();
+			question4.askQuestion(scan);
+			Question5 question5 = new Question5();
+			question5.askQuestion(scan);
+			Question6 question6 = new Question6();
+			question6.askQuestion(scan);
+			Question7 question7 = new Question7();
+			question7.askQuestion(scan);
+			Question8 question8 = new Question8();
+			question8.askQuestion(scan);
+			Question9 question9 = new Question9();
+			question9.askQuestion(scan);
+			Question10 question10 = new Question10();
+			question10.askQuestion(scan);*/
+			
 			Question1 question1 = new Question1();
-			question1.askQuestion();
+			question1.askQuestion(scan);
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;
@@ -51,7 +71,7 @@ public class Quiz extends Rating {
 				score--;
 			}
 			Question2 question2 = new Question2();
-			question2.askQuestion();
+			question2.askQuestion(scan);
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score++;
@@ -65,7 +85,7 @@ public class Quiz extends Rating {
 				score--;
 			}
 			Question3 question3 = new Question3();
-			question3.askQuestion();
+			question3.askQuestion(scan);
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score++;
@@ -81,7 +101,7 @@ public class Quiz extends Rating {
 				score--;
 			}
 			Question4 question4 = new Question4();
-			question4.askQuestion();
+			question4.askQuestion(scan);
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;
@@ -95,7 +115,7 @@ public class Quiz extends Rating {
 				score--;
 			}
 			Question5 question5 = new Question5();
-			question5.askQuestion();
+			question5.askQuestion(scan);
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;
@@ -109,7 +129,7 @@ public class Quiz extends Rating {
 				score--;
 			}
 			Question6 question6 = new Question6();
-			question6.askQuestion();
+			question6.askQuestion(scan);
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;
@@ -123,7 +143,7 @@ public class Quiz extends Rating {
 				score--;
 			}
 			Question7 question7 = new Question7();
-			question7.askQuestion();
+			question7.askQuestion(scan);
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;
@@ -137,7 +157,7 @@ public class Quiz extends Rating {
 				score--;
 			}
 			Question8 question8 = new Question8();
-			question8.askQuestion();
+			question8.askQuestion(scan);
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;
@@ -151,7 +171,7 @@ public class Quiz extends Rating {
 				score--;
 			}
 			Question9 question9 = new Question9();
-			question9.askQuestion();
+			question9.askQuestion(scan);
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;
@@ -165,7 +185,7 @@ public class Quiz extends Rating {
 				score--;
 			}
 			Question10 question10 = new Question10();
-			question10.askQuestion();
+			question10.askQuestion(scan);
 			choice = scan.nextLine();
 			if (choice.equals("A")) {
 				score--;

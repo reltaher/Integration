@@ -124,8 +124,8 @@ public class ChampionList {
 				break;
 			case "H":
 				String[][] championH = new String[2][1];
-				championH[0][0] = "";
-				championH[1][0] = "";
+				championH[0][0] = "Hecarim (Found at 0, 0)";
+				championH[1][0] = "Heimerdinger (Found at 1, 0)";
 				for (int row = 0; row < championH.length; row++) {
 					for (int col = 0; col < championH[row].length; col++) {
 						System.out.print(championH[row][col] + "\t");
@@ -135,9 +135,9 @@ public class ChampionList {
 				break;
 			case "I":
 				String[][] championI = new String[3][1];
-				championI[0][0] = "";
-				championI[1][0] = "";
-				championI[2][0] = "";
+				championI[0][0] = "Illaoi (Found at 0, 0)";
+				championI[1][0] = "Irelia (Found at 1, 0)";
+				championI[2][0] = "Ivern (Found at 2, 0)";
 				for (int row = 0; row < championI.length; row++) {
 					for (int col = 0; col < championI[row].length; col++) {
 						System.out.print(championI[row][col] + "\t");
@@ -146,13 +146,15 @@ public class ChampionList {
 				}
 				break;
 			case "J":
+				//"Janna",
+				//"Jarvan IV", "Jax", "Jayce", "Jhin", "Jinx"
 				String[][] championJ = new String[3][2];
-				championJ[0][0] = "";
-				championJ[0][1] = "";
-				championJ[1][0] = "";
-				championJ[1][1] = "";
-				championJ[2][0] = "";
-				championJ[2][1] = "";
+				championJ[0][0] = "Janna (Found at 0, 0)";
+				championJ[0][1] = "Jarvan IV (Found at 0, 1)";
+				championJ[1][0] = "Jax (Found at 1, 0)";
+				championJ[1][1] = "Jayce (Found at 1, 1)";
+				championJ[2][0] = "Jhin (Found at 2, 0)";
+				championJ[2][1] = "Jinx (Found at 2, 1)";
 				for (int row = 0; row < championJ.length; row++) {
 					for (int col = 0; col < championJ[row].length; col++) {
 						System.out.print(championJ[row][col] + "\t");
@@ -162,19 +164,19 @@ public class ChampionList {
 				break;
 			case "K":
 				String[][] championK = new String[7][2];
-				championK[0][0] = "Kai'sa";
-				championK[0][1] = "\t\tKalista";
-				championK[1][0] = "Karma";
-				championK[1][1] = "\t\tKarthus";
-				championK[2][0] = "Kassadin";
-				championK[2][1] = "\tKatarina";
-				championK[3][0] = "Kayle";
-				championK[3][1] = "\t\tKayn";
-				championK[4][0] = "Kennen";
-				championK[4][1] = "\t\tKha'Zix";
-				championK[5][0] = "Kindred";
-				championK[5][1] = "\t\tKled";
-				championK[6][0] = "Kog'Maw";
+				championK[0][0] = "Kai'sa (Found at 0,0)";
+				championK[0][1] = "\t\tKalista (Found at 0, 1)";
+				championK[1][0] = "Karma (Found at 1, 0)";
+				championK[1][1] = "\t\tKarthus (Found at 1, 1)";
+				championK[2][0] = "Kassadin (Found at 2, 0)";
+				championK[2][1] = "\tKatarina (Found at 2, 1)";
+				championK[3][0] = "Kayle (Found at 3, 0)";
+				championK[3][1] = "\t\tKayn (Found at 3, 1)";
+				championK[4][0] = "Kennen (Found at 4, 0)";
+				championK[4][1] = "\t\tKha'Zix (Founda at 4, 1)";
+				championK[5][0] = "Kindred (Found at 5, 0)";
+				championK[5][1] = "\t\tKled (Found at 5, 1)";
+				championK[6][0] = "Kog'Maw (Found at 6, 0)";
 				championK[6][1] = "";
 				for (int row = 0; row < championK.length; row++) {
 					for (int col = 0; col < championK[row].length; col++) {
@@ -184,14 +186,15 @@ public class ChampionList {
 				}
 				break;
 			case "L":
+				//"Leblanc", "Lee Sin", "Leona", "Lissandra", "Lucian", "Lulu", "Lux"
 				String[][] championL = new String[4][2];
-				championL[0][0] = "";
-				championL[0][1] = "";
-				championL[1][0] = "";
-				championL[1][1] = "";
-				championL[2][0] = "";
-				championL[2][1] = "";
-				championL[3][0] = "";
+				championL[0][0] = "Leblanc (Found at 0, 0)";
+				championL[0][1] = "Lee Sin (Found at 0, 1)";
+				championL[1][0] = "Leona (Found at 1, 0)";
+				championL[1][1] = "Lissandra (Found at 1, 1)";
+				championL[2][0] = "Lucian (Found at 2, 0)";
+				championL[2][1] = "Lulu (Founda at 2, 1)";
+				championL[3][0] = "Lux (Found at 3, 0)";
 				championL[3][1] = "";
 				for (int row = 0; row < championL.length; row++) {
 					for (int col = 0; col < championL[row].length; col++) {
@@ -201,15 +204,15 @@ public class ChampionList {
 				}
 				break;
 			case "M":
-				String[][] championM = new String[4][2];
-				championM[0][0] = "";
-				championM[0][1] = "";
-				championM[1][0] = "";
-				championM[1][1] = "";
-				championM[2][0] = "";
-				championM[2][1] = "";
-				championM[3][0] = "";
-				championM[3][1] = "";
+				//"Malphite", "Malzahar",
+				//"Maokai", "Master Yi", "Miss Fortune", "Mordekaiser"
+				String[][] championM = new String[3][2];
+				championM[0][0] = "Malphite (Found at 0, 0)";
+				championM[0][1] = "Malzahar (Found at 0, 1)";
+				championM[1][0] = "Maokai (Found at 1, 0)";
+				championM[1][1] = "Master Yi (Found at 1, 1)";
+				championM[2][0] = "Miss Fortune (Found at 2, 0)";
+				championM[2][1] = "Mordekaiser (Found at 2, 1)";
 				for (int row = 0; row < championM.length; row++) {
 					for (int col = 0; col < championM[row].length; col++) {
 						System.out.print(championM[row][col] + "\t");
@@ -218,14 +221,16 @@ public class ChampionList {
 				}
 				break;
 			case "N":
+				//"Nami", "Nasus", "Nautilus",
+				//"Neeko", "Nidalee", "Nocturne", "Nunu"
 				String[][] championN = new String[4][2];
-				championN[0][0] = "";
-				championN[0][1] = "";
-				championN[1][0] = "";
-				championN[1][1] = "";
-				championN[2][0] = "";
-				championN[2][1] = "";
-				championN[3][0] = "";
+				championN[0][0] = "Nami (0, 0)";
+				championN[0][1] = "Nasus (0, 1)";
+				championN[1][0] = "Nautilus (1, 0)";
+				championN[1][1] = "Neeko (1, 1)";
+				championN[2][0] = "Nidalee (2, 0)";
+				championN[2][1] = "Nocturne (2, 1)";
+				championN[3][0] = "Nunu (3, 0)";
 				championN[3][1] = "";
 				for (int row = 0; row < championN.length; row++) {
 					for (int col = 0; col < championN[row].length; col++) {
@@ -235,10 +240,11 @@ public class ChampionList {
 				}
 				break;
 			case "O":
+				//"Olaf", "Orianna", "Ornn"
 				String[][] championO = new String[3][1];
-				championO[0][0] = "";
-				championO[1][0] = "";
-				championO[2][0] = "";
+				championO[0][0] = "Olaf (0, 0)";
+				championO[1][0] = "Orianaa (1, 0)";
+				championO[2][0] = "Ornn (2, 0)";
 				for (int row = 0; row < championO.length; row++) {
 					for (int col = 0; col < championO[row].length; col++) {
 						System.out.print(championO[row][col] + "\t");
@@ -247,10 +253,11 @@ public class ChampionList {
 				}
 				break;
 			case "P":
+				//"Pantheon", "Poppy", "Pyke"
 				String[][] championP = new String[3][1];
-				championP[0][0] = "";
-				championP[1][0] = "";
-				championP[2][0] = "";
+				championP[0][0] = "Pantheon (0, 0)";
+				championP[1][0] = "Poppy (1, 0)";
+				championP[2][0] = "Pyke (2, 0)";
 				for (int row = 0; row < championP.length; row++) {
 					for (int col = 0; col < championP[row].length; col++) {
 						System.out.print(championP[row][col] + "\t");
@@ -260,7 +267,7 @@ public class ChampionList {
 				break;
 			case "Q":
 				String[][] championQ = new String[1][1];
-				championQ[0][0] = "Quinn";
+				championQ[0][0] = "Quinn (0, 0)";
 				for (int row = 0; row < championQ.length; row++) {
 					for (int col = 0; col < championQ[row].length; col++) {
 						System.out.print(championQ[row][col] + "\t");
@@ -269,13 +276,17 @@ public class ChampionList {
 				}
 				break;
 			case "R":
-				String[][] championR = new String[3][2];
-				championR[0][0] = "";
-				championR[0][1] = "";
-				championR[1][0] = "";
-				championR[1][1] = "";
-				championR[2][0] = "";
-				championR[2][1] = "";
+				//"Rakan", "Rammus", "Rek'Sai", "Renekton", 
+				//"Rengar", "Riven", "Rumble", "Ryze"
+				String[][] championR = new String[4][2];
+				championR[0][0] = "Rakan (0, 0)";
+				championR[0][1] = "Rammus (0, 1)";
+				championR[1][0] = "Rek'Sai (1, 0)";
+				championR[1][1] = "Renekton (1, 1)";
+				championR[2][0] = "Rengar (2, 0)";
+				championR[2][1] = "Riven (2, 1)";
+				championR[3][0] = "Rumble (3, 0)";
+				championR[3][1] = "Ryze (3, 1)";
 				for (int row = 0; row < championR.length; row++) {
 					for (int col = 0; col < championR[row].length; col++) {
 						System.out.print(championR[row][col] + "\t");
@@ -284,20 +295,23 @@ public class ChampionList {
 				}
 				break;
 			case "S":
+				//"Sejuani", "Shaco", "Shen", "Shyvana", "Singed", "Sion",
+				//"Sivir", "Skarner", "Sona", "Soraka",
+				//"Swain", "Sylas", "Syndra"
 				String[][] championS = new String[7][2];
-				championS[0][0] = "";
-				championS[0][1] = "";
-				championS[1][0] = "";
-				championS[1][1] = "";
-				championS[2][0] = "";
-				championS[2][1] = "";
-				championS[3][0] = "";
-				championS[3][1] = "";
-				championS[4][0] = "";
-				championS[4][1] = "";
-				championS[5][0] = "";
-				championS[5][1] = "";
-				championS[6][0] = "";
+				championS[0][0] = "Sejuani (0, 0)";
+				championS[0][1] = "Shaco (0, 1)";
+				championS[1][0] = "Shen (1, 0)";
+				championS[1][1] = "Shyvana (1, 1)";
+				championS[2][0] = "Singed (2, 0)";
+				championS[2][1] = "Sion (2, 1)";
+				championS[3][0] = "Sivir (3, 0)";
+				championS[3][1] = "Skarner (3, 1)";
+				championS[4][0] = "Sona (4, 0)";
+				championS[4][1] = "Soraka (4, 1)";
+				championS[5][0] = "Swain (5, 0)";
+				championS[5][1] = "Sylas (5, 1)";
+				championS[6][0] = "Syndra (6, 0)";
 				championS[6][1] = "";
 				for (int row = 0; row < championS.length; row++) {
 					for (int col = 0; col < championS[row].length; col++) {
@@ -307,18 +321,20 @@ public class ChampionList {
 				}
 				break;
 			case "T":
+				//"Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh",
+				//"Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch"
 				String[][] championT = new String[6][2];
-				championT[0][0] = "";
-				championT[0][1] = "";
-				championT[1][0] = "";
-				championT[1][1] = "";
-				championT[2][0] = "";
-				championT[2][1] = "";
-				championT[3][0] = "";
-				championT[3][1] = "";
-				championT[4][0] = "";
-				championT[4][1] = "";
-				championT[5][0] = "";
+				championT[0][0] = "Tahm Kench (0, 0)";
+				championT[0][1] = "Taliyah (0, 1)";
+				championT[1][0] = "Talon (1, 0)";
+				championT[1][1] = "Taric (1, 1)";
+				championT[2][0] = "Teemo (2, 0)";
+				championT[2][1] = "Thresh (2, 1)";
+				championT[3][0] = "Tristana (3, 0)";
+				championT[3][1] = "Trundle (3, 1)";
+				championT[4][0] = "Tryndamere (4, 0)";
+				championT[4][1] = "Twisted Fate (4, 1)";
+				championT[5][0] = "Twitch (5, 0)";
 				championT[5][1] = "";
 				for (int row = 0; row < championT.length; row++) {
 					for (int col = 0; col < championT[row].length; col++) {
@@ -328,9 +344,10 @@ public class ChampionList {
 				}
 				break;
 			case "U":
+				//"Udyr", "Urgot"
 				String[][] championU = new String[2][1];
-				championU[0][0] = "";
-				championU[1][0] = "";
+				championU[0][0] = "Udyr (0, 0)";
+				championU[1][0] = "Urgot (1, 0)";
 				for (int row = 0; row < championU.length; row++) {
 					for (int col = 0; col < championU[row].length; col++) {
 						System.out.print(championU[row][col] + "\t");
@@ -339,15 +356,17 @@ public class ChampionList {
 				}
 				break;
 			case "V":
+				//"Varus", "Vayne", "Veigar", "Vel'Koz",
+				// "Vi", "Viktor", "Vladimir", "Volibear"
 				String[][] championV = new String[4][2];
-				championV[0][0] = "";
-				championV[0][1] = "";
-				championV[1][0] = "";
-				championV[1][1] = "";
-				championV[2][0] = "";
-				championV[2][1] = "";
-				championV[3][0] = "";
-				championV[3][1] = "";
+				championV[0][0] = "Varus (0, 0)";
+				championV[0][1] = "Vayne (0, 1)";
+				championV[1][0] = "Veigar (1, 0)";
+				championV[1][1] = "Vel,Koz (1, 1)";
+				championV[2][0] = "Vi (2, 0)";
+				championV[2][1] = "Viktor (2, 1)";
+				championV[3][0] = "Vladimir (3, 0)";
+				championV[3][1] = "Volibear (3, 1)";
 				for (int row = 0; row < championV.length; row++) {
 					for (int col = 0; col < championV[row].length; col++) {
 						System.out.print(championV[row][col] + "\t");
@@ -356,9 +375,10 @@ public class ChampionList {
 				}
 				break;
 			case "W":
+				//"Warwick", "Wukong"
 				String[][] championW = new String[2][1];
-				championW[0][0] = "";
-				championW[1][0] = "";
+				championW[0][0] = "Warick (0, 0)";
+				championW[1][0] = "Wukong (1, 0)";
 				for (int row = 0; row < championW.length; row++) {
 					for (int col = 0; col < championW[row].length; col++) {
 						System.out.print(championW[row][col] + "\t");
@@ -367,9 +387,11 @@ public class ChampionList {
 				}
 				break;
 			case "X":
-				String[][] championX = new String[2][1];
-				championX[0][0] = "";
-				championX[1][0] = "";
+				//"Xayah", "Xerath", "Xin Zhao"
+				String[][] championX = new String[3][1];
+				championX[0][0] = "Xayah (0, 0)";
+				championX[1][0] = "Xerath (1, 0)";
+				championX[2][0] = "Xin Zhao (2, 0)";
 				for (int row = 0; row < championX.length; row++) {
 					for (int col = 0; col < championX[row].length; col++) {
 						System.out.print(championX[row][col] + "\t");
@@ -378,9 +400,10 @@ public class ChampionList {
 				}
 				break;
 			case "Y":
+				//"Yasuo", "Yorick"
 				String[][] championY = new String[2][1];
-				championY[0][0] = "";
-				championY[1][0] = "";
+				championY[0][0] = "Yasuo (0, 0)";
+				championY[1][0] = "Yorick (1, 0)";
 				for (int row = 0; row < championY.length; row++) {
 					for (int col = 0; col < championY[row].length; col++) {
 						System.out.print(championY[row][col] + "\t");
@@ -389,13 +412,15 @@ public class ChampionList {
 				}
 				break;
 			case "Z":
+				//"Zac", "Zed", "Ziggs", "Zilean", "Zoe",
+				//"Zyra"
 				String[][] championZ = new String[3][2];
-				championZ[0][0] = "";
-				championZ[0][1] = "";
-				championZ[1][0] = "";
-				championZ[1][1] = "";
-				championZ[2][0] = "";
-				championZ[2][1] = "";
+				championZ[0][0] = "Zac (0, 0)";
+				championZ[0][1] = "Zed (0, 1)";
+				championZ[1][0] = "Ziggs (1, 0)";
+				championZ[1][1] = "Zilean (1, 1)";
+				championZ[2][0] = "Zoe (2, 0)";
+				championZ[2][1] = "Zyra (2, 1)";
 				for (int row = 0; row < championZ.length; row++) {
 					for (int col = 0; col < championZ[row].length; col++) {
 						System.out.print(championZ[row][col] + "\t");
