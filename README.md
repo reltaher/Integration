@@ -14,6 +14,8 @@
     Use casting and describe what it means in a comment
     Format strings using escape sequences
 
+------------------------------------------------------------------------------------------------------------
+
     PSI 2:
     Create a method with arguments and return values
     Questions.java Line 46+
@@ -68,6 +70,8 @@
     
     Use continue in a loop with a comment describing what it does
     ChampionNumber.java Line 41
+    
+    ------------------------------------------------------------------------------------------------------------
     
     PSI 3
 
