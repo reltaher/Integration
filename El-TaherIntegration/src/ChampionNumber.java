@@ -10,17 +10,17 @@ public class ChampionNumber {
 		while (programCase3 == 0) {
 			System.out.println("Enter a number: ");
 			while (programCase3 == 0) {
-			try {
-			champInt = scan.nextInt();
-			programCase3 = 1;
-			break;
-			} catch (Exception ex) {
-				System.out.println("Try again");
-				scan.nextLine();
-			}
+				try {
+					champInt = scan.nextInt();
+					programCase3 = 1;
+					break;
+				} catch (Exception ex) {
+					System.out.println("Try again");
+					scan.nextLine();
+				}
 			}
 			if (champInt >= 0 || champInt <= 0) {
-				//Math.abs takes the absolute value of a number (prevents negative results).
+				// Math.abs takes the absolute value of a number (prevents negative results).
 				champInt = Math.abs(champInt + 150 - 100 * 2 / 3 % 4);
 				if (champInt <= 0) {
 					champResult = "Zed";
@@ -56,7 +56,7 @@ public class ChampionNumber {
 				System.out.println("Type 0 to try again. Type 1 to return to main menu.");
 				programCase3 = scan.nextInt();
 			}
-		} 
+		}
 		System.out.println("Type 1 to take the quiz.");
 		System.out.println("Type 2 to try the Random Champion Game.");
 		System.out.println("Type 3 enter a number for a champion output.");

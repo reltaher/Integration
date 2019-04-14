@@ -13,12 +13,12 @@ public class ChampionList {
 			searchChampLetter = scan.nextLine();
 			switch (searchChampLetter) {
 			case "A":
-				//2D Array with 5 Rows, 2 Columns
-				//2D Array Coordinates are backwards. Row is Y, while Column is X.
-				String[][] championA = new String[5][2]; 
-				//Each champion's coordinates are identified next to them. (Found at y, x)
-				//"Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Ashe",
-				//"Aurelion Sol", "Azir"
+				// 2D Array with 5 Rows, 2 Columns
+				// 2D Array Coordinates are backwards. Row is Y, while Column is X.
+				String[][] championA = new String[5][2];
+				// Each champion's coordinates are identified next to them. (Found at y, x)
+				// "Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Ashe",
+				// "Aurelion Sol", "Azir"
 				championA[0][0] = "Aatrox (Found at 0, 0)";
 				championA[0][1] = "Ahri (Found at 0, 1)";
 				championA[1][0] = "Akali (Found at 1, 0";
@@ -29,11 +29,11 @@ public class ChampionList {
 				championA[3][1] = "Ashe (Found at 3, 1)";
 				championA[4][0] = "A. Sol (Found at 4, 0)";
 				championA[4][1] = "Azir (Found at 4, 1)";
-				//For loop to display rows
+				// For loop to display rows
 				for (int row = 0; row < championA.length; row++) {
-					//Nested for loop to display columns
+					// Nested for loop to display columns
 					for (int col = 0; col < championA[row].length; col++) {
-						//Print the 2D array that displays rows/columns
+						// Print the 2D array that displays rows/columns
 						System.out.print(championA[row][col] + "\t");
 					}
 					System.out.println();
@@ -107,8 +107,8 @@ public class ChampionList {
 				break;
 			case "G":
 				String[][] championG = new String[3][2];
-				//"Galio", "Gangplank", "Garen", "Gnar",
-				//"Gragas", "Graves",
+				// "Galio", "Gangplank", "Garen", "Gnar",
+				// "Gragas", "Graves",
 				championG[0][0] = "Galio (Found at 0, 0)";
 				championG[0][1] = "Gangplank (Found at 0, 1)";
 				championG[1][0] = "Garen (Found at 1, 0)";
@@ -146,8 +146,8 @@ public class ChampionList {
 				}
 				break;
 			case "J":
-				//"Janna",
-				//"Jarvan IV", "Jax", "Jayce", "Jhin", "Jinx"
+				// "Janna",
+				// "Jarvan IV", "Jax", "Jayce", "Jhin", "Jinx"
 				String[][] championJ = new String[3][2];
 				championJ[0][0] = "Janna (Found at 0, 0)";
 				championJ[0][1] = "Jarvan IV (Found at 0, 1)";
@@ -186,7 +186,7 @@ public class ChampionList {
 				}
 				break;
 			case "L":
-				//"Leblanc", "Lee Sin", "Leona", "Lissandra", "Lucian", "Lulu", "Lux"
+				// "Leblanc", "Lee Sin", "Leona", "Lissandra", "Lucian", "Lulu", "Lux"
 				String[][] championL = new String[4][2];
 				championL[0][0] = "Leblanc (Found at 0, 0)";
 				championL[0][1] = "Lee Sin (Found at 0, 1)";
@@ -204,8 +204,8 @@ public class ChampionList {
 				}
 				break;
 			case "M":
-				//"Malphite", "Malzahar",
-				//"Maokai", "Master Yi", "Miss Fortune", "Mordekaiser"
+				// "Malphite", "Malzahar",
+				// "Maokai", "Master Yi", "Miss Fortune", "Mordekaiser"
 				String[][] championM = new String[3][2];
 				championM[0][0] = "Malphite (Found at 0, 0)";
 				championM[0][1] = "Malzahar (Found at 0, 1)";
@@ -221,8 +221,8 @@ public class ChampionList {
 				}
 				break;
 			case "N":
-				//"Nami", "Nasus", "Nautilus",
-				//"Neeko", "Nidalee", "Nocturne", "Nunu"
+				// "Nami", "Nasus", "Nautilus",
+				// "Neeko", "Nidalee", "Nocturne", "Nunu"
 				String[][] championN = new String[4][2];
 				championN[0][0] = "Nami (0, 0)";
 				championN[0][1] = "Nasus (0, 1)";
@@ -240,7 +240,7 @@ public class ChampionList {
 				}
 				break;
 			case "O":
-				//"Olaf", "Orianna", "Ornn"
+				// "Olaf", "Orianna", "Ornn"
 				String[][] championO = new String[3][1];
 				championO[0][0] = "Olaf (0, 0)";
 				championO[1][0] = "Orianaa (1, 0)";
@@ -253,7 +253,7 @@ public class ChampionList {
 				}
 				break;
 			case "P":
-				//"Pantheon", "Poppy", "Pyke"
+				// "Pantheon", "Poppy", "Pyke"
 				String[][] championP = new String[3][1];
 				championP[0][0] = "Pantheon (0, 0)";
 				championP[1][0] = "Poppy (1, 0)";
@@ -276,8 +276,8 @@ public class ChampionList {
 				}
 				break;
 			case "R":
-				//"Rakan", "Rammus", "Rek'Sai", "Renekton", 
-				//"Rengar", "Riven", "Rumble", "Ryze"
+				// "Rakan", "Rammus", "Rek'Sai", "Renekton",
+				// "Rengar", "Riven", "Rumble", "Ryze"
 				String[][] championR = new String[4][2];
 				championR[0][0] = "Rakan (0, 0)";
 				championR[0][1] = "Rammus (0, 1)";
@@ -295,9 +295,9 @@ public class ChampionList {
 				}
 				break;
 			case "S":
-				//"Sejuani", "Shaco", "Shen", "Shyvana", "Singed", "Sion",
-				//"Sivir", "Skarner", "Sona", "Soraka",
-				//"Swain", "Sylas", "Syndra"
+				// "Sejuani", "Shaco", "Shen", "Shyvana", "Singed", "Sion",
+				// "Sivir", "Skarner", "Sona", "Soraka",
+				// "Swain", "Sylas", "Syndra"
 				String[][] championS = new String[7][2];
 				championS[0][0] = "Sejuani (0, 0)";
 				championS[0][1] = "Shaco (0, 1)";
@@ -321,8 +321,8 @@ public class ChampionList {
 				}
 				break;
 			case "T":
-				//"Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh",
-				//"Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch"
+				// "Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh",
+				// "Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch"
 				String[][] championT = new String[6][2];
 				championT[0][0] = "Tahm Kench (0, 0)";
 				championT[0][1] = "Taliyah (0, 1)";
@@ -344,7 +344,7 @@ public class ChampionList {
 				}
 				break;
 			case "U":
-				//"Udyr", "Urgot"
+				// "Udyr", "Urgot"
 				String[][] championU = new String[2][1];
 				championU[0][0] = "Udyr (0, 0)";
 				championU[1][0] = "Urgot (1, 0)";
@@ -356,7 +356,7 @@ public class ChampionList {
 				}
 				break;
 			case "V":
-				//"Varus", "Vayne", "Veigar", "Vel'Koz",
+				// "Varus", "Vayne", "Veigar", "Vel'Koz",
 				// "Vi", "Viktor", "Vladimir", "Volibear"
 				String[][] championV = new String[4][2];
 				championV[0][0] = "Varus (0, 0)";
@@ -375,7 +375,7 @@ public class ChampionList {
 				}
 				break;
 			case "W":
-				//"Warwick", "Wukong"
+				// "Warwick", "Wukong"
 				String[][] championW = new String[2][1];
 				championW[0][0] = "Warick (0, 0)";
 				championW[1][0] = "Wukong (1, 0)";
@@ -387,7 +387,7 @@ public class ChampionList {
 				}
 				break;
 			case "X":
-				//"Xayah", "Xerath", "Xin Zhao"
+				// "Xayah", "Xerath", "Xin Zhao"
 				String[][] championX = new String[3][1];
 				championX[0][0] = "Xayah (0, 0)";
 				championX[1][0] = "Xerath (1, 0)";
@@ -400,7 +400,7 @@ public class ChampionList {
 				}
 				break;
 			case "Y":
-				//"Yasuo", "Yorick"
+				// "Yasuo", "Yorick"
 				String[][] championY = new String[2][1];
 				championY[0][0] = "Yasuo (0, 0)";
 				championY[1][0] = "Yorick (1, 0)";
@@ -412,8 +412,8 @@ public class ChampionList {
 				}
 				break;
 			case "Z":
-				//"Zac", "Zed", "Ziggs", "Zilean", "Zoe",
-				//"Zyra"
+				// "Zac", "Zed", "Ziggs", "Zilean", "Zoe",
+				// "Zyra"
 				String[][] championZ = new String[3][2];
 				championZ[0][0] = "Zac (0, 0)";
 				championZ[0][1] = "Zed (0, 1)";
@@ -573,31 +573,37 @@ public class ChampionList {
 				champion.add("Zilean");
 				champion.add("Zoe");
 				champion.add("Zyra");
-				/*String list[] = { "Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Ashe",
-						"Aurelion Sol", "Azir", "Bard", "Blitzcrank", "Brand", "Braum", "Caitlyn", "Camille",
-						"Cassiopeia", "Cho'Gath", "Corki", "Darius", "Diana", "Dr. Mundo", "Draven", "Ekko", "Elise",
-						"Evelynn", "Ezreal", "Fiddlesticks", "Fiora", "Fizz", "Galio", "Gangplank", "Garen", "Gnar",
-						"Gragas", "Graves", "Hecarim", "Heimerdinger", "Illaoi", "Irelia", "Ivern", "Janna",
-						"Jarvan IV", "Jax", "Jayce", "Jhin", "Jinx", "Kai'sa", "Kalista", "Karma", "Karthus",
-						"Kassadin", "Katarina", "Kayle", "Kayn", "Kennen", "Kha'zix", "Kindred", "Kled", "Kog'Maw",
-						"Leblanc", "Lee Sin", "Leona", "Lissandra", "Lucian", "Lulu", "Lux", "Malphite", "Malzahar",
-						"Maokai", "Master Yi", "Miss Fortune", "Mordekaiser", "Morgana", "Nami", "Nasus", "Nautilus",
-						"Neeko", "Nidalee", "Nocturne", "Nunu", "Olaf", "Orianna", "Ornn", "Pantheon", "Poppy", "Pyke",
-						"Quinn", "Rakan", "Rammus", "Rek'Sai", "Renekton", "Rengar", "Riven", "Rumble", "Ryze",
-						"Sejuani", "Shaco", "Shen", "Shyvana", "Singed", "Sion", "Sivir", "Skarner", "Sona", "Soraka",
-						"Swain", "Sylas", "Syndra", "Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh",
-						"Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch", "Udyr", "Urgot", "Varus",
-						"Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor", "Vladimir", "Volibear", "Warwick", "Wukong",
-						"Xayah", "Xerath", "Xin Zhao", "Yasuo", "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zoe",
-						"Zyra" };*/
+				/*
+				 * String list[] = { "Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia",
+				 * "Annie", "Ashe", "Aurelion Sol", "Azir", "Bard", "Blitzcrank", "Brand",
+				 * "Braum", "Caitlyn", "Camille", "Cassiopeia", "Cho'Gath", "Corki", "Darius",
+				 * "Diana", "Dr. Mundo", "Draven", "Ekko", "Elise", "Evelynn", "Ezreal",
+				 * "Fiddlesticks", "Fiora", "Fizz", "Galio", "Gangplank", "Garen", "Gnar",
+				 * "Gragas", "Graves", "Hecarim", "Heimerdinger", "Illaoi", "Irelia", "Ivern",
+				 * "Janna", "Jarvan IV", "Jax", "Jayce", "Jhin", "Jinx", "Kai'sa", "Kalista",
+				 * "Karma", "Karthus", "Kassadin", "Katarina", "Kayle", "Kayn", "Kennen",
+				 * "Kha'zix", "Kindred", "Kled", "Kog'Maw", "Leblanc", "Lee Sin", "Leona",
+				 * "Lissandra", "Lucian", "Lulu", "Lux", "Malphite", "Malzahar", "Maokai",
+				 * "Master Yi", "Miss Fortune", "Mordekaiser", "Morgana", "Nami", "Nasus",
+				 * "Nautilus", "Neeko", "Nidalee", "Nocturne", "Nunu", "Olaf", "Orianna",
+				 * "Ornn", "Pantheon", "Poppy", "Pyke", "Quinn", "Rakan", "Rammus", "Rek'Sai",
+				 * "Renekton", "Rengar", "Riven", "Rumble", "Ryze", "Sejuani", "Shaco", "Shen",
+				 * "Shyvana", "Singed", "Sion", "Sivir", "Skarner", "Sona", "Soraka", "Swain",
+				 * "Sylas", "Syndra", "Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo",
+				 * "Thresh", "Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch",
+				 * "Udyr", "Urgot", "Varus", "Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor",
+				 * "Vladimir", "Volibear", "Warwick", "Wukong", "Xayah", "Xerath", "Xin Zhao",
+				 * "Yasuo", "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zoe", "Zyra" };
+				 */
 				System.out.println();
 				System.out.println("Champion List: ");
-				//Enhanced for loop (for each)
+				// Enhanced for loop (for each)
 				for (String championlist : champion) {
 					System.out.println(championlist);
 				}
 				System.out.println();
-				System.out.println("Right now, there are " + champion.size() + " Champions. Scroll up to view all of the champions.");
+				System.out.println("Right now, there are " + champion.size()
+						+ " Champions. Scroll up to view all of the champions.");
 				System.out.println("The list will update when new champions are added.");
 				break;
 			default:

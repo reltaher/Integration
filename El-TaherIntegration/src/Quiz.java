@@ -30,7 +30,7 @@ import java.util.Scanner;
 //In this case, this class contains the properties from the Question class.
 //These fields and methods are obtained with the extends keyword.
 public class Quiz extends Rating {
-	//Polymorphism is utilized here
+	// Polymorphism is utilized here
 	public void askQuestion() {
 		System.out.println("Sample Question: ");
 		System.out.println("A: ");
@@ -38,32 +38,33 @@ public class Quiz extends Rating {
 		System.out.println("C: ");
 		System.out.println("D: ");
 	}
-	public void quizStart(Scanner scan) { //Method with constructor being passed down
-		int programCase1 = 0; //Data type (int), name (programCase1), initialize (=), variable (0).
+
+	public void quizStart(Scanner scan) { // Method with constructor being passed down
+		int programCase1 = 0; // Data type (int), name (programCase1), initialize (=), variable (0).
 		while (programCase1 == 0) {
-			score = 0; //score was declared from Rating class, initialized here.
+			score = 0; // score was declared from Rating class, initialized here.
 			choice = scan.nextLine();
-			/*Question1 question1 = new Question1();
-			question1.askQuestion(scan);
-			Question2 question2 = new Question2();
-			question2.askQuestion(scan);
-			Question3 question3 = new Question3();
-			question3.askQuestion(scan);
-			Question4 question4 = new Question4();
-			question4.askQuestion(scan);
-			Question5 question5 = new Question5();
-			question5.askQuestion(scan);
-			Question6 question6 = new Question6();
-			question6.askQuestion(scan);
-			Question7 question7 = new Question7();
-			question7.askQuestion(scan);
-			Question8 question8 = new Question8();
-			question8.askQuestion(scan);
-			Question9 question9 = new Question9();
-			question9.askQuestion(scan);
-			Question10 question10 = new Question10();
-			question10.askQuestion(scan);*/
-			
+			// Question1 question1 = new Question1();
+			// question1.askQuestion(scan);
+			// Question2 question2 = new Question2();
+			// question2.askQuestion(scan);
+			// Question3 question3 = new Question3();
+			// question3.askQuestion(scan);
+			// Question4 question4 = new Question4();
+			// question4.askQuestion(scan);
+			// Question5 question5 = new Question5();
+			// question5.askQuestion(scan);
+			// Question6 question6 = new Question6();
+			// question6.askQuestion(scan);
+			// Question7 question7 = new Question7();
+			// question7.askQuestion(scan);
+			// Question8 question8 = new Question8();
+			// question8.askQuestion(scan);
+			// Question9 question9 = new Question9();
+			// question9.askQuestion(scan);
+			// Question10 question10 = new Question10();
+			// question10.askQuestion(scan);*/
+
 			Question1 question1 = new Question1();
 			question1.askQuestion(scan);
 			choice = scan.nextLine();

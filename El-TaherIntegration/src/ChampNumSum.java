@@ -11,8 +11,6 @@ public class ChampNumSum {
 		questions.add(new Question5());
 		Collections.shuffle(questions);
 		System.out.println(questions);
-		}
 	}
+}
 //}
-
-

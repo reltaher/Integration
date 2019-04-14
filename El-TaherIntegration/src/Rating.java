@@ -29,10 +29,11 @@ public class Rating {
 	public void setScore(short newScore) {
 		score = newScore;
 	}
+
 	public void setScore(int newScore) {
-		score = (short)newScore;
+		score = (short) newScore;
 	}
-	
+
 	public int getScoreResult() {
 		return scoreResult;
 	}
@@ -40,11 +41,11 @@ public class Rating {
 	public void setScoreResult(int newScoreResult) {
 		scoreResult = newScoreResult;
 	}
-	
+
 	public String getChoice() {
 		return choice;
 	}
-	
+
 	public void setChoice(String newChoice) {
 		choice = newChoice;
 	}
@@ -120,7 +121,8 @@ public class Rating {
 	public void setChallengerRating(String newChallengerRating) {
 		challengerRating = newChallengerRating;
 	}
-	public void displayScore()  {
+
+	public void displayScore() {
 		if (score <= 0) {
 			score = 0;
 			System.out.println("Score: " + score);
@@ -140,16 +142,16 @@ public class Rating {
 		} else if (score <= 8) {
 			System.out.println("Score: " + score);
 			System.out.println("Here is your result: " + diamondRating);
-		} else if (score <= 10)  {
+		} else if (score <= 10) {
 			System.out.println("Score: " + score);
 			System.out.println("Here is your result: " + masterRating);
-		} else if (score <= 12)  {
+		} else if (score <= 12) {
 			System.out.println("Score: " + score);
 			System.out.println("Here is your result: " + grandmasterRating);
-		} else if (score <= 15)  {
+		} else if (score <= 15) {
 			System.out.println("Score: " + score);
 			System.out.println("Here is your result: " + challengerRating
-			+ "Congratulations! This is the highest possible rank you can achieve.");
+					+ "Congratulations! This is the highest possible rank you can achieve.");
 		} else {
 			System.out.println("The quiz has encountered an error while displaying a result.");
 		}
