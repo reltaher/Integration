@@ -14,7 +14,7 @@
     Use casting and describe what it means in a comment
     Format strings using escape sequences
 
-------------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------------
 
     PSI 2:
     Create a method with arguments and return values
