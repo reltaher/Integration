@@ -72,3 +72,49 @@ IGNORE I2, TESTBED, AND TEST.
     Use continue in a loop with a comment describing what it does
     ChampionNumber.java Line 41
     
+    PSI 3
+
+    Make a class in a separate file with private fields, public getters and setters, a constructor with and without parameters
+    -Rating.java, all lines apply
+    
+    Overload a method
+    -Rating.java, Line 29-34
+    
+    Describe inheritance and its benefits
+    -Quiz.java, Line 29-31
+    
+    Develop code that makes use of polymorphism
+    -Quiz.java, Line 33-39
+    -Question1.java, Question2.java, Question3.java, ..., Question10.java
+    
+    Use super and this to access objects and constructors
+    -This: Rating.java Line 22
+    -Super: Quiz.java Line 210
+    
+    Declare, instantiate, initialize and use a one-dimensional array
+    -SmallestChamp.java, Line 14
+    
+    Manually find the smallest value in an array
+    -SmallestChamp.java, Lines 14-93
+    
+    Get a sum of the values in an array using an accumulator.
+    -SmallestChamp.java, Lines 98-102 (ALSO SATISFIES ENHANCED FOR LOOP REQUIREMENT)
+    
+    Search an array and identify the index where a value was found.
+    -SmallestChamp.java, Lines 9-13 (indexes are identifed in the form of a comment)
+    
+    Create and use the enhanced for loop
+    -SmallestChamp.java, Lines 98-102
+    
+    Declare, instantiate, initialize and use multi-dimensional arrays
+    -ChampionList.java, Lines 18-40 (Entire java file utilizes 2D Arrays aswell)
+    
+    Declare and use an ArrayList of a given type
+    -ChampionList.java, Lines 432-598
+    
+    Search a two-dimensional array and identify the coordinates where a value was found
+    -ChampionList.java, Lines 22-40 (Every case in ChampionList.java identifes the coordinates)
+    
+    Effectively utilize exception handling for user input of an int
+    try: MainMenu.java, Line 61-109
+    catch: MainMenu.java, Lines 109-120
