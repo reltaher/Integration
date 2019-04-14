@@ -30,7 +30,7 @@ import java.util.Scanner;
 //In this case, this class contains the properties from the Question class.
 //These fields and methods are obtained with the extends keyword.
 public class Quiz extends Rating {
-	//Polymorphism is utilized here.
+	//Polymorphism is utilized here
 	public void askQuestion() {
 		System.out.println("Sample Question: ");
 		System.out.println("A: ");
