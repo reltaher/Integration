@@ -30,10 +30,17 @@ import java.util.Scanner;
 //In this case, this class contains the properties from the Question class.
 //These fields and methods are obtained with the extends keyword.
 public class Quiz extends Rating {
-	public void quizStart(Scanner scan) {
-		int programCase1 = 0;
+	public void askQuestion() {
+		System.out.println("Sample Question: ");
+		System.out.println("A: ");
+		System.out.println("B: ");
+		System.out.println("C: ");
+		System.out.println("D: ");
+	}
+	public void quizStart(Scanner scan) { //Method with constructor being passed down
+		int programCase1 = 0; //Data type (int), name (programCase1), initialize (=), variable (0).
 		while (programCase1 == 0) {
-			score = 0;
+			score = 0; //score was declared from Rating class, initialized here.
 			choice = scan.nextLine();
 			/*Question1 question1 = new Question1();
 			question1.askQuestion(scan);
