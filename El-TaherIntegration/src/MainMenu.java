@@ -90,7 +90,7 @@ public class MainMenu {
 				case 7:
 					System.out.println("Thanks for playing!");
 					runProgram = false;
-					break; // terminates loop/program.
+					break; // terminates loop/program
 				case 8:
 					SmallestChamp start = new SmallestChamp();
 					start.smallestChamp(scan);
