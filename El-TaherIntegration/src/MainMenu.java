@@ -95,14 +95,14 @@ public class MainMenu {
 					SmallestChamp start = new SmallestChamp();
 					start.smallestChamp(scan);
 					break;
-				case 9:
+				/*case 9:
 					System.out.println("Thanks for playing!");
 					runProgram = false;
 					break; // terminates loop/program.
 				case 10:
 					ChampNumSum a = new ChampNumSum();
 					a.numsum();
-					break;
+					break;*/
 				default:
 					System.out.println("Invalid choice. Try again.");
 				}
