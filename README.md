@@ -1,7 +1,4 @@
 # Integration
-
-IGNORE I2, TESTBED, AND TEST.
-
     PSI 1:
     Add your name as a comment at top of every file
     Add a description of the program as a comment at top
@@ -17,7 +14,9 @@ IGNORE I2, TESTBED, AND TEST.
     Use casting and describe what it means in a comment
     Format strings using escape sequences
 
-    PSI2:
+    ------------------------------------------------------------------------------------------------------------
+
+    PSI 2:
     Create a method with arguments and return values
     Questions.java Line 46+
     
@@ -71,6 +70,8 @@ IGNORE I2, TESTBED, AND TEST.
     
     Use continue in a loop with a comment describing what it does
     ChampionNumber.java Line 41
+    
+    ------------------------------------------------------------------------------------------------------------
     
     PSI 3
 
