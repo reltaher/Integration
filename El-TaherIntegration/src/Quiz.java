@@ -44,11 +44,6 @@ public class Quiz {
 			question1.setChoiceC("C: ");
 			question1.setChoiceD("D: ");
 			question1.setCorrectAnswer("C");
-			if (choice.equals(question1.getCorrectAnswer()))  {
-				score++;
-			} else {
-				incorrectAnswers++;
-			}
 			MCQuestion question2 = new MCQuestion();
 			question2.setQuestionText("Q2");
 			question2.setChoiceA("A: ");
@@ -56,11 +51,6 @@ public class Quiz {
 			question2.setChoiceC("C: ");
 			question2.setChoiceD("D: ");
 			question2.setCorrectAnswer("A");
-			if (choice.equals("A"))  {
-				score++;
-			} else {
-				incorrectAnswers++;
-			}
 			MCQuestion question3 = new MCQuestion();
 			question3.setQuestionText("Q3");
 			question3.setChoiceA("A: ");
@@ -68,11 +58,6 @@ public class Quiz {
 			question3.setChoiceC("C: ");
 			question3.setChoiceD("D: ");
 			question3.setCorrectAnswer("B");
-			if (choice.equals("B"))  {
-				score++;
-			} else {
-				incorrectAnswers++;
-			}
 			//Clears buffer (otherwise Q1 and Q2 prints at the same time)
 			choice = scan.nextLine();
 			//Creating an array of objects that were made from the previous lines
@@ -89,6 +74,11 @@ public class Quiz {
 					System.out.println("Please enter A, B, C, or D.");
 					//Lets user try again to enter input.
 					choice = scan.nextLine();
+					}
+				if (choice.compareTo(que.getCorrectAnswer())==0) {
+					score++;
+				} else {
+					incorrectAnswers--;
 				}
 			}
 			Result rating = new Result();

@@ -21,6 +21,7 @@ public class Question {
 	 * then allow the string to be shipped to the main class.
 	 */
 	private String questionText;
+	private String correctAnswer;
 
 
 	public String getQuestionText() {
@@ -29,6 +30,14 @@ public class Question {
 
 	public void setQuestionText(String newQuestionText) {
 		questionText = newQuestionText;
+	}
+	
+	public String getCorrectAnswer()  {
+		return correctAnswer;
+	}
+	
+	public void setCorrectAnswer(String newCorrectAnswer)  {
+		correctAnswer = newCorrectAnswer;
 	}
 
 	public void askQuestion() {

@@ -48,7 +48,8 @@ public class Result {
 			System.out.println("The quiz has encountered an error while displaying a result.");
 		}
 		System.out.println("Score: " + score + "\nHere is your result: " + rating);
-		System.out.println("Incorrect Answers: " + incorrectAnswers);
+		// Math.abs takes the absolute value of a number (prevents negative results).
+		System.out.println("Incorrect Answers: " + Math.abs(incorrectAnswers));
 		}
 	public void displayResults() {
 		System.out.println("Here are the possible ranks you can get from the quiz: ");

@@ -20,8 +20,7 @@ public class ChampionNumber {
 				}
 			}
 			if (champInt >= 0 || champInt <= 0) {
-				// Math.abs takes the absolute value of a number (prevents negative results).
-				champInt = Math.abs(champInt + 150 - 100 * 2 / 3 % 4);
+				champInt = champInt + 150 - 100 * 2 / 3 % 4;
 				if (champInt <= 0) {
 					champResult = "Zed";
 					System.out.println(champResult);
