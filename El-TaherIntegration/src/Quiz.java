@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 //This Project has been created by Ramzy El-Taher.
 
@@ -29,196 +30,86 @@ import java.util.Scanner;
 //Inheritance = one class containing the fields and methods of another class.
 //In this case, this class contains the properties from the Question class.
 //These fields and methods are obtained with the extends keyword.
-public class Quiz extends Rating {
-	// Polymorphism is utilized here
-	public void askQuestion() {
-		System.out.println("Sample Question: ");
-		System.out.println("A: ");
-		System.out.println("B: ");
-		System.out.println("C: ");
-		System.out.println("D: ");
-	}
-
+public class Quiz {
 	public void quizStart(Scanner scan) { // Method with constructor being passed down
-		int programCase1 = 0; // Data type (int), name (programCase1), initialize (=), variable (0).
-		while (programCase1 == 0) {
-			score = 0; // score was declared from Rating class, initialized here.
-			choice = scan.nextLine();
-			// Question1 question1 = new Question1();
-			// question1.askQuestion(scan);
-			// Question2 question2 = new Question2();
-			// question2.askQuestion(scan);
-			// Question3 question3 = new Question3();
-			// question3.askQuestion(scan);
-			// Question4 question4 = new Question4();
-			// question4.askQuestion(scan);
-			// Question5 question5 = new Question5();
-			// question5.askQuestion(scan);
-			// Question6 question6 = new Question6();
-			// question6.askQuestion(scan);
-			// Question7 question7 = new Question7();
-			// question7.askQuestion(scan);
-			// Question8 question8 = new Question8();
-			// question8.askQuestion(scan);
-			// Question9 question9 = new Question9();
-			// question9.askQuestion(scan);
-			// Question10 question10 = new Question10();
-			// question10.askQuestion(scan);*/
-
-			Question1 question1 = new Question1();
-			question1.askQuestion(scan);
-			choice = scan.nextLine();
-			if (choice.equals("A")) {
-				score--;
-			} else if (choice.equals("B")) {
-				score--;
-			} else if (choice.equals("C")) {
-				score++;
-			} else if (choice.equals("D")) {
-				score--;
-			} else {
-				score--;
-			}
-			Question2 question2 = new Question2();
-			question2.askQuestion(scan);
-			choice = scan.nextLine();
-			if (choice.equals("A")) {
-				score++;
-			} else if (choice.equals("B")) {
-				score--;
-			} else if (choice.equals("C")) {
-				score--;
-			} else if (choice.equals("D")) {
-				score--;
-			} else {
-				score--;
-			}
-			Question3 question3 = new Question3();
-			question3.askQuestion(scan);
-			choice = scan.nextLine();
-			if (choice.equals("A")) {
-				score++;
-			} else if (choice.equals("B")) {
-				score++;
-			} else if (choice.equals("C")) {
-				score--;
-			} else if (choice.equals("D")) {
-				score--;
-			} else if (choice.equals("AB")) {
-				score += 2;
-			} else {
-				score--;
-			}
-			Question4 question4 = new Question4();
-			question4.askQuestion(scan);
-			choice = scan.nextLine();
-			if (choice.equals("A")) {
-				score--;
-			} else if (choice.equals("B")) {
-				score--;
-			} else if (choice.equals("C")) {
-				score--;
-			} else if (choice.equals("D")) {
+		String programCase1 = "Y"; // Data type (int), name (programCase1), initialize (=), variable (0).
+		while (programCase1.equals("Y")) {
+			String choice = "";
+			int score = 0;
+			int incorrectAnswers = 0;
+			MCQuestion question1 = new MCQuestion();
+			question1.setQuestionText("Q1");
+			question1.setChoiceA("A: ");
+			question1.setChoiceB("B: ");
+			question1.setChoiceC("C: ");
+			question1.setChoiceD("D: ");
+			question1.setCorrectAnswer("C");
+			if (choice.equals(question1.getCorrectAnswer()))  {
 				score++;
 			} else {
-				score--;
+				incorrectAnswers++;
 			}
-			Question5 question5 = new Question5();
-			question5.askQuestion(scan);
-			choice = scan.nextLine();
-			if (choice.equals("A")) {
-				score--;
-			} else if (choice.equals("B")) {
-				score--;
-			} else if (choice.equals("C")) {
+			MCQuestion question2 = new MCQuestion();
+			question2.setQuestionText("Q2");
+			question2.setChoiceA("A: ");
+			question2.setChoiceB("B: ");
+			question2.setChoiceC("C: ");
+			question2.setChoiceD("D: ");
+			question2.setCorrectAnswer("A");
+			if (choice.equals("A"))  {
 				score++;
-			} else if (choice.equals("D")) {
-				score--;
 			} else {
-				score--;
+				incorrectAnswers++;
 			}
-			Question6 question6 = new Question6();
-			question6.askQuestion(scan);
-			choice = scan.nextLine();
-			if (choice.equals("A")) {
-				score--;
-			} else if (choice.equals("B")) {
-				score--;
-			} else if (choice.equals("C")) {
+			MCQuestion question3 = new MCQuestion();
+			question3.setQuestionText("Q3");
+			question3.setChoiceA("A: ");
+			question3.setChoiceB("B: ");
+			question3.setChoiceC("C: ");
+			question3.setChoiceD("D: ");
+			question3.setCorrectAnswer("B");
+			if (choice.equals("B"))  {
 				score++;
-			} else if (choice.equals("D")) {
-				score--;
 			} else {
-				score--;
+				incorrectAnswers++;
 			}
-			Question7 question7 = new Question7();
-			question7.askQuestion(scan);
+			//Clears buffer (otherwise Q1 and Q2 prints at the same time)
 			choice = scan.nextLine();
-			if (choice.equals("A")) {
-				score--;
-			} else if (choice.equals("B")) {
-				score--;
-			} else if (choice.equals("C")) {
-				score++;
-			} else if (choice.equals("D")) {
-				score--;
-			} else {
-				score--;
+			//Creating an array of objects that were made from the previous lines
+			Question[] askQuestions = {question1, question2, question3};
+			//enhanced for loop to loop through each object
+			for (Question que : askQuestions)  {
+				//Calling the method from the object to loop through
+				que.askQuestion();
+				//Checks user input
+				choice = scan.nextLine();
+				//Checks to see if user has entered the correct input (A, B, C, D).
+				while(!choice.matches("[A-D]"))  {
+					//This prints out if user enters incorrect input.
+					System.out.println("Please enter A, B, C, or D.");
+					//Lets user try again to enter input.
+					choice = scan.nextLine();
+				}
 			}
-			Question8 question8 = new Question8();
-			question8.askQuestion(scan);
-			choice = scan.nextLine();
-			if (choice.equals("A")) {
-				score--;
-			} else if (choice.equals("B")) {
-				score--;
-			} else if (choice.equals("C")) {
-				score++;
-			} else if (choice.equals("D")) {
-				score--;
-			} else {
-				score--;
-			}
-			Question9 question9 = new Question9();
-			question9.askQuestion(scan);
-			choice = scan.nextLine();
-			if (choice.equals("A")) {
-				score--;
-			} else if (choice.equals("B")) {
-				score--;
-			} else if (choice.equals("C")) {
-				score++;
-			} else if (choice.equals("D")) {
-				score--;
-			} else {
-				score--;
-			}
-			Question10 question10 = new Question10();
-			question10.askQuestion(scan);
-			choice = scan.nextLine();
-			if (choice.equals("A")) {
-				score--;
-			} else if (choice.equals("B")) {
-				score--;
-			} else if (choice.equals("C")) {
-				score++;
-			} else if (choice.equals("D")) {
-				score--;
-			} else {
-				score--;
-			}
-			// super takes the method of displayScore from the base class of Quiz, which is
-			// Rating.
-			super.displayScore();
-			System.out.println("Type 0 to try again. Type 1 to return to main menu.");
-			programCase1 = scan.nextInt();
+			Result rating = new Result();
+			rating.setScore(score);
+			rating.setIncorrectAnswers(incorrectAnswers);
+			rating.displayScore();
+			System.out.println("Would you like to try again? Type Y to retry,"
+					+ " or type N to return to the main menu. ");
+			programCase1 = scan.next();
+			/*boolean gotGoodInput = false;
+			while (gotGoodInput == false) {
+			try {
+			programCase1 = scan.nextLine();
+			gotGoodInput = true;
+			} catch (InputMismatchException ex) {
+				System.out.println("Try again");
+				scan.nextLine();
+			} catch (Exception ex) {
+				System.out.println("Error");
+			}*/
+			//}
 		}
-		System.out.println("Type 1 to take the quiz.");
-		System.out.println("Type 2 to try the Random Champion Game.");
-		System.out.println("Type 3 enter a number for a champion output.");
-		System.out.println("Type 4 to compare the Strings of two champions.");
-		System.out.println("Type 5 to view the list of champions.");
-		System.out.println("Type 6 to view the ranks that you can obtain from the quiz.");
-		System.out.println("Type 7 to end the program.");
 	}
 }
