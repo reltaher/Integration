@@ -6,10 +6,8 @@ public class ChampionList {
         boolean programCase5 = true;
         while (programCase5 == true) {
             System.out.println();
-            System.out.println(
-                    "Type a letter to search through the champion names.");
-            System.out.println(
-                    "Type \"All\" to view the list of all  of the champions.");
+            System.out.println("Type a letter to search through the champion names.");
+            System.out.println("Type \"All\" to view the list of all  of the champions.");
             String searchChampLetter = "";
             searchChampLetter = scan.nextLine();
             searchChampLetter = scan.nextLine();
@@ -42,8 +40,8 @@ public class ChampionList {
                             System.out.print(championA[row][col] + "\t");
                             if (championA[row][col].equals("Azir")) {
                                 System.out.println();
-                                System.out.println("Azir's coordinates are "
-                                + "found at (" + row + ", " + col + ")");
+                                System.out.println("Azir's coordinates are " + "found at (" + row
+                                        + ", " + col + ")");
                             }
                         }
                         System.out.println();
@@ -587,34 +585,26 @@ public class ChampionList {
                     champion.add("Zoe");
                     champion.add("Zyra");
                     /*
-                     * String list[] = { "Aatrox", "Ahri", "Akali", "Alistar",
-                     * "Amumu", "Anivia", "Annie", "Ashe", "Aurelion Sol",
-                     * "Azir", "Bard", "Blitzcrank", "Brand", "Braum",
-                     * "Caitlyn", "Camille", "Cassiopeia", "Cho'Gath", "Corki",
-                     * "Darius", "Diana", "Dr. Mundo", "Draven", "Ekko",
-                     * "Elise", "Evelynn", "Ezreal", "Fiddlesticks", "Fiora",
-                     * "Fizz", "Galio", "Gangplank", "Garen", "Gnar", "Gragas",
-                     * "Graves", "Hecarim", "Heimerdinger", "Illaoi", "Irelia",
-                     * "Ivern", "Janna", "Jarvan IV", "Jax", "Jayce", "Jhin",
-                     * "Jinx", "Kai'sa", "Kalista", "Karma", "Karthus",
-                     * "Kassadin", "Katarina", "Kayle", "Kayn", "Kennen",
-                     * "Kha'zix", "Kindred", "Kled", "Kog'Maw", "Leblanc",
-                     * "Lee Sin", "Leona", "Lissandra", "Lucian", "Lulu", "Lux",
-                     * "Malphite", "Malzahar", "Maokai", "Master Yi",
-                     * "Miss Fortune", "Mordekaiser", "Morgana", "Nami",
-                     * "Nasus", "Nautilus", "Neeko", "Nidalee", "Nocturne",
-                     * "Nunu", "Olaf", "Orianna", "Ornn", "Pantheon", "Poppy",
-                     * "Pyke", "Quinn", "Rakan", "Rammus", "Rek'Sai",
-                     * "Renekton", "Rengar", "Riven", "Rumble", "Ryze",
-                     * "Sejuani", "Shaco", "Shen", "Shyvana", "Singed", "Sion",
-                     * "Sivir", "Skarner", "Sona", "Soraka", "Swain", "Sylas",
-                     * "Syndra", "Tahm Kench", "Taliyah", "Talon", "Taric",
-                     * "Teemo", "Thresh", "Tristana", "Trundle", "Tryndamere",
-                     * "Twisted Fate", "Twitch", "Udyr", "Urgot", "Varus",
-                     * "Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor", "Vladimir",
-                     * "Volibear", "Warwick", "Wukong", "Xayah", "Xerath",
-                     * "Xin Zhao", "Yasuo", "Yorick", "Zac", "Zed", "Ziggs",
-                     * "Zilean", "Zoe", "Zyra" };
+                     * String list[] = { "Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia",
+                     * "Annie", "Ashe", "Aurelion Sol", "Azir", "Bard", "Blitzcrank", "Brand",
+                     * "Braum", "Caitlyn", "Camille", "Cassiopeia", "Cho'Gath", "Corki", "Darius",
+                     * "Diana", "Dr. Mundo", "Draven", "Ekko", "Elise", "Evelynn", "Ezreal",
+                     * "Fiddlesticks", "Fiora", "Fizz", "Galio", "Gangplank", "Garen", "Gnar",
+                     * "Gragas", "Graves", "Hecarim", "Heimerdinger", "Illaoi", "Irelia", "Ivern",
+                     * "Janna", "Jarvan IV", "Jax", "Jayce", "Jhin", "Jinx", "Kai'sa", "Kalista",
+                     * "Karma", "Karthus", "Kassadin", "Katarina", "Kayle", "Kayn", "Kennen",
+                     * "Kha'zix", "Kindred", "Kled", "Kog'Maw", "Leblanc", "Lee Sin", "Leona",
+                     * "Lissandra", "Lucian", "Lulu", "Lux", "Malphite", "Malzahar", "Maokai",
+                     * "Master Yi", "Miss Fortune", "Mordekaiser", "Morgana", "Nami", "Nasus",
+                     * "Nautilus", "Neeko", "Nidalee", "Nocturne", "Nunu", "Olaf", "Orianna",
+                     * "Ornn", "Pantheon", "Poppy", "Pyke", "Quinn", "Rakan", "Rammus", "Rek'Sai",
+                     * "Renekton", "Rengar", "Riven", "Rumble", "Ryze", "Sejuani", "Shaco", "Shen",
+                     * "Shyvana", "Singed", "Sion", "Sivir", "Skarner", "Sona", "Soraka", "Swain",
+                     * "Sylas", "Syndra", "Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo",
+                     * "Thresh", "Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch",
+                     * "Udyr", "Urgot", "Varus", "Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor",
+                     * "Vladimir", "Volibear", "Warwick", "Wukong", "Xayah", "Xerath", "Xin Zhao",
+                     * "Yasuo", "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zoe", "Zyra" };
                      */
                     System.out.println();
                     System.out.println("Champion List: ");
@@ -625,8 +615,7 @@ public class ChampionList {
                     System.out.println();
                     System.out.println("Right now, there are " + champion.size()
                             + " Champions. Scroll up to view all of the champions.");
-                    System.out.println(
-                            "The list will update when new champions are added.");
+                    System.out.println("The list will update when new champions are added.");
                     break;
                 case "Back":
                     programCase5 = false;
