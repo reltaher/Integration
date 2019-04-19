@@ -29,7 +29,7 @@ public class Question {
 	}
 
 	public void setQuestionText(String newQuestionText) {
-		questionText = newQuestionText;
+		this.questionText = newQuestionText;
 	}
 	
 	public String getCorrectAnswer()  {
@@ -37,10 +37,10 @@ public class Question {
 	}
 	
 	public void setCorrectAnswer(String newCorrectAnswer)  {
-		correctAnswer = newCorrectAnswer;
+		this.correctAnswer = newCorrectAnswer;
 	}
-
-	public void askQuestion() {
-		System.out.println(questionText);
+	
+	public void askQuestion()  {
+	    System.out.print("Question ");
 	}
 }

@@ -1,5 +1,5 @@
 public class TFQuestion extends Question {
-	private String questionText;
+  private String questionText;
 	private String choiceT = "True";
 	private String choiceF = "False";
 	private boolean isTrue = true;
@@ -43,7 +43,9 @@ public class TFQuestion extends Question {
 	public void setIsFalse(boolean newIsFalse)  {
 		isFalse = newIsFalse;
 	}
+	@Override
 	public void askQuestion() {
+	  super.askQuestion();
 		System.out.println(questionText);
 	}
 }

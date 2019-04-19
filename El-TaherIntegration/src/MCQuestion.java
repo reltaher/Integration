@@ -6,12 +6,13 @@ public class MCQuestion extends Question {
 	private String choiceD;
 	private String correctAnswer;
 	
+	
 	public String getQuestionText() {
-		return questionText;
+	    return questionText;
 	}
-
-	public void setQuestionText(String newQuestionText) {
-		questionText = newQuestionText;
+	
+	public void setQuestionText(String newQuestionText)  {
+	    questionText = newQuestionText;
 	}
 	
 	public String getChoiceA() {
@@ -46,18 +47,20 @@ public class MCQuestion extends Question {
 		choiceD = newChoiceD;
 	}
 	
-	public String getCorrectAnswer()  {
+	public String getCorrectAnswer() {
 		return correctAnswer;
 	}
 	
 	public void setCorrectAnswer(String newCorrectAnswer) {
 		correctAnswer = newCorrectAnswer;
 	}
+	@Override
 	public void askQuestion() {
-		System.out.println(questionText);
-		System.out.println(choiceA);
-		System.out.println(choiceB);
-		System.out.println(choiceC);
+	  super.askQuestion();
+	  System.out.println(questionText);
+	  System.out.println(choiceA);
+	  System.out.println(choiceB);
+	  System.out.println(choiceC);
 		System.out.println(choiceD);
 	}
 }

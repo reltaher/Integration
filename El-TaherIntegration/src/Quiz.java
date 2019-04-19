@@ -39,25 +39,29 @@ public class Quiz {
             int score = 0;
             int incorrectAnswers = 0;
             MCQuestion question1 = new MCQuestion();
-            question1.setQuestionText("Q1");
-            question1.setChoiceA("A: ");
-            question1.setChoiceB("B: ");
-            question1.setChoiceC("C: ");
-            question1.setChoiceD("D: ");
+            question1.setQuestionText("1: "
+                    + "\nWhich champion states the following quote:"
+                    +"\n\"Balance is weakness\"");
+            question1.setChoiceA("A: Rengar");
+            question1.setChoiceB("B: Talon");
+            question1.setChoiceC("C: Zed");
+            question1.setChoiceD("D: Yasuo");
             question1.setCorrectAnswer("C");
             MCQuestion question2 = new MCQuestion();
-            question2.setQuestionText("Q2");
-            question2.setChoiceA("A: ");
-            question2.setChoiceB("B: ");
-            question2.setChoiceC("C: ");
-            question2.setChoiceD("D: ");
+            question2.setQuestionText("2: "
+                    + "\nWhich of these champions are considered Marksmen?");
+            question2.setChoiceA("A: Teemo");
+            question2.setChoiceB("B: Urgot");
+            question2.setChoiceC("C: Neeko");
+            question2.setChoiceD("D: Jayce");
             question2.setCorrectAnswer("A");
             MCQuestion question3 = new MCQuestion();
-            question3.setQuestionText("Q3");
-            question3.setChoiceA("A: ");
-            question3.setChoiceB("B: ");
-            question3.setChoiceC("C: ");
-            question3.setChoiceD("D: ");
+            question3.setQuestionText("3: "
+                    + "\nWhat item do junglers NOT buy first?");
+            question3.setChoiceA("A: Hunter's Machete");
+            question3.setChoiceB("B: Boots of Speed");
+            question3.setChoiceC("C: Hunter's Talisman");
+            question3.setChoiceD("D: Refillable Potion");
             question3.setCorrectAnswer("B");
             // Clears buffer (otherwise Q1 and Q2 prints at the same time)
             choice = scan.nextLine();
