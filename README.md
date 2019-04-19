@@ -76,46 +76,45 @@
     PSI 3
 
     Make a class in a separate file with private fields, public getters and setters, a constructor with and without parameters
-    -Rating.java, all lines apply
+    -Result.java, all lines apply
     
     Overload a method
-    -Rating.java, Line 29-34
+    -Result.java, Line 29-34
     
     Describe inheritance and its benefits
-    -Quiz.java, Line 29-31
+    -MCQuestion.java, Line 1-4
     
     Develop code that makes use of polymorphism
-    -Quiz.java, Line 33-39
-    -Question1.java, Question2.java, Question3.java, ..., Question10.java
+    -Quiz.java, Line 37-86
+    -Question.java (base), MCQuestion.java (derived), TFQuestion.java (derived)
     
     Use super and this to access objects and constructors
-    -This: Rating.java Line 22
-    -Super: Quiz.java Line 210
+    -This: Result.java Line 22
+    -Super: MCQuestion.java Line 63
     
     Declare, instantiate, initialize and use a one-dimensional array
-    -SmallestChamp.java, Line 14
+    -SmallestChamp.java, Line 13
     
     Manually find the smallest value in an array
-    -SmallestChamp.java, Lines 14-93
+    -SmallestChamp.java, Lines 15-25
     
     Get a sum of the values in an array using an accumulator.
-    -SmallestChamp.java, Lines 98-102 (ALSO SATISFIES ENHANCED FOR LOOP REQUIREMENT)
+    -SmallestChamp.java, Line 21
     
     Search an array and identify the index where a value was found.
-    -SmallestChamp.java, Lines 9-13 (indexes are identifed in the form of a comment)
+    -SmallestChamp.java, Lines 27-39
     
     Create and use the enhanced for loop
-    -SmallestChamp.java, Lines 98-102
+    -SmallestChamp.java, Lines 20-25
     
     Declare, instantiate, initialize and use multi-dimensional arrays
-    -ChampionList.java, Lines 18-40 (Entire java file utilizes 2D Arrays aswell)
+    -ChampionList.java, Lines 21+
     
     Declare and use an ArrayList of a given type
-    -ChampionList.java, Lines 432-598
+    -ChampionList.java, Lines 445-588, 619-629
     
     Search a two-dimensional array and identify the coordinates where a value was found
-    -ChampionList.java, Lines 22-40 (Every case in ChampionList.java identifes the coordinates)
+    -ChampionList.java, Lines 43-47
     
     Effectively utilize exception handling for user input of an int
-    try: MainMenu.java, Line 61-109
-    catch: MainMenu.java, Lines 109-120
+    -MainMenu.java, Lines 62-72
