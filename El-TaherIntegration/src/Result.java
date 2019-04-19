@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //This project has been created by Ramzy El-Taher.
 public class Result {
 	private int score;
@@ -51,16 +53,22 @@ public class Result {
 		// Math.abs takes the absolute value of a number (prevents negative results).
 		System.out.println("Incorrect Answers: " + Math.abs(incorrectAnswers));
 		}
-	public void displayResults() {
+	public void displayResults(Scanner scan) {
+		String programCase2 = "Y";
+		while(programCase2.equals("Y")) {
 		System.out.println("Here are the possible ranks you can get from the quiz: ");
-		System.out.println("Iron");
-		System.out.println("Bronze");
-		System.out.println("Silver");
-		System.out.println("Gold");
-		System.out.println("Platinum");
-		System.out.println("Diamond");
-		System.out.println("Master");
-		System.out.println("Grandmaster");
-		System.out.println("Challenger");
+		System.out.println("-Iron");
+		System.out.println("-Bronze");
+		System.out.println("-Silver");
+		System.out.println("-Gold");
+		System.out.println("-Platinum");
+		System.out.println("-Diamond");
+		System.out.println("-Master");
+		System.out.println("-Grandmaster");
+		System.out.println("-Challenger");
+		System.out.println();
+		System.out.println("Type N to return back to main menu.");
+		programCase2 = scan.next();
+		}
 	}
 }

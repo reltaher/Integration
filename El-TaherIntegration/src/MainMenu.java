@@ -79,7 +79,7 @@ public class MainMenu {
 					break; // terminates this specific case after user is finished.
 				case 2:
 					Result showrank = new Result();
-					showrank.displayResults();
+					showrank.displayResults(scan);
 					break;
 				case 3:
 					RandomChampion myChamp = new RandomChampion();
