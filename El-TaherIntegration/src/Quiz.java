@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.util.Scanner;
 //This Project has been created by Ramzy El-Taher.
 
@@ -26,10 +25,6 @@ import java.util.Scanner;
  * making a multiple choice test like we are in this program.
  */
 
-//This class utilizes inheritance.
-//Inheritance = one class containing the fields and methods of another class.
-//In this case, this class contains the properties from the Question class.
-//These fields and methods are obtained with the extends keyword.
 public class Quiz {
     // Method with constructor being passed down
     public void quizStart(Scanner scan) {
@@ -39,9 +34,9 @@ public class Quiz {
             int score = 0;
             int incorrectAnswers = 0;
             MCQuestion question1 = new MCQuestion();
-            question1.setQuestionText("1: "
-                    + "\nWhich champion states the following quote:"
-                    +"\n\"Balance is weakness\"");
+            question1.setQuestionText(
+                    "1: " + "\nWhich champion states the following quote:"
+                            + "\n\"Balance is weakness\"");
             question1.setChoiceA("A: Rengar");
             question1.setChoiceB("B: Talon");
             question1.setChoiceC("C: Zed");
@@ -56,8 +51,8 @@ public class Quiz {
             question2.setChoiceD("D: Jayce");
             question2.setCorrectAnswer("A");
             MCQuestion question3 = new MCQuestion();
-            question3.setQuestionText("3: "
-                    + "\nWhat item do junglers NOT buy first?");
+            question3.setQuestionText(
+                    "3: " + "\nWhat item do junglers NOT buy first?");
             question3.setChoiceA("A: Hunter's Machete");
             question3.setChoiceB("B: Boots of Speed");
             question3.setChoiceC("C: Hunter's Talisman");
@@ -65,9 +60,8 @@ public class Quiz {
             question3.setCorrectAnswer("B");
             // Clears buffer (otherwise Q1 and Q2 prints at the same time)
             choice = scan.nextLine();
-            // Creating an array of objects that were made from the previous
-            // lines
-            Question[] quizQuestions = { question1, question2, question3 };   
+            // Creating an array of objects
+            Question[] quizQuestions = { question1, question2, question3 };
             // enhanced for loop to loop through each object
             for (Question que : quizQuestions) {
                 // Calling the method from the object to loop through

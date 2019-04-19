@@ -14,7 +14,6 @@ public class SmallestChamp {
             int sum = 0;
             // first value is declared as smallest
             int smallest = smallestChamp[0];
-
             // smallest value in the array would be printed out.
             // Hidden answer to a quiz question
             // takes each value in the array and adds them together

@@ -1,3 +1,7 @@
+//This class utilizes inheritance.
+//Inheritance = one class containing the fields and methods of another class.
+//In this case, this class contains the properties from the Question class.
+//These fields and methods are obtained with the extends keyword.
 public class TFQuestion extends Question {
   private String questionText;
 	private String choiceT = "True";
