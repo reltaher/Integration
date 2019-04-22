@@ -7,7 +7,8 @@ public class Quiz {
         // Assigning a string variable named "programCase1" to the string "Y".
         String programCase1 = "Y";
         // Code within the while block continuously runs as long as programCase1 is "Y".
-        // When comparing strings, use .equals, not ==. Using == w/ Strings will result as False.
+        // When comparing strings, use .equals, not ==. Using == w/ Strings will result
+        // as False.
         while (programCase1.equalsIgnoreCase("Y")) {
             String choice = "";
             int score = 0;
@@ -66,8 +67,8 @@ public class Quiz {
             question4.setChoiceD("D: Kai'sa");
             question4.setCorrectAnswer("A");
             MCQuestion question5 = new MCQuestion();
-            question5.setQuestionText("5: " + "\nAt what time does Rift Herald despawn at the "
-                    + "latest?");
+            question5.setQuestionText(
+                    "5: " + "\nAt what time does Rift Herald despawn at the " + "latest?");
             question5.setChoiceA("A: 19:30");
             question5.setChoiceB("B: 19:45");
             question5.setChoiceC("C: 19:00");
@@ -83,7 +84,7 @@ public class Quiz {
             question6.setCorrectAnswer("C");
             MCQuestion question7 = new MCQuestion();
             question7.setQuestionText("7: " + "\nWhich champion states the following quote: "
-            + "\"Better times there were, and will be again.\"");
+                    + "\"Better times there were, and will be again.\"");
             question7.setChoiceA("A: Karma");
             question7.setChoiceB("B: Irelia");
             question7.setChoiceC("C: Akali");
@@ -108,11 +109,11 @@ public class Quiz {
                     + "damage, wait until minions get low health to last hit.");
             question9.setCorrectAnswer("D");
             MCQuestion question10 = new MCQuestion();
-            question10.setQuestionText("10: " + "\n");
-            question10.setChoiceA("A: ");
-            question10.setChoiceB("B: ");
-            question10.setChoiceC("C: ");
-            question10.setChoiceD("D: ");
+            question10.setQuestionText("10: " + "\nWhere does Kindred's mark first spawn at?");
+            question10.setChoiceA("A: Top Scuttle Crab");
+            question10.setChoiceB("B: Bot Scuttle Crab");
+            question10.setChoiceC("C: Either Top or Bot Scuttle Crab");
+            question10.setChoiceD("D: Enemy Raptors");
             question10.setCorrectAnswer("A");
             MCQuestion question11 = new MCQuestion();
             question11.setQuestionText("11: " + "\nWhich champion appears when you get 100 in the"
@@ -132,16 +133,16 @@ public class Quiz {
             question12.setChoiceD("D: 99");
             question12.setCorrectAnswer("B");
             MCQuestion question13 = new MCQuestion();
-            question13.setQuestionText("13: " + "\nWhich champion in the champion list is found" + 
-                    "at the coordinates 4, 1? (Hint: Answer is within this program)");
+            question13.setQuestionText("13: " + "\nWhich champion in the champion list is found"
+                    + "at the coordinates 4, 1? (Hint: Answer is within this program)");
             question13.setChoiceA("A: Sona");
             question13.setChoiceB("B: Lux");
             question13.setChoiceC("C: Azir");
             question13.setChoiceD("D: Volibear");
             question13.setCorrectAnswer("C");
             MCQuestion question14 = new MCQuestion();
-            question14.setQuestionText("14: " + "\nHow old is Orianna? "
-                    + "(Hint: Answer is within this program)");
+            question14.setQuestionText(
+                    "14: " + "\nHow old is Orianna? " + "(Hint: Answer is within this program)");
             question14.setChoiceA("A: 22");
             question14.setChoiceB("B: 30");
             question14.setChoiceC("C: 28");
