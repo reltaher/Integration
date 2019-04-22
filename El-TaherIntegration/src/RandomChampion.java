@@ -33,40 +33,32 @@ public class RandomChampion {
             System.out.println(championRanNum);
             if (championRanNum <= 0) {
                 champion = "Ashe";
-                System.out.println(champion);
             } else if (championRanNum <= 10) {
                 champion = "Ekko";
-                System.out.println(champion);
             } else if (championRanNum <= 20) {
                 champion = "Gragas";
-                System.out.println(champion);
             } else if (championRanNum <= 30) {
                 champion = "Ahri";
-                System.out.println(champion);
             } else if (championRanNum <= 40) {
                 champion = "Xerath";
-                System.out.println(champion);
             } else if (championRanNum <= 50) {
                 champion = "Urgot";
-                System.out.println(champion);
             } else if (championRanNum <= 60) {
                 champion = "Yorick";
-                System.out.println(champion);
             } else if (championRanNum <= 70) {
                 champion = "Ivern";
-                System.out.println(champion);
             } else if (championRanNum <= 80) {
                 champion = "Rek'sai";
-                System.out.println(champion);
             } else if (championRanNum <= 90) {
                 champion = "Elise";
-                System.out.println(champion);
-            } else if (championRanNum <= 100) {
+            } else if (championRanNum < 100) {
+                champion = "Hecarim";
+            } else if (championRanNum == 100) {
                 champion = "Kha'Zix";
-                System.out.println(champion);
             } else {
                 System.out.println("Something went wrong...");
             }
+            System.out.println(champion);
             System.out.println("Type 0 to obtain another champion. Type 1 to return to main menu.");
             boolean goodInput = false;
             while (goodInput == false) {

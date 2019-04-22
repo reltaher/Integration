@@ -107,40 +107,46 @@ public class Quiz {
             question10.setChoiceD("D: ");
             question10.setCorrectAnswer("");
             MCQuestion question11 = new MCQuestion();
-            question11.setQuestionText("11: " + "\n");
+            question11.setQuestionText("11: " + "\nWhich champion appears when you get 100 in the"
+                    + "Random Champion Game? (Hint: Answer is within this program)");
             question11.setChoiceA("A: ");
             question11.setChoiceB("B: ");
             question11.setChoiceC("C: ");
             question11.setChoiceD("D: ");
             question11.setCorrectAnswer("");
             MCQuestion question12 = new MCQuestion();
-            question12.setQuestionText("12: " + "\n");
-            question12.setChoiceA("A: ");
-            question12.setChoiceB("B: ");
-            question12.setChoiceC("C: ");
-            question12.setChoiceD("D: ");
-            question12.setCorrectAnswer("");
+            question12.setQuestionText("12: " + "\nIn order to get Teemo when you are entering a"
+                    + "number for champion output, what number do you enter? "
+                    + "(Hint: Answer is within this program)");
+            question12.setChoiceA("A: 1");
+            question12.setChoiceB("B: -147");
+            question12.setChoiceC("C: 147");
+            question12.setChoiceD("D: 99");
+            question12.setCorrectAnswer("B");
             MCQuestion question13 = new MCQuestion();
-            question13.setQuestionText("13: " + "\n");
-            question13.setChoiceA("A: ");
-            question13.setChoiceB("B: ");
-            question13.setChoiceC("C: ");
-            question13.setChoiceD("D: ");
-            question13.setCorrectAnswer("");
+            question13.setQuestionText("13: " + "\nWhich champion in the champion list is found" + 
+                    "at the coordinates 4, 1? (Hint: Answer is within this program)");
+            question13.setChoiceA("A: Sona");
+            question13.setChoiceB("B: Lux");
+            question13.setChoiceC("C: Azir");
+            question13.setChoiceD("D: Volibear");
+            question13.setCorrectAnswer("C");
             MCQuestion question14 = new MCQuestion();
-            question14.setQuestionText("14: " + "\n");
-            question14.setChoiceA("A: ");
-            question14.setChoiceB("B: ");
-            question14.setChoiceC("C: ");
-            question14.setChoiceD("D: ");
-            question14.setCorrectAnswer("");
+            question14.setQuestionText("14: " + "\nHow old is Orianna? "
+                    + "(Hint: Answer is within this program)");
+            question14.setChoiceA("A: 22");
+            question14.setChoiceB("B: 30");
+            question14.setChoiceC("C: 28");
+            question14.setChoiceD("D: Orianna does not have an age since she is a robot.");
+            question14.setCorrectAnswer("A");
             MCQuestion question15 = new MCQuestion();
-            question15.setQuestionText("15: " + "\n");
-            question15.setChoiceA("A: ");
-            question15.setChoiceB("B: ");
-            question15.setChoiceC("C: ");
-            question15.setChoiceD("D: ");
-            question15.setCorrectAnswer("");
+            question15.setQuestionText("15: " + "\nWhich four champions have a combined age of"
+                    + "127? (Hint: Answer is within this program)");
+            question15.setChoiceA("A: Trundle, Ezreal, Darius, Urgot");
+            question15.setChoiceB("B: Fiora, Draven, Caitlyn, Pyke");
+            question15.setChoiceC("C: Graves, Orianna, Lucian, Olaf");
+            question15.setChoiceD("D: Sejuani, Ryze, Udyr, Sivir");
+            question15.setCorrectAnswer("C");
             // Clears buffer (otherwise Q1 and Q2 prints at the same time)
             choice = scan.nextLine();
             // Creating an array of objects
