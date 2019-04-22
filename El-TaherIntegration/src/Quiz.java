@@ -58,12 +58,13 @@ public class Quiz {
             question3.setChoiceD("D: Refillable Potion");
             question3.setCorrectAnswer("B");
             MCQuestion question4 = new MCQuestion();
-            question4.setQuestionText("4: " + "\n");
-            question4.setChoiceA("A: ");
-            question4.setChoiceB("B: ");
-            question4.setChoiceC("C: ");
-            question4.setChoiceD("D: ");
-            question4.setCorrectAnswer("");
+            question4.setQuestionText("4: " + "\nWhich champion states the following quote: "
+                    + "\"Am I the abyss? Or did I gaze into it?\"");
+            question4.setChoiceA("A: Aatrox");
+            question4.setChoiceB("B: Malzahar");
+            question4.setChoiceC("C: Kayn (Rhaast)");
+            question4.setChoiceD("D: Kai'sa");
+            question4.setCorrectAnswer("A");
             MCQuestion question5 = new MCQuestion();
             question5.setQuestionText("5: " + "\n");
             question5.setChoiceA("A: ");
