@@ -76,7 +76,7 @@ public class Quiz {
             question5.setCorrectAnswer("D");
             MCQuestion question6 = new MCQuestion();
             question6.setQuestionText("6: " + "\nHow much gold does each turret plating give when"
-                    + "only one champion is obtaining the gold?");
+                    + " only one champion is obtaining the gold?");
             question6.setChoiceA("A: 120");
             question6.setChoiceB("B: 80");
             question6.setChoiceC("C: 160");
