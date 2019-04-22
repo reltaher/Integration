@@ -109,10 +109,10 @@ public class Quiz {
             MCQuestion question11 = new MCQuestion();
             question11.setQuestionText("11: " + "\nWhich champion appears when you get 100 in the"
                     + "Random Champion Game? (Hint: Answer is within this program)");
-            question11.setChoiceA("A: ");
-            question11.setChoiceB("B: ");
-            question11.setChoiceC("C: ");
-            question11.setChoiceD("D: ");
+            question11.setChoiceA("A: Ashe");
+            question11.setChoiceB("B: Hecarim");
+            question11.setChoiceC("C: Kha'Zix");
+            question11.setChoiceD("D: Elise");
             question11.setCorrectAnswer("");
             MCQuestion question12 = new MCQuestion();
             question12.setQuestionText("12: " + "\nIn order to get Teemo when you are entering a"
