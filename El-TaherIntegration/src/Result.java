@@ -44,9 +44,9 @@ public class Result {
 			rating = "Diamoond";
 		} else if (score <= 11) {
 			rating = "Master";
-		} else if (score <= 13) {
+		} else if (score <= 14) {
 			rating = "Grandmaster";
-		} else if (score <= 15) {
+		} else if (score == 15) {
 			rating = "Challenger";
 		} else {
 			System.out.println("The quiz has encountered an error while displaying a result.");
