@@ -66,26 +66,29 @@ public class Quiz {
             question4.setChoiceD("D: Kai'sa");
             question4.setCorrectAnswer("A");
             MCQuestion question5 = new MCQuestion();
-            question5.setQuestionText("5: " + "\n");
-            question5.setChoiceA("A: ");
-            question5.setChoiceB("B: ");
-            question5.setChoiceC("C: ");
-            question5.setChoiceD("D: ");
-            question5.setCorrectAnswer("");
+            question5.setQuestionText("5: " + "\nAt what time does Rift Herald despawn at the "
+                    + "latest?");
+            question5.setChoiceA("A: 19:30");
+            question5.setChoiceB("B: 19:45");
+            question5.setChoiceC("C: 19:00");
+            question5.setChoiceD("D: 19:55");
+            question5.setCorrectAnswer("D");
             MCQuestion question6 = new MCQuestion();
-            question6.setQuestionText("6: " + "\n");
-            question6.setChoiceA("A: ");
-            question6.setChoiceB("B: ");
-            question6.setChoiceC("C: ");
-            question6.setChoiceD("D: ");
-            question6.setCorrectAnswer("");
+            question6.setQuestionText("6: " + "\nHow much gold does each turret plating give when"
+                    + "only one champion is obtaining the gold?");
+            question6.setChoiceA("A: 120");
+            question6.setChoiceB("B: 80");
+            question6.setChoiceC("C: 160");
+            question6.setChoiceD("D: 300");
+            question6.setCorrectAnswer("C");
             MCQuestion question7 = new MCQuestion();
-            question7.setQuestionText("7: " + "\n");
-            question7.setChoiceA("A: ");
-            question7.setChoiceB("B: ");
-            question7.setChoiceC("C: ");
-            question7.setChoiceD("D: ");
-            question7.setCorrectAnswer("");
+            question7.setQuestionText("7: " + "\nWhich champion states the following quote: "
+            + "\"Better times there were, and will be again.\"");
+            question7.setChoiceA("A: Karma");
+            question7.setChoiceB("B: Irelia");
+            question7.setChoiceC("C: Akali");
+            question7.setChoiceD("D: Rakan");
+            question7.setCorrectAnswer("B");
             MCQuestion question8 = new MCQuestion();
             question8.setQuestionText("8: " + "\n");
             question8.setChoiceA("A: ");
