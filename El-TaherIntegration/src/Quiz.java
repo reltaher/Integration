@@ -90,26 +90,30 @@ public class Quiz {
             question7.setChoiceD("D: Rakan");
             question7.setCorrectAnswer("B");
             MCQuestion question8 = new MCQuestion();
-            question8.setQuestionText("8: " + "\n");
-            question8.setChoiceA("A: ");
-            question8.setChoiceB("B: ");
-            question8.setChoiceC("C: ");
-            question8.setChoiceD("D: ");
-            question8.setCorrectAnswer("");
+            question8.setQuestionText("8: " + "\nWho were the world champions in the Season 4"
+                    + "World championship for League of Legends?");
+            question8.setChoiceA("A: SKT");
+            question8.setChoiceB("B: SSW");
+            question8.setChoiceC("C: SSG");
+            question8.setChoiceD("D: IG");
+            question8.setCorrectAnswer("B");
             MCQuestion question9 = new MCQuestion();
-            question9.setQuestionText("9: " + "\n");
-            question9.setChoiceA("A: ");
-            question9.setChoiceB("B: ");
-            question9.setChoiceC("C: ");
-            question9.setChoiceD("D: ");
-            question9.setCorrectAnswer("");
+            question9.setQuestionText("9: " + "\nWhat do you normally do to freeze a minion wave?");
+            question9.setChoiceA("A: Have your minions and the enemy minions sit in the middle"
+                    + "of the lane.");
+            question9.setChoiceB("B: Push your minion wave into the enemy's tower.");
+            question9.setChoiceC("C: Have the minions crash into your tower, last hit while minions"
+                    + "are taking turret damage");
+            question9.setChoiceD("D: Have the enemy's minions by your tower but not taking turret "
+                    + "damage, wait until minions get low health to last hit.");
+            question9.setCorrectAnswer("D");
             MCQuestion question10 = new MCQuestion();
             question10.setQuestionText("10: " + "\n");
             question10.setChoiceA("A: ");
             question10.setChoiceB("B: ");
             question10.setChoiceC("C: ");
             question10.setChoiceD("D: ");
-            question10.setCorrectAnswer("");
+            question10.setCorrectAnswer("A");
             MCQuestion question11 = new MCQuestion();
             question11.setQuestionText("11: " + "\nWhich champion appears when you get 100 in the"
                     + "Random Champion Game? (Hint: Answer is within this program)");
@@ -117,7 +121,7 @@ public class Quiz {
             question11.setChoiceB("B: Hecarim");
             question11.setChoiceC("C: Kha'Zix");
             question11.setChoiceD("D: Elise");
-            question11.setCorrectAnswer("");
+            question11.setCorrectAnswer("C");
             MCQuestion question12 = new MCQuestion();
             question12.setQuestionText("12: " + "\nIn order to get Teemo when you are entering a"
                     + "number for champion output, what number do you enter? "
