@@ -134,7 +134,7 @@ public class Quiz {
             question12.setCorrectAnswer("B");
             MCQuestion question13 = new MCQuestion();
             question13.setQuestionText("13: " + "\nWhich champion in the champion list is found"
-                    + " at the coordinates 4, 1? (Hint: Answer is within this program)");
+                    + " at the coordinates (4, 1)? (Hint: Answer is within this program)");
             question13.setChoiceA("A: Sona");
             question13.setChoiceB("B: Lux");
             question13.setChoiceC("C: Azir");
