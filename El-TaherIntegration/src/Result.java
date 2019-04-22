@@ -10,6 +10,8 @@ public class Result {
 	}
 
 	public void setScore(short newScore) {
+	  //When you want to convert a variable to another, use casting.
+	  //This line of code has a short variable being converted to an int variable.
 		score = (int)newScore;
 	}
 
