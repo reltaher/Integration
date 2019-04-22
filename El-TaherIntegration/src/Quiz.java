@@ -92,7 +92,7 @@ public class Quiz {
             question7.setCorrectAnswer("B");
             MCQuestion question8 = new MCQuestion();
             question8.setQuestionText("8: " + "\nWho were the world champions in the Season 4"
-                    + "World championship for League of Legends?");
+                    + " World championship for League of Legends?");
             question8.setChoiceA("A: SKT");
             question8.setChoiceB("B: SSW");
             question8.setChoiceC("C: SSG");
@@ -117,7 +117,7 @@ public class Quiz {
             question10.setCorrectAnswer("A");
             MCQuestion question11 = new MCQuestion();
             question11.setQuestionText("11: " + "\nWhich champion appears when you get 100 in the"
-                    + "Random Champion Game? (Hint: Answer is within this program)");
+                    + " Random Champion Game? (Hint: Answer is within this program)");
             question11.setChoiceA("A: Ashe");
             question11.setChoiceB("B: Hecarim");
             question11.setChoiceC("C: Kha'Zix");
@@ -125,7 +125,7 @@ public class Quiz {
             question11.setCorrectAnswer("C");
             MCQuestion question12 = new MCQuestion();
             question12.setQuestionText("12: " + "\nIn order to get Teemo when you are entering a"
-                    + "number for champion output, what number do you enter? "
+                    + " number for champion output, what number do you enter? "
                     + "(Hint: Answer is within this program)");
             question12.setChoiceA("A: 1");
             question12.setChoiceB("B: -147");
@@ -134,7 +134,7 @@ public class Quiz {
             question12.setCorrectAnswer("B");
             MCQuestion question13 = new MCQuestion();
             question13.setQuestionText("13: " + "\nWhich champion in the champion list is found"
-                    + "at the coordinates 4, 1? (Hint: Answer is within this program)");
+                    + " at the coordinates 4, 1? (Hint: Answer is within this program)");
             question13.setChoiceA("A: Sona");
             question13.setChoiceB("B: Lux");
             question13.setChoiceC("C: Azir");
@@ -150,7 +150,7 @@ public class Quiz {
             question14.setCorrectAnswer("A");
             MCQuestion question15 = new MCQuestion();
             question15.setQuestionText("15: " + "\nWhich four champions have a combined age of"
-                    + "127? (Hint: Answer is within this program)");
+                    + " 127? (Hint: Answer is within this program)");
             question15.setChoiceA("A: Trundle, Ezreal, Darius, Urgot");
             question15.setChoiceB("B: Fiora, Draven, Caitlyn, Pyke");
             question15.setChoiceC("C: Graves, Orianna, Lucian, Olaf");
