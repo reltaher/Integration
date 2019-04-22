@@ -42,7 +42,7 @@ public class Result {
 			rating = "Platinum";	
 		} else if (score <= 9) {
 			rating = "Diamoond";
-		} else if (score <= 11) {
+		} else if (score <= 12) {
 			rating = "Master";
 		} else if (score <= 14) {
 			rating = "Grandmaster";
