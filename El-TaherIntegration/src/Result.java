@@ -34,17 +34,17 @@ public class Result {
 			rating = "Iron";
 		} else if (score == 1) {
 			rating = "Bronze";
-		} else if (score == 2) {
+		} else if (score <= 3) {
 			rating = "Silver";
-		} else if (score <= 4) {
+		} else if (score <= 5) {
 			rating = "Gold";
-		} else if (score <= 6) {
+		} else if (score <= 7) {
 			rating = "Platinum";	
-		} else if (score <= 8) {
+		} else if (score <= 9) {
 			rating = "Diamoond";
-		} else if (score <= 10) {
+		} else if (score <= 11) {
 			rating = "Master";
-		} else if (score <= 12) {
+		} else if (score <= 13) {
 			rating = "Grandmaster";
 		} else if (score <= 15) {
 			rating = "Challenger";
