@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 //This Project has been created by Ramzy El-Taher.
 public class Quiz {
-  // Method with constructor being passed down
+  /** Method with constructor being passed down.
+   * @param scan passes down the Scanner object named "scan".
+   */
   public void quizStart(Scanner scan) {
     // Assigning a string variable named "programCase1" to the string "Y".
     String programCase1 = "Y";

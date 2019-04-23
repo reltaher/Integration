@@ -4,6 +4,10 @@ import java.util.Scanner;
 //This Project has been created by Ramzy El-Taher.
 
 public class RandomChampion {
+  /** Method with constructor being passed down.
+   * The method is a minigame that is used in MainMenu.java.
+   * @param scan passes down the Scanner object named "scan".
+   */
   public void ranChamp(Scanner scan) {
     /*
      * I will be using the Random class for a different setting rather than for the

@@ -1,7 +1,12 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+//Made by Ramzy El-Taher.
 
-public class ChampionList {
+public class ChampionList { 
+  /** Method with constructor being passed down.
+   * The Method displays the whole list of champions in MainMenu.java.
+   * @param scan passes down the Scanner object named "scan".
+   */
   public void champList(Scanner scan) {
     boolean programCase5 = true;
     while (programCase5 == true) {

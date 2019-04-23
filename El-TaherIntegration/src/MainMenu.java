@@ -40,6 +40,9 @@ import java.util.Scanner;
  */
 
 public class MainMenu {
+  /** Method named "menu" that was passed down from Main.java.
+   * 
+   */
   public void menu() {
     System.out.println("Welcome to my Integration Project!");
     System.out.println("This program will quiz you based on how knowledgable"

@@ -9,6 +9,9 @@ public class Result {
     return score;
   }
 
+  /** Method with a constructor containing a short variable being passed down.
+   * @param newScore - the new name for the int datatype "score" which is used as a setter.
+   */
   public void setScore(short newScore) {
     // When you want to convert a variable to another, use casting.
     // This line of code has a short variable being converted to an int variable.
@@ -27,6 +30,9 @@ public class Result {
     incorrectAnswers = newIncorrectAnswers;
   }
 
+  /** Method that is used in Quiz.java to display the user's score.
+   * 
+   */
   public void displayScore() {
     String rating = "";
     if (score <= 0) {
@@ -56,6 +62,9 @@ public class Result {
     System.out.println("Incorrect Answers: " + Math.abs(incorrectAnswers));
   }
 
+  /** Method with constructor being passed down that is used to display the ranks in MainMenu.java.
+   * @param scan passes down the Scanner object named "scan".
+   */
   public void displayResults(Scanner scan) {
     String programCase2 = "Y";
     while (programCase2.equals("Y")) {

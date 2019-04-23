@@ -3,6 +3,10 @@ import java.util.Scanner;
 //This Project has been created by Ramzy El-Taher.
 
 public class ChampionNumber {
+  /** Method with constructor being passed down.
+   * The method is a minigame that is used in MainMenu.java.
+   * @param scan passes down the Scanner object named "scan".
+   */
   public void champNum(Scanner scan) {
     double champInt = 0.0;
     String programCase3 = "Y";
