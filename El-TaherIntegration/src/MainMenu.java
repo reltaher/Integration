@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 /** Represents the author of this program, who is a student currently enrolled at FGCU.
- * @author eltah
+ * @author reltaher
  *
  */
 
