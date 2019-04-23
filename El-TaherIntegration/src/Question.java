@@ -1,4 +1,7 @@
-//This project has been created by Ramzy El-Taher.
+/** Represents the author of this program, who is a student currently enrolled at FGCU.
+ * @author eltah
+ *
+ */
 public class Question {
 
   /*

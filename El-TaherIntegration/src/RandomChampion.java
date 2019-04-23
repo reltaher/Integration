@@ -1,7 +1,10 @@
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
-//This Project has been created by Ramzy El-Taher.
+/** Represents the author of this program, who is a student currently enrolled at FGCU.
+ * @author eltah
+ *
+ */
 
 public class RandomChampion {
   /** Method with constructor being passed down.

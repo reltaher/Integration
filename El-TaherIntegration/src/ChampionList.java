@@ -1,7 +1,10 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-//Made by Ramzy El-Taher.
 
+/** Represents the author of this program, who is a student currently enrolled at FGCU.
+ * @author eltah
+ *
+ */
 public class ChampionList { 
   /** Method with constructor being passed down.
    * The Method displays the whole list of champions in MainMenu.java.

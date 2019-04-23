@@ -1,8 +1,12 @@
-//This class utilizes inheritance.
-//Inheritance = one class containing the fields and methods of another class.
-//In this case, this class contains the properties from the Question class.
-//These fields and methods are obtained with the extends keyword.
+/** Represents the author of this program, who is a student currently enrolled at FGCU.
+ * @author eltah
+ *
+ */
 public class MCquestion extends Question {
+  //This class utilizes inheritance.
+  //Inheritance = one class containing the fields and methods of another class.
+  //In this case, this class contains the properties from the Question class.
+  //These fields and methods are obtained with the extends keyword.
   private String questionText;
   private String choiceA;
   private String choiceB;

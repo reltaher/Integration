@@ -1,7 +1,10 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
-//This Project has been created by Ramzy El-Taher.
 
+/** Represents the author of this program, who is a student currently enrolled at FGCU.
+ * @author eltah
+ *
+ */
 public class ChampionNumber {
   /** Method with constructor being passed down.
    * The method is a minigame that is used in MainMenu.java.

@@ -1,8 +1,13 @@
 import java.util.Scanner;
+/** Represents the author of this program, who is a student currently enrolled at FGCU.
+ * @author eltah
+ *
+ */
 
-//This class manually checks the smallest value stored in an array.
-//We will use this class for the user to find the answer to a quiz question.
 public class SmallestChamp {
+  //This class manually checks the smallest value stored in an array.
+  //The purpose of this class is for the user to find the answer to a quiz question.
+  
   /** Method with constructor being passed down.
    * The method is used in MainMenu.java as a hidden case to give the user
    * two answers in Quiz.java

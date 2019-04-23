@@ -1,6 +1,9 @@
 import java.util.Scanner;
+/** Represents the author of this program, who is a student currently enrolled at FGCU.
+ * @author eltah
+ *
+ */
 
-//This Project has been created by Ramzy El-Taher.
 public class Quiz {
   /** Method with constructor being passed down.
    * @param scan passes down the Scanner object named "scan".
