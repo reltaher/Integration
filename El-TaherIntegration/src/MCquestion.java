@@ -1,12 +1,15 @@
-/** Represents the author of this program, who is a student currently enrolled at FGCU.
+/**
+ * Represents the author of this program, who is a student currently enrolled at
+ * FGCU.
+ * 
  * @author reltaher
  *
  */
 public class MCquestion extends Question {
-  //This class utilizes inheritance.
-  //Inheritance = one class containing the fields and methods of another class.
-  //In this case, this class contains the properties from the Question class.
-  //These fields and methods are obtained with the extends keyword.
+  // This class utilizes inheritance.
+  // Inheritance = one class containing the fields and methods of another class.
+  // In this case, this class contains the properties from the Question class.
+  // These fields and methods are obtained with the extends keyword.
   private String questionText;
   private String choiceA;
   private String choiceB;
@@ -14,6 +17,10 @@ public class MCquestion extends Question {
   private String choiceD;
   private String correctAnswer;
 
+  /**
+   * Gets questionText.
+   * @return questionText.
+   */
   public String getQuestionText() {
     return questionText;
   }
@@ -22,6 +29,11 @@ public class MCquestion extends Question {
     questionText = newQuestionText;
   }
 
+  
+  /**
+   * Gets choiceA.
+   * @return choiceA.
+   */
   public String getChoiceA() {
     return choiceA;
   }
@@ -30,6 +42,10 @@ public class MCquestion extends Question {
     choiceA = newChoiceA;
   }
 
+  /**
+   * Gets choiceB.
+   * @return choiceB.
+   */
   public String getChoiceB() {
     return choiceB;
   }
@@ -38,6 +54,10 @@ public class MCquestion extends Question {
     choiceB = newChoiceB;
   }
 
+  /**
+   * Gets choiceC.
+   * @return choiceC.
+   */
   public String getChoiceC() {
     return choiceC;
   }
@@ -46,6 +66,10 @@ public class MCquestion extends Question {
     choiceC = newChoiceC;
   }
 
+  /**
+   * Gets choiceD.
+   * @return choiceD.
+   */
   public String getChoiceD() {
     return choiceD;
   }
@@ -54,6 +78,10 @@ public class MCquestion extends Question {
     choiceD = newChoiceD;
   }
 
+  /**
+   * Gets correctAnswer.
+   * @return correctAnswer.
+   */
   public String getCorrectAnswer() {
     return correctAnswer;
   }
