@@ -38,7 +38,7 @@
     
     Format strings using escape sequences
     -ChampionList.java Line 187, 189, 191, 193, ... (other strings are formatted in this class)
-    ------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------
 
     PSI 2:
     Create a method with arguments and return values
