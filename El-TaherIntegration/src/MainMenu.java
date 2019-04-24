@@ -30,7 +30,7 @@ public class MainMenu {
     // When a variable has the final keyword, it means that the variable cannot be
     // replaced.
     final Scanner scan = new Scanner(System.in, "utf-8");
-    int select = 0;
+    int menuSelection = 0;
     while (runProgram) {
 
       boolean goodInput = false;
@@ -43,7 +43,7 @@ public class MainMenu {
         System.out.println("Type 6 to end the program.");
         try {
           // used for menu selection
-          select = scan.nextInt(); // reads input for menu selection
+          menuSelection = scan.nextInt(); // reads input for menu selection
           goodInput = true;
         } catch (InputMismatchException ex) {
           System.out.println("Invalid Entry.\n");
@@ -53,7 +53,7 @@ public class MainMenu {
         }
       }
       // A switch statement is used to create the menu screen.
-      switch (select) {
+      switch (menuSelection) {
         case 1:
           Quiz takeQuiz = new Quiz(); // creates a quiz object.
           takeQuiz.quizStart(scan); // takes code from the Quiz class.
