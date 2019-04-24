@@ -1,13 +1,24 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/** Represents the author of this program, who is a student currently enrolled at FGCU.
+/**
+ * Represents the author of this program, who is a student currently enrolled at
+ * FGCU.
+ * 
  * @author reltaher
  *
  */
-public class ChampionList { 
-  /** Method with constructor being passed down.
-   * The Method displays the whole list of champions in MainMenu.java.
+
+/*
+ * This program contains different game modes which is based on the game
+ * "League of Legends". The game modes include a quiz, random champion game,
+ * champion number game, and comparing champion strings.
+ */
+public class ChampionList {
+  /**
+   * Method with constructor being passed down. The Method displays the whole list
+   * of champions in MainMenu.java.
+   * 
    * @param scan passes down the Scanner object named "scan".
    */
   public void champList(Scanner scan) {

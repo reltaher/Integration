@@ -1,11 +1,23 @@
 import java.util.Scanner;
-/** Represents the author of this program, who is a student currently enrolled at FGCU.
+
+/**
+ * Represents the author of this program, who is a student currently enrolled at
+ * FGCU.
+ * 
  * @author reltaher
  *
  */
 
+/*
+ * This program contains different game modes which is based on the game
+ * "League of Legends". The game modes include a quiz, random champion game,
+ * champion number game, and comparing champion strings.
+ */
+
 public class Quiz {
-  /** Method with constructor being passed down.
+  /**
+   * Method with constructor being passed down.
+   * 
    * @param scan passes down the Scanner object named "scan".
    */
   public void quizStart(Scanner scan) {
@@ -117,7 +129,7 @@ public class Quiz {
       question10.setChoiceB("B: Bot Scuttle Crab");
       question10.setChoiceC("C: Either Top or Bot Scuttle Crab");
       question10.setChoiceD("D: Enemy Raptors");
-      question10.setCorrectAnswer("A");
+      question10.setCorrectAnswer("C");
       MCquestion question11 = new MCquestion();
       question11.setQuestionText("11: " + "\nWhich champion appears when you get 100 in the"
           + " Random Champion Game? (Hint: Answer is within this program)");

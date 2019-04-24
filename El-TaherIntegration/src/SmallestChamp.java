@@ -1,16 +1,28 @@
 import java.util.Scanner;
-/** Represents the author of this program, who is a student currently enrolled at FGCU.
+
+/**
+ * Represents the author of this program, who is a student currently enrolled at
+ * FGCU.
+ * 
  * @author reltaher
  *
  */
 
+/*
+ * This program contains different game modes which is based on the game
+ * "League of Legends". The game modes include a quiz, random champion game,
+ * champion number game, and comparing champion strings.
+ */
+
 public class SmallestChamp {
-  //This class manually checks the smallest value stored in an array.
-  //The purpose of this class is for the user to find the answer to a quiz question.
-  
-  /** Method with constructor being passed down.
-   * The method is used in MainMenu.java as a hidden case to give the user
-   * two answers in Quiz.java
+  // This class manually checks the smallest value stored in an array.
+  // The purpose of this class is for the user to find the answer to a quiz
+  // question.
+
+  /**
+   * Method with constructor being passed down. The method is used in
+   * MainMenu.java as a hidden case to give the user two answers in Quiz.java
+   * 
    * @param scan passes down the Scanner object named "scan".
    */
   public void smallestChamp(Scanner scan) {

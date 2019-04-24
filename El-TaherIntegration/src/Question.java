@@ -5,6 +5,13 @@
  * @author reltaher
  *
  */
+
+/*
+ * This program contains different game modes which is based on the game
+ * "League of Legends". The game modes include a quiz, random champion game,
+ * champion number game, and comparing champion strings.
+ */
+
 public class Question {
 
   /*
@@ -67,6 +74,10 @@ public class Question {
     this.correctAnswer = newCorrectAnswer;
   }
 
+  /**
+   * Method named "askQuestion" - used with super to print "Question " for each
+   * question in the quiz.
+   */
   public void askQuestion() {
     System.out.print("Question ");
   }

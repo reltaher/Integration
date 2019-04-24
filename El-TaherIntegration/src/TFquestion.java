@@ -5,6 +5,13 @@
  * @author reltaher
  *
  */
+
+/*
+ * This program contains different game modes which is based on the game
+ * "League of Legends". The game modes include a quiz, random champion game,
+ * champion number game, and comparing champion strings.
+ */
+
 public class TFquestion extends Question {
   // This class utilizes inheritance.
   // Inheritance = one class containing the fields and methods of another class.
