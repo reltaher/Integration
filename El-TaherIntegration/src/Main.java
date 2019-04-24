@@ -45,15 +45,12 @@ public class Main {
    * https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
    */
 
-  /*
-   * This is a header. Public is an access modifier. void is the return type
+  /**
+   * Main method, which is also a header. Public is an access modifier. void is the return type
    * meaning this method does not return anything. method names should be in
    * lowerCamelCase and be named with a verb. Within this header is the parameter,
    * which in this case would be String[] args. static belongs to the class, not
    * the object.
-   */
-  /**
-   * Main method.
    * 
    * @param args - calls all arguments
    */
