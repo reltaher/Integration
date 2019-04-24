@@ -24,8 +24,7 @@ public class ChampionList {
   public void champList(Scanner scan) {
     boolean programCase5 = true;
     while (programCase5 == true) {
-      System.out.println();
-      System.out.println("Type a letter to search through the champion names.");
+      System.out.println("\nType a capital letter to search through the champion names.");
       System.out.println("Type \"All\" to view the list of all of the champions.");
       System.out.println("Type \"Back\" to return to main menu.");
       String searchChampLetter = "";
@@ -94,7 +93,7 @@ public class ChampionList {
         case "D":
           String[][] championD = new String[2][2];
           championD[0][0] = "Darius";
-          championD[0][1] = "Diana";
+          championD[0][1] = "\tDiana";
           championD[1][0] = "Dr. Mundo";
           championD[1][1] = "Draven";
           for (int row = 0; row < championD.length; row++) {
@@ -227,7 +226,7 @@ public class ChampionList {
           championM[0][0] = "Malphite";
           championM[0][1] = "Malzahar";
           championM[1][0] = "Maokai";
-          championM[1][1] = "Master Yi";
+          championM[1][1] = "\tMaster Yi";
           championM[2][0] = "Miss Fortune";
           championM[2][1] = "Mordekaiser";
           for (int row = 0; row < championM.length; row++) {
@@ -240,11 +239,11 @@ public class ChampionList {
         case "N":
           String[][] championN = new String[4][2];
           championN[0][0] = "Nami";
-          championN[0][1] = "Nasus";
+          championN[0][1] = "\tNasus";
           championN[1][0] = "Nautilus";
           championN[1][1] = "Neeko";
           championN[2][0] = "Nidalee";
-          championN[2][1] = "Nocturne";
+          championN[2][1] = "\tNocturne";
           championN[3][0] = "Nunu";
           championN[3][1] = "";
           for (int row = 0; row < championN.length; row++) {
@@ -332,9 +331,9 @@ public class ChampionList {
           championT[0][0] = "Tahm Kench";
           championT[0][1] = "Taliyah";
           championT[1][0] = "Talon";
-          championT[1][1] = "Taric";
+          championT[1][1] = "\tTaric";
           championT[2][0] = "Teemo";
-          championT[2][1] = "Thresh";
+          championT[2][1] = "\tThresh";
           championT[3][0] = "Tristana";
           championT[3][1] = "Trundle";
           championT[4][0] = "Tryndamere";
@@ -362,11 +361,11 @@ public class ChampionList {
         case "V":
           String[][] championV = new String[4][2];
           championV[0][0] = "Varus";
-          championV[0][1] = "Vayne";
+          championV[0][1] = "\tVayne";
           championV[1][0] = "Veigar";
-          championV[1][1] = "Vel,Koz";
+          championV[1][1] = "\tVel,Koz";
           championV[2][0] = "Vi";
-          championV[2][1] = "Viktor";
+          championV[2][1] = "\tViktor";
           championV[3][0] = "Vladimir";
           championV[3][1] = "Volibear";
           for (int row = 0; row < championV.length; row++) {
@@ -584,7 +583,7 @@ public class ChampionList {
           programCase5 = false;
           break;
         default:
-          System.out.println("Invalid selection.\n");
+          System.out.println("Invalid selection. Make sure your letter is capitalized.");
       }
     }
   }
