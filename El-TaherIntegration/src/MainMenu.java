@@ -84,7 +84,7 @@ public class MainMenu {
           start.smallestChamp(scan);
           break;
         default:
-          System.out.println("Invalid choice. Try again.");
+          System.out.println("Invalid choice. Try again.\n");
       }
     }
   }
