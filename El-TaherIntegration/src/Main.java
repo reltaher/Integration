@@ -5,15 +5,24 @@
  * @author reltaher
  *
  */
+
+/*
+ * This program is primarily a quiz based on the game "League of Legends". Some
+ * of the other modes in this program, such as the Random Champion game,
+ * Champion Number game, and Champion List, contain information that gives the
+ * user an answer to one of the quiz questions.
+ * 
+ * What this code accomplishes is a friendly user interface throughout the whole
+ * program, with a menu selection for each different mode, such as the quiz or
+ * the Random Champion game. For each game mode, the code will prompt the user
+ * if they wish to continue or not, if they do not wish to continue, then it
+ * will prompt them back to the main menu. If the user wishes to quit out of the
+ * program, then case 6 will terminate the program for them, giving them a
+ * friendly exiting message.
+ */
 public class Main {
 
   // To format with Google Style Java Guide, Ctrl+Shift+F
-
-  /*
-   * This program contains different game modes which is based on the game
-   * "League of Legends". The game modes include a quiz, random champion game,
-   * champion number game, and comparing champion strings.
-   */
 
   /*
    * WHEN DOING SCANNERS: IF I GO FROM NUMBERS TO STRINGS CLEAR BUFFER FROM
@@ -46,11 +55,11 @@ public class Main {
    */
 
   /**
-   * Main method, which is also a header. Public is an access modifier. void is the return type
-   * meaning this method does not return anything. method names should be in
-   * lowerCamelCase and be named with a verb. Within this header is the parameter,
-   * which in this case would be String[] args. static belongs to the class, not
-   * the object.
+   * Main method, which is also a header. Public is an access modifier. void is
+   * the return type meaning this method does not return anything. method names
+   * should be in lowerCamelCase and be named with a verb. Within this header is
+   * the parameter, which in this case would be String[] args. static belongs to
+   * the class, not the object.
    * 
    * @param args - calls all arguments
    */
