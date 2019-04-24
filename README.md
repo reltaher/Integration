@@ -106,42 +106,42 @@
     -Result.java, all lines apply
     
     Overload a method
-    -Result.java, Line 29-34
+    -Result.java, Lines 36-39, 50-51
     
     Describe inheritance and its benefits
-    -MCQuestion.java, Line 1-4
+    -MCQuestion.java, Line 16-19
     
     Develop code that makes use of polymorphism
-    -Quiz.java, Line 37-86
+    -Quiz.java, Line 33-206
     -Question.java (base), MCQuestion.java (derived), TFQuestion.java (derived)
     
     Use super and this to access objects and constructors
-    -This: Result.java Line 22
-    -Super: MCQuestion.java Line 63
+    -This: Question.java Line 55, 74
+    -Super: MCQuestion.java Line 127
     
     Declare, instantiate, initialize and use a one-dimensional array
-    -SmallestChamp.java, Line 13
+    -SmallestChamp.java, Line 35
     
     Manually find the smallest value in an array
-    -SmallestChamp.java, Lines 15-25
+    -SmallestChamp.java, Lines 36-47
     
     Get a sum of the values in an array using an accumulator.
-    -SmallestChamp.java, Line 21
+    -SmallestChamp.java, Line 43
     
     Search an array and identify the index where a value was found.
-    -SmallestChamp.java, Lines 27-39
+    -SmallestChamp.java, Lines 49-59
     
     Create and use the enhanced for loop
-    -SmallestChamp.java, Lines 20-25
+    -SmallestChamp.java, Lines 42-47
     
     Declare, instantiate, initialize and use multi-dimensional arrays
-    -ChampionList.java, Lines 21+
+    -ChampionList.java, Lines 37+
     
     Declare and use an ArrayList of a given type
-    -ChampionList.java, Lines 445-588, 619-629
+    -ChampionList.java, Lines 428+
     
     Search a two-dimensional array and identify the coordinates where a value was found
-    -ChampionList.java, Lines 43-47
+    -ChampionList.java, Lines 56-60
     
     Effectively utilize exception handling for user input of an int
-    -MainMenu.java, Lines 62-72
+    -MainMenu.java, Lines 44-53
