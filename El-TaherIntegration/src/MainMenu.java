@@ -34,7 +34,7 @@ public class MainMenu {
     while (runProgram) {
 
       boolean goodInput = false;
-      while (goodInput == false) {
+      do {
         System.out.println("Type 1 to take the quiz.");
         System.out.println("Type 2 to to view the ranks that you can obtain from the quiz.");
         System.out.println("Type 3 to try the Random Champion Game.");
@@ -51,7 +51,7 @@ public class MainMenu {
         } catch (Exception ex) {
           System.out.println("Not sure how you got here! Contact System admin.");
         }
-      }
+      } while (goodInput == false);
       // A switch statement is used to create the menu screen.
       switch (menuSelection) {
         case 1:
