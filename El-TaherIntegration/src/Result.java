@@ -1,5 +1,9 @@
 import java.util.Scanner;
-/** Represents the author of this program, who is a student currently enrolled at FGCU.
+
+/**
+ * Represents the author of this program, who is a student currently enrolled at
+ * FGCU.
+ * 
  * @author reltaher
  *
  */
@@ -8,12 +12,20 @@ public class Result {
   private int score;
   private int incorrectAnswers;
 
+  /**
+   * Gets score.
+   * 
+   * @return score.
+   */
   public int getScore() {
     return score;
   }
 
-  /** Method with a constructor containing a short variable being passed down.
-   * @param newScore - the new name for the int datatype "score" which is used as a setter.
+  /**
+   * Method with a constructor containing a short variable being passed down.
+   * 
+   * @param newScore - the new name for the int datatype "score" which is used as
+   *                 a setter.
    */
   public void setScore(short newScore) {
     // When you want to convert a variable to another, use casting.
@@ -21,19 +33,39 @@ public class Result {
     score = (int) newScore;
   }
 
+  /**
+   * Method with a constructor containing an int variable being passed down. A
+   * short datatype of the same variable was also being passed down. This
+   * represents overloading.
+   * 
+   * @param newScore - the new name for the int datatype "score" which is used as
+   *                 a setter.
+   */
   public void setScore(int newScore) {
     score = newScore;
   }
 
+  /**
+   * Gets incorrectAnswers.
+   * 
+   * @return incorrectAnswers.
+   */
   public int getIncorrectAnswers() {
     return incorrectAnswers;
   }
 
+  /**
+   * Method with a constructor containing an int variable being passed down.
+   * 
+   * @param newIncorrectAnswers - the new name for the int datatype
+   *                            "incorrectAnswers" which is used as a setter.
+   */
   public void setIncorrectAnswers(int newIncorrectAnswers) {
     incorrectAnswers = newIncorrectAnswers;
   }
 
-  /** Method that is used in Quiz.java to display the user's score.
+  /**
+   * Method that is used in Quiz.java to display the user's score.
    * 
    */
   public void displayScore() {
@@ -65,7 +97,10 @@ public class Result {
     System.out.println("Incorrect Answers: " + Math.abs(incorrectAnswers));
   }
 
-  /** Method with constructor being passed down that is used to display the ranks in MainMenu.java.
+  /**
+   * Method with constructor being passed down that is used to display the ranks
+   * in MainMenu.java.
+   * 
    * @param scan passes down the Scanner object named "scan".
    */
   public void displayResults(Scanner scan) {

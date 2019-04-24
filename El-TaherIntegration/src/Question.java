@@ -1,4 +1,7 @@
-/** Represents the author of this program, who is a student currently enrolled at FGCU.
+/**
+ * Represents the author of this program, who is a student currently enrolled at
+ * FGCU.
+ * 
  * @author reltaher
  *
  */
@@ -26,18 +29,40 @@ public class Question {
   private String questionText;
   private String correctAnswer;
 
+  /**
+   * Gets questionText.
+   * 
+   * @return questionText.
+   */
   public String getQuestionText() {
     return questionText;
   }
 
+  /**
+   * Method with a constructor containing a String variable being passed down.
+   * 
+   * @param newQuestionText - the new name for the String variable "questionText"
+   *                        which is used as a setter.
+   */
   public void setQuestionText(String newQuestionText) {
     this.questionText = newQuestionText;
   }
 
+  /**
+   * Gets correctAnswer.
+   * 
+   * @return correctAnswer.
+   */
   public String getCorrectAnswer() {
     return correctAnswer;
   }
 
+  /**
+   * Method with a constructor containing a String variable being passed down.
+   * 
+   * @param newCorrectAnswer - the new name for the String variable
+   *                         "correctAnswer" which is used as a setter.
+   */
   public void setCorrectAnswer(String newCorrectAnswer) {
     this.correctAnswer = newCorrectAnswer;
   }

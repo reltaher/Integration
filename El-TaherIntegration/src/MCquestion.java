@@ -25,7 +25,7 @@ public class MCquestion extends Question {
     return questionText;
   }
 
-  public void setQuestionText(String newQuestionText) {
+  public void setQuestionText(String newQuestionText) {  
     questionText = newQuestionText;
   }
 
@@ -38,6 +38,9 @@ public class MCquestion extends Question {
     return choiceA;
   }
 
+  /** Method with a constructor containing a String variable being passed down.
+   * @param newChoiceA - the new name which is used as a setter.
+   */
   public void setChoiceA(String newChoiceA) {
     choiceA = newChoiceA;
   }
@@ -50,6 +53,9 @@ public class MCquestion extends Question {
     return choiceB;
   }
 
+  /** Method with a constructor containing a String variable being passed down.
+   * @param newChoiceB - the new name which is used as a setter.
+   */
   public void setChoiceB(String newChoiceB) {
     choiceB = newChoiceB;
   }
@@ -62,6 +68,9 @@ public class MCquestion extends Question {
     return choiceC;
   }
 
+  /** Method with a constructor containing a String variable being passed down.
+   * @param newChoiceC - the new name which is used as a setter.
+   */
   public void setChoiceC(String newChoiceC) {
     choiceC = newChoiceC;
   }
@@ -74,6 +83,9 @@ public class MCquestion extends Question {
     return choiceD;
   }
 
+  /** Method with a constructor containing a String variable being passed down.
+   * @param newChoiceD - the new name which is used as a setter.
+   */
   public void setChoiceD(String newChoiceD) {
     choiceD = newChoiceD;
   }
@@ -86,7 +98,7 @@ public class MCquestion extends Question {
     return correctAnswer;
   }
 
-  public void setCorrectAnswer(String newCorrectAnswer) {
+  public void setCorrectAnswer(String newCorrectAnswer) { 
     correctAnswer = newCorrectAnswer;
   }
 
