@@ -26,10 +26,10 @@ public class ChampionList {
     while (programCase5 == true) {
       System.out.println();
       System.out.println("Type a letter to search through the champion names.");
-      System.out.println("Type \"All\" to view the list of all  of the champions.");
+      System.out.println("Type \"All\" to view the list of all of the champions.");
+      System.out.println("Type \"Back\" to return to main menu.");
       String searchChampLetter = "";
-      searchChampLetter = scan.nextLine();
-      searchChampLetter = scan.nextLine();
+      searchChampLetter = scan.next();
       switch (searchChampLetter) {
         case "A":
           // 2D Array with 5 Rows, 2 Columns
@@ -38,9 +38,6 @@ public class ChampionList {
           String[][] championA = new String[5][2];
           // Each champion's coordinates are identified next to them.
           // (Found at y, x)
-          // "Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia",
-          // "Annie", "Ashe",
-          // "Aurelion Sol", "Azir"
           championA[0][0] = "Aatrox";
           championA[0][1] = "Ahri";
           championA[1][0] = "Akali";
@@ -579,8 +576,7 @@ public class ChampionList {
           for (String championlist : champion) {
             System.out.println(championlist);
           }
-          System.out.println();
-          System.out.println("Right now, there are " + champion.size()
+          System.out.println("\nRight now, there are " + champion.size()
               + " Champions. Scroll up to view all of the champions.");
           System.out.println("The list will update when new champions are added.");
           break;
@@ -588,8 +584,7 @@ public class ChampionList {
           programCase5 = false;
           break;
         default:
-          System.out.println("Invalid selection.");
-          System.out.println();
+          System.out.println("Invalid selection.\n");
       }
     }
   }

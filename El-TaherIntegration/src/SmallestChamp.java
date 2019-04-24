@@ -56,11 +56,11 @@ public class SmallestChamp {
         }
         if (found) {
           System.out
-              .println("\nOrianna is " + smallest + "years old (located at index " + index + ")");
+              .println("\nOrianna is " + smallest + " years old (located at index " + index + ").");
         }
       }
       // prints the sum of the values in the array.
-      System.out.println("Graves, Orianna, Lucian, Olaf combined ages is" + sum);
+      System.out.println("Graves, Orianna, Lucian, Olaf combined ages is " + sum + ".");
       System.out.println();
       programCase7 = false;
     }
