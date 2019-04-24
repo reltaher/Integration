@@ -1,4 +1,6 @@
 # Integration
+(NOTE: LINES FOR EACH PSI REQUIREMENT ARE OFF BY 8 LINES DUE TO IMPROVED COMMENT IN EACH CLASS.)
+
     PSI 1:
     Add your name as a comment at top of every file
     -First Javadoc comment of every class
