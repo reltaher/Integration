@@ -213,7 +213,7 @@ public class Quiz {
       rating.setIncorrectAnswers(incorrectAnswers);
       rating.displayScore();
       System.out.println("Would you like to try again? Type Y to retry,"
-          + " or type N to return to the main menu. ");
+          + " or type any other character to return to the main menu. ");
       programCase1 = scan.next();
     }
   }

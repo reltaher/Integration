@@ -123,7 +123,8 @@ public class Result {
       System.out.println("-Grandmaster");
       System.out.println("-Challenger");
       System.out.println();
-      System.out.println("Type N to return back to main menu.");
+      System.out.println(
+          "Type Y to view the list again. Type any other charcter to return to main menu.");
       programCase2 = scan.next();
     }
   }
