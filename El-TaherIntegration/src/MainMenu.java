@@ -49,7 +49,7 @@ public class MainMenu {
         System.out.println("Type 4 enter a number for a champion output.");
         System.out.println("Type 5 to view the list of champions.");
         System.out.println("Type 6 to end the program.");
-        //7 is meant to be hidden, as it gives answers to two questions in the quiz.
+        //7 is meant to be hidden, as it gives the answer to two questions in the quiz.
         try {
           // used for menu selection
           menuSelection = scan.nextInt(); // reads input for menu selection
