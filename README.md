@@ -16,6 +16,7 @@ If you have ever played the game "League of Legends", then this quiz program wil
 
 ## Built With
 
+This program has been built with Eclipse, which is an IDE for Java Developers that also contains a marketplace for other useful plugins such as SpotBugs, CheckStyle, Darkest Dark Theme, and more. Udemy Courses on learning Java were also an important resource that was utilized in the making of this program.
 
 ## Contributing
 
