@@ -183,5 +183,10 @@ If you have ever played the game "League of Legends", then this quiz program wil
 
 ## Key Programming Concepts Utilized
 
+*Use of Classes, which is essentially code in which objects are created.
 
-# Integration
+*Use of Objects, which are instances of a class. Objects contain two characteristics: State (Stored in Fields) and Behavior (Stored in Methods).
+
+*Use of Packages, which are namespaces that sorts classes and interfaces.
+
+*Use of comments, contained all over the program, which the program ignores when the program is compiled. The comments used in this program explains different programming concepts such as data types, variables (Location in memory), inheritance (concept in which a class contains the fields and methods of another class), etc.
