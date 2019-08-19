@@ -20,15 +20,24 @@ This program has been built with Eclipse, which is an IDE for Java Developers th
 
 ## Contributing
 
+This project was primarily for me to gain knowledge on Java and programming in general. Since this was my first project in Java, there is always room for improvement. If you would like to contribute to improve this project, then feel free to send me a message!
 
 ## Author
 
+Ramzy El-Taher
 
 ## License
 
 
 ## Acknowledgments
 
+Special Thanks to:
+
+-Professor Scott Vanselow: Helped guide me through the difficulties that I had in the later stages of this project, specifically when I had to apply OOP concepts such as polymorphism to this program.
+
+-The TAs (Carlos Reyes, Anthony Cangelosi, Moises Martinez) in the COP 2006 class who were able to help right at the moment when I struggled with an error or another issue that was difficult for me to understand at the time.
+
+-StackOverflow: Whenever I encountered a strange problem with Eclipse, StackOverflow usually had a solution to it. This helped me save a ton of time which would have been spent trying to fix the error otherwise.
 
 ## History
 
