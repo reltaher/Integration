@@ -287,8 +287,9 @@ public class ChampionList {
           }
           break;
         case "Q":
-          String[][] championQ = new String[1][1];
+          String[][] championQ = new String[2][1];
           championQ[0][0] = "Quinn";
+          championQ[1][0] = "Qiyana";
           for (int row = 0; row < championQ.length; row++) {
             for (int col = 0; col < championQ[row].length; col++) {
               System.out.print(championQ[row][col] + "\t");
@@ -408,9 +409,10 @@ public class ChampionList {
           }
           break;
         case "Y":
-          String[][] championY = new String[2][1];
+          String[][] championY = new String[3][1];
           championY[0][0] = "Yasuo";
           championY[1][0] = "Yorick";
+          championY[2][0] = "Yuumi";
           for (int row = 0; row < championY.length; row++) {
             for (int col = 0; col < championY[row].length; col++) {
               System.out.print(championY[row][col] + "\t");
@@ -523,6 +525,7 @@ public class ChampionList {
           champion.add("Poppy");
           champion.add("Pyke");
           champion.add("Quinn");
+          champion.add("Qiyana");
           champion.add("Rakan");
           champion.add("Rammus");
           champion.add("Rek'sai");
@@ -572,6 +575,7 @@ public class ChampionList {
           champion.add("Xin Zhao");
           champion.add("Yasuo");
           champion.add("Yorick");
+          champion.add("Yuumi");
           champion.add("Zac");
           champion.add("Zed");
           champion.add("Ziggs");
