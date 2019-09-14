@@ -6,7 +6,7 @@ If you have ever played the game "League of Legends", then this quiz program wil
 ![League_Quiz_Program](documents/League_Quiz_Demonstration.gif)
 
 ## Documentation
-
+[Documentation of the Program (Made with JavaDoc](https://reltaher.github.io/League-Quiz/doc/)
 
 ## Diagrams
 
