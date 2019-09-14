@@ -3,7 +3,7 @@
 If you have ever played the game "League of Legends", then this quiz program will test your knowledge on it. Started in January 2019, and finished in April 2019, this quiz program was the first project that I have ever made in Java. At the time, I was completely new to the language, and was learning the basic fundamentals of programming at FGCU. This project was made for my Integration Project assignment in my Introduction to Programming (COP 2006) class, and for that projct, I wanted to do mix programming with something in my interest. In this case, I decided to make a project related to League of Legends, a game that I have been playing since 2013. I have gotten a lot of positive feedback about this project from different colleagues, as well as my professor, so this project has overall helped sparked my interest in software development, and because of that I have gained an interest to continue making different projects.
 
 ## Demonstration
-(documents/League_Quiz_Demonstration.gif)
+![League_Quiz_Program](documents/League_Quiz_Demonstration.gif)
 
 ## Documentation
 
